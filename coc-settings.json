@@ -1,0 +1,137 @@
+{
+  "languageserver": {
+    "ccls": {
+      "enable": true,
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        ".ccls-root",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "client": {
+          "snippetSupport": true
+        }
+        // "highlight": { "lsRanges": true }
+      }
+    },
+    "lua": {
+      "enable": true,
+      "command": "java",
+      "args": [
+        "-cp",
+        "/home/waves/Workspace/lua/ls/EmmyLua-LS-all.jar",
+        "com.tang.vscode.MainKt"
+      ],
+      "filetypes": ["lua"],
+      "rootPatterns": [".git/"]
+    }
+  },
+  // java and java debug
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.home": "/opt/environment/java/jdk-13.0.2",
+  // "java.jdt.ls.vmargs": "-javaagent:/home/waves/.m2/repository/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar",
+  "java.jdt.ls.vmargs": "-javaagent:/home/waves/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar",
+  "java.configuration.maven.userSettings": "/home/waves/.m2/settings.xml",
+  "java.import.maven.enabled": true,
+  "yank.enableCompletion": false,
+  "list.normalMappings": {
+    "i": "do:previous"
+  },
+  // prettier
+  "coc.preferences.formatOnSaveFiletypes": [
+    // "java",
+    "html",
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "go",
+    "json"
+    // "c",
+    // "cpp"
+  ],
+  "prettier.statusItemText": " ",
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  // git
+  "git.enableGutters": true,
+  "git.branchCharacter": "\uf418",
+  "git.addGBlameToBufferVar": true,
+  "git.addGBlameToVirtualText": true,
+  "git.virtualTextPrefix": " ❯❯❯ ",
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.addedSign.text": "+",
+  "git.changedSign.text": "~",
+  "git.removedSign.text": "-",
+  "git.topRemovedSign.text": "▔",
+  "git.changeRemovedSign.text": "~",
+  "git.changedDecorator": "~",
+  "git.conflictedDecorator": "",
+  "git.stagedDecorator": "●",
+  "git.untrackedDecorator": "",
+  "coc.preferences.colorSupport": true,
+  "highlight.colors.enable": true,
+  "highlight.document.enable": true,
+  "diagnostic.enableSign": true,
+  "diagnostic.warningSign": "",
+  "diagnostic.errorSign": "",
+  "diagnostic.hintSign": "",
+  "diagnostic.infoSign": "",
+  "suggest.minTriggerInputLength": 2,
+  // "suggest.snippetIndicator": "🌸",
+  // "suggest.snippetIndicator": " ",
+  // "suggest.snippetIndicator": "🌟",
+  "suggest.snippetIndicator": "🧊",
+  // "suggest.snippetIndicator": "🚀",
+  // "coc.preferences.snippetStatusText": "🌸",
+  // "coc.preferences.snippetStatusText": "🌟",
+  // "coc.preferences.snippetStatusText": "🚀",
+  "coc.preferences.snippetStatusText": "🧊",
+  "suggest.completionItemKindLabels": {
+    "keyword": "",
+    // "keyword": "גּ",
+    "variable": "",
+    "value": "",
+    "operator": "",
+    "function": "",
+    "reference": "渚",
+    "constant": "",
+    "method": "",
+    "struct": "פּ",
+    "class": "",
+    "interface": "",
+    "text": "ﭨ",
+    "enum": "",
+    "enumMember": "",
+    "module": "",
+    "color": "",
+    "property": "",
+    "field": "",
+    "unit": "",
+    "event": "鬒",
+    "file": "",
+    "folder": "",
+    "snippet": "",
+    "typeParameter": "",
+    "default": ""
+  },
+  "yaml.format.enable": true,
+  "yaml.schemas": {
+    "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
+  }
+}
