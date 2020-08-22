@@ -71,8 +71,6 @@ nnoremap <silent> ss :CocFzfList symbols<cr>
 nnoremap <silent> sc :CocFzfList commands<cr>
 nnoremap <silent> se :CocFzfList location<cr>
 nnoremap <silent> st :CocFzfList outline<cr>
-nnoremap <silent> sh :History<cr>
-nnoremap <silent> sg :Commits<cr>
 "--- Can be replace now
 "nmap <silent> so :CocAction('runCommand', 'editor.action.organizeImport')<CR>
 " coc-explorer

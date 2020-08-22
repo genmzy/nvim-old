@@ -24,3 +24,4 @@ nnoremap <silent> <leader>l :BLines<cr>
 " Git searches
 nnoremap <silent> <leader>gf :GFiles?<cr>
 nnoremap <silent> <leader>gc :Commits<cr>
+nnoremap <silent> sh :History<cr>

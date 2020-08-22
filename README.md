@@ -26,4 +26,4 @@
 
 - Install plugins
 
-  Enter vim and execute `:PlugInstall` 
+  Enter vim and execute `:PlugInstall`
