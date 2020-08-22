@@ -89,7 +89,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'lambdalisue/suda.vim'
 
 "defx
-Plug 'Shougo/defx.nvim'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
 
