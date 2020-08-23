@@ -25,3 +25,6 @@ nnoremap <silent> <leader>l :BLines<cr>
 nnoremap <silent> <leader>gf :GFiles?<cr>
 nnoremap <silent> <leader>gc :Commits<cr>
 nnoremap <silent> sh :History<cr>
+
+command! -bang Config call fzf#vim#files($root, <bang>0)
+nnoremap <silent> <leader>w :Config<cr>
