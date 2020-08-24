@@ -5,5 +5,5 @@ function! FT_h2c()
     set filetype=c
   endif
 endfunction
-autocmd! FileType cpp call FT_h2c()
+autocmd! FileType cpp,objc call FT_h2c()
 
