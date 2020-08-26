@@ -18,7 +18,7 @@ nnoremap <silent> <leader>b :Buffers<cr>
 nnoremap <silent> <leader>e :CocFzfList extensions<cr>
 nnoremap <silent> <leader>ss :Snippets<cr>
 nnoremap <silent> <leader>ct :Colors<cr>
-nnoremap <silent> <leader>m :Marks<cr>
+nnoremap <silent> <leader>mk :Marks<cr>
 " For fuzzy find current lines, which is better than '/' to search
 nnoremap <silent> <leader>l :BLines<cr>
 " Git searches

@@ -64,6 +64,8 @@ map <LEADER>6 :buffer 6<CR>
 map <LEADER>7 :buffer 7<CR>
 map <LEADER>8 :buffer 8<CR>
 map <LEADER>9 :buffer 9<CR>
+" Instead of Shift+K for `man` helper
+map <silent> <leader>h :Man<cr>
 
 " quick tabpage-change
 map - :-tabnext<CR>
