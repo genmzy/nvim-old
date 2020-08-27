@@ -92,6 +92,8 @@
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
   "diagnostic.infoSign": "",
+  "suggest.noselect": true,
+  "suggest.enablePreselect": true,
   "suggest.minTriggerInputLength": 2,
   // "suggest.snippetIndicator": "🌸",
   // "suggest.snippetIndicator": " ",

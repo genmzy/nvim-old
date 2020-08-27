@@ -4,6 +4,7 @@
 " Not only coc-snippets the that can jump among the arguments, but also ordinary coc completion
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
+let g:snips_author = 'GenmZy_'
 autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap if
 let g:coc_global_extensions = [
@@ -51,6 +52,16 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> to trigger the full snippets complete(including '()' and arguments)
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
                                            \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+"" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+"" position. Coc only does snippet and additional edit on confirm.
+"" <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
+"if exists('*complete_info')
+  "inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+"else
+  "inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"endif
+
 " Useful commands
 "nnoremap <silent> sy :<C-u>CocList -A --normal yank<cr>
 nmap <silent> gd <Plug>(coc-definition)
@@ -77,6 +88,17 @@ nnoremap <silent> st :CocFzfList outline<cr>
 "nmap <F2> :CocCommand explorer<CR>
 "nmap <F2> :CocCommand explorer --toggle --position=floating --sources=file+<CR>
 
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap hf <Plug>(coc-funcobj-i)
+omap hf <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap hc <Plug>(coc-classobj-i)
+omap hc <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+
 " coc-highlight
 "autocmd CursorHold * silent call CocActionAsync('highlight')
 au CursorHoldI * sil call CocActionAsync('showSignatureHelp')
@@ -98,6 +120,14 @@ command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+"xmap <silent> <leader>k :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+"nmap <silent> <leader>k :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+" Use CTRL-S for selections ranges.
+" Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
+nmap <silent> <leader>j <Plug>(coc-range-select)
+xmap <silent> <leader>j <Plug>(coc-range-select)
 
 " solve the huge file read problem
 let g:trigger_size = 0.5 * 1048576
