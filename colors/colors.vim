@@ -69,7 +69,7 @@
 " ===
 " === space_light
 " ===
-let g:space_vim_transp_bg = 1
+let g:space_vim_transp_bg = 0
 colorscheme space_vim_theme
 set background=light
 let g:spaceline_colorscheme='space_light'
