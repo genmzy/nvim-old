@@ -58,7 +58,7 @@ Plug 'hardcoreplayers/oceanic-material'
 
 " Color enhancement
 "Plug 'Kjwon15/vim-transparent' " Parent background
-Plug 'sheerun/vim-polyglot' " Enhancing syntax color of a lot of filetypes
+Plug '986299679/vim-polyglot' " Enhancing syntax color of a lot of filetypes
 
 " Very nice completion plugin -> vim-IDE
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
