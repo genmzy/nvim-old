@@ -16,3 +16,9 @@ endsnippet
 snippet apue "Include apue.h" b
 #include "${1:apue.h}"
 endsnippet
+
+snippet op "NOTIFY `open` and `close`" b
+open${1:<++>}
+$3
+close${2:<++>}
+endsnippet

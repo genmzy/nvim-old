@@ -1,16 +1,10 @@
-noremap <silent> k j
-noremap <silent> j h
-noremap <silent> h i
-noremap <silent> i k
 " accelerated_jk
-nmap k <Plug>(accelerated_jk_gj)
-nmap i <Plug>(accelerated_jk_gk)
-
-noremap <silent> H I
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
 
 map <silent> K 5k
-map <silent> J 14j
-map <silent> I 5i
+map <silent> J 5j
+map <silent> H 14h
 map <silent> L 14l
 
 " Resize splits with arrow keys
@@ -49,9 +43,13 @@ map <F7> :set nosplitbelow<CR>:split<CR>
 map <F6> :set splitbelow<CR>:split<CR>
 
 " s<direction> map to cross the split windows
-map sj <C-w>h
-map sk <C-w>j
-map si <C-w>k
+"map sj <C-w>h
+"map sk <C-w>j
+"map si <C-w>k
+"map sl <C-w>l
+map sh <C-w>h
+map sj <C-w>j
+map sk <C-w>k
 map sl <C-w>l
 
 " quick buffer-change
@@ -64,6 +62,7 @@ map <LEADER>6 :buffer 6<CR>
 map <LEADER>7 :buffer 7<CR>
 map <LEADER>8 :buffer 8<CR>
 map <LEADER>9 :buffer 9<CR>
+
 " Instead of Shift+K for `man` helper
 map <silent> <leader>h :Man<cr>
 
