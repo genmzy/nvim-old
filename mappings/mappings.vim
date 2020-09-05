@@ -43,10 +43,6 @@ map <F7> :set nosplitbelow<CR>:split<CR>
 map <F6> :set splitbelow<CR>:split<CR>
 
 " s<direction> map to cross the split windows
-"map sj <C-w>h
-"map sk <C-w>j
-"map si <C-w>k
-"map sl <C-w>l
 map sh <C-w>h
 map sj <C-w>j
 map sk <C-w>k
