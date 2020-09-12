@@ -52,9 +52,11 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug '986299679/vim-waves'
 Plug '986299679/deus'
-Plug '986299679/space-vim-theme'
+Plug '986299679/lavender'
 Plug '986299679/snazzy'
 Plug 'hardcoreplayers/oceanic-material'
+Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-two-firewatch'
 
 " Color enhancement
 "Plug 'Kjwon15/vim-transparent' " Parent background

@@ -44,16 +44,16 @@
 
 
 "" ===
-"" === space_dark
+"" === lavender_dark
 "" ===
 ""let g:airline_theme='base16_nord'
 ""let g:airline_theme='lucius'
 ""hi Identifier cterm=none
-"let g:space_vim_italic = 0
-"let g:space_vim_italicize_strings = 0
-"let g:space_vim_transp_bg = 0
+"let g:lavender_italic = 0
+"let g:lavender_italicize_strings = 0
+"let g:lavender_transp_bg = 1
 "set background=dark
-"colorscheme space_vim_theme
+"colorscheme lavender
 "hi Comment guifg=#5C637f ctermfg=248
 
 
@@ -67,10 +67,10 @@
 
 
 " ===
-" === space_light
+" === lavender_light
 " ===
-let g:space_vim_transp_bg = 0
-colorscheme space_vim_theme
+let g:lavender_transp_bg = 0
+colorscheme lavender
 set background=light
 let g:spaceline_colorscheme='space_light'
 "hi Comment guifg=#8e9ecc ctermfg=248
@@ -147,3 +147,16 @@ let g:spaceline_colorscheme='space_light'
 "color snazzy
 ""hi Normal ctermfg=252 ctermbg=none
 "let g:airline_theme='base16_snazzy'
+
+""===
+""=== gruvbox
+""===
+"set background=dark
+"let g:gruvbox_contrast_dark="soft"
+"color gruvbox
+
+""===
+""=== two-firewatch
+""===
+"set background=light
+"color two-firewatch
