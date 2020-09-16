@@ -48,7 +48,7 @@ Plug 'lifepillar/vim-colortemplate'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 
 " Colorscheme
-Plug 'ayu-theme/ayu-vim'
+Plug '986299679/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug '986299679/vim-waves'
 Plug '986299679/deus'
