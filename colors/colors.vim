@@ -110,8 +110,6 @@ let ayucolor="light"
 "let g:spaceline_seperate_style="arrow"
 colorscheme ayu
 let g:spaceline_colorscheme='ayu_light'
-hi floaterm guifg=#abb0b6 guibg=#3e4b59
-hi floatermborder guibg=none guifg=orange
 
 "" ===
 "" === ayu_mirage
