@@ -56,7 +56,8 @@ Plug '986299679/lavender'
 Plug '986299679/snazzy'
 Plug 'hardcoreplayers/oceanic-material'
 Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-two-firewatch'
+Plug '986299679/onedark.vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Color enhancement
 "Plug 'Kjwon15/vim-transparent' " Parent background

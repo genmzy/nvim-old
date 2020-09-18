@@ -102,14 +102,14 @@
 "colorscheme solarized8_flat
 
 
-" ===
-" === ayu_light
-" ===
-let ayucolor="light"
-"let ayucolor="dark"
-"let g:spaceline_seperate_style="arrow"
-colorscheme ayu
-let g:spaceline_colorscheme='ayu_light'
+"" ===
+"" === ayu_light
+"" ===
+"let ayucolor="light"
+""let ayucolor="dark"
+""let g:spaceline_seperate_style="arrow"
+"colorscheme ayu
+"let g:spaceline_colorscheme='ayu_light'
 
 "" ===
 "" === ayu_mirage
@@ -125,10 +125,11 @@ let g:spaceline_colorscheme='ayu_light'
 "set background=dark
 "color one
 
-"" ===
-"" === onedark
-"" ===
-"color onedark
+" ===
+" === onedark
+" ===
+let g:spaceline_colorscheme='one'
+color onedark
 
 "" ===
 "" === onehalf
