@@ -86,10 +86,10 @@
 "let g:airline_theme='dracula'
 "let g:dracula_colorterm = 1
 
-"" ===
-"" === nord
-"" ===
-"color nord
+" ===
+" === nord
+" ===
+color nord
 
 "" ===
 "" === solarized8
