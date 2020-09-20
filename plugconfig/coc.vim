@@ -63,7 +63,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
 "endif
 
 " Useful commands
-"nnoremap <silent> sy :<C-u>CocList -A --normal yank<cr>
+nnoremap <silent> sy :<C-u>CocList -A yank<cr>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -75,7 +75,7 @@ nmap <silent> sr <Plug>(coc-rename)
 nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
 
-nnoremap <silent> sy :CocFzfList yank<cr>
+"nnoremap <silent> sy :CocFzfList yank<cr>
 nnoremap <silent> so :CocFzfList actions<cr>
 nnoremap <silent> sd :CocFzfList diagnostics<cr>
 nnoremap <silent> ss :CocFzfList symbols<cr>
