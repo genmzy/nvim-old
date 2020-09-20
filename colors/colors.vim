@@ -89,6 +89,7 @@
 " ===
 " === nord
 " ===
+let g:spaceline_colorscheme='nord'
 color nord
 
 "" ===
