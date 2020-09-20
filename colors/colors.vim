@@ -125,11 +125,11 @@ color nord
 "set background=dark
 "color one
 
-" ===
-" === onedark
-" ===
-let g:spaceline_colorscheme='one'
-color onedark
+"" ===
+"" === onedark
+"" ===
+"let g:spaceline_colorscheme='one'
+"color onedark
 
 "" ===
 "" === onehalf
