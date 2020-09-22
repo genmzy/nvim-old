@@ -49,7 +49,7 @@ Plug 'lifepillar/vim-colortemplate'
 
 " Colorscheme
 Plug '986299679/ayu-vim'
-Plug 'arcticicestudio/nord-vim'
+Plug '986299679/nord-vim'
 Plug '986299679/vim-waves'
 Plug '986299679/deus'
 Plug '986299679/lavender'
