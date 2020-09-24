@@ -2,7 +2,7 @@
 " === FZF
 " ===
 let g:vista_fzf_preview = ['down:50%']
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
 set rtp+=/usr/local/opt/fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 let g:fzf_preview_window = 'down:50%'
