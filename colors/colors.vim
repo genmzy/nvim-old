@@ -160,3 +160,5 @@ color nord
 ""===
 "set background=light
 "color two-firewatch
+
+hi CocErrorSign  ctermfg=Red guifg=#BF616A

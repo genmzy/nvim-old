@@ -60,7 +60,7 @@ Plug '986299679/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Color enhancement
-"Plug 'Kjwon15/vim-transparent' " Parent background
+Plug 'Kjwon15/vim-transparent' " Parent background
 Plug '986299679/vim-polyglot' " Enhancing syntax color of a lot of filetypes
 
 " Very nice completion plugin -> vim-IDE

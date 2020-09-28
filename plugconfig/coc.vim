@@ -76,7 +76,8 @@ nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
 
 "nnoremap <silent> sy :CocFzfList yank<cr>
-nnoremap <silent> so :CocFzfList actions<cr>
+"nnoremap <silent> so :CocFzfList actions<cr>
+nnoremap <silent> so :CocAction
 nnoremap <silent> sd :CocFzfList diagnostics<cr>
 nnoremap <silent> ss :CocFzfList symbols<cr>
 nnoremap <silent> sc :CocFzfList commands<cr>
