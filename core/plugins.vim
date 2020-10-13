@@ -49,7 +49,7 @@ Plug 'lifepillar/vim-colortemplate'
 
 " Colorscheme
 Plug '986299679/ayu-vim'
-Plug '986299679/nord-vim'
+Plug '986299679/nord-vim', {'branch': 'master'}
 Plug '986299679/vim-waves'
 Plug '986299679/deus'
 Plug '986299679/lavender'
@@ -70,7 +70,7 @@ Plug 'liuchengxu/vim-which-key'
 " C highlight(have some bug now, so i do not use it.)
 "Plug 'jackguo380/vim-lsp-cxx-highlight'
 
-" Start shows
+" launch shows
 Plug 'hardcoreplayers/dashboard-nvim'
 
 " Code snippets
