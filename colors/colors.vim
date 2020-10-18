@@ -26,21 +26,21 @@
 "let g:terminal_color_14 = '#9AEDFE'
 
 
-" ===
-" === waves
-" ===
-let g:airline_theme='lucius'
+"" ===
+"" === waves
+"" ===
 "let g:airline_theme='lucius'
-"hi Identifier cterm=none
-let g:waves_italic = 0
-let g:waves_italicize_strings = 0
-let g:waves_transp_bg = 1
-set background=dark
-colorscheme vim_waves
-"hi Comment guifg=#b8b0b0 ctermfg=59
-"hi Comment guifg=#5C637f ctermfg=248
-"let g:indentLine_color_term = 138
-""let g:indentLine_setColors = 0
+""let g:airline_theme='lucius'
+""hi Identifier cterm=none
+"let g:waves_italic = 0
+"let g:waves_italicize_strings = 0
+"let g:waves_transp_bg = 1
+"set background=dark
+"colorscheme vim_waves
+""hi Comment guifg=#b8b0b0 ctermfg=59
+""hi Comment guifg=#5C637f ctermfg=248
+""let g:indentLine_color_term = 138
+"""let g:indentLine_setColors = 0
 
 
 "" ===
