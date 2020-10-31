@@ -112,11 +112,11 @@
   "suggest.completionItemKindLabels": {
     "keyword": "",
     // "keyword": "גּ",
-    "variable": "ﰩ",
+    "variable": "",
     "value": "",
     "operator": "",
     "function": "",
-    "reference": "ﱿ",
+    "reference": "",
     "constant": "",
     "method": "",
     "struct": "פּ",
