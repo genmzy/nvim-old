@@ -15,7 +15,7 @@ silent! call defx#custom#option('_', {
 \ })
 
 " Launch Defx.
-nnoremap <silent> <F2> :Defx -no-toggle -search=`expand('%:p')` `getcwd()`<CR>
+nnoremap <silent> <F2> :Defx -columns=git:mark:indent:icons:filename:type -no-toggle -search=`expand('%:p')` `getcwd()`<CR>
 
 augroup defxsettings
   autocmd!
@@ -88,30 +88,6 @@ let g:defx_icons_directory_symlink_icon = ''
 let g:defx_icons_nested_opened_tree_icon = ''
 let g:defx_icons_nested_closed_tree_icon = ''
 
-let g:defx_icons_extensions = {
-  \ 'html': { 'icon': '', 'color': 'e67e22' },
-  \ 'css': { 'icon': '', 'color': '689fb6' },
-  \ 'js': { 'icon': '', 'color': 'f5c06f' },
-  \ 'jsx': { 'icon': '', 'color': '689fb6' },
-  \ 'md': { 'icon': '', 'color': '44788e' },
-  \ 'png': { 'icon': '', 'color': 'd4843e' },
-  \ 'webp': { 'icon': '', 'color': '3498db' },
-  \ 'jpg': { 'icon': '', 'color': '16a085' },
-  \ 'svg': { 'icon': '', 'color': '3affdb' }
-\ }
-
-let g:defx_icons_exact_matches = {
-  \ 'license': { 'icon': '', 'color': 'f1f1f1' },
-  \ 'favicon.ico': { 'icon': '', 'color': '1abc9c' },
-  \ 'robots.txt': { 'icon': '', 'color': 'f1f1f1' },
-  \ 'node_modules': { 'icon': '', 'color': '82aaff' }
-\ }
-
-let g:defx_icon_pattern_matches = {
-  \ '.*ignore': { 'icon': '', 'color': '8f93a2' }
-\ }
-
-let g:defx_icon_exact_dir_matches = {
-  \ 'node_modules': { 'icon': '', 'color': '82aaff' },
-  \ '.git': { 'icon': '', 'color': '82aaff' }
-\ }
+autocmd FileType defx setlocal nonumber
+autocmd FileType defx setlocal norelativenumber
+autocmd FileType defx setlocal signcolumn=no

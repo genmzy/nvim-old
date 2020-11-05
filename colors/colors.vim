@@ -8,7 +8,7 @@
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "set background=dark    " Setting dark mode
 "let g:deus_termcolors=256
-"let g:spaceline_colorscheme='space'
+"let g:spaceline_colorscheme='nord'
 "let g:terminal_color_0  = '#000000'
 "let g:terminal_color_1  = '#d26487'
 "let g:terminal_color_2  = '#50FA7B'
@@ -117,7 +117,7 @@ color nord
 "" ===
 "let ayucolor="mirage"
 "colorscheme ayu
-"let g:spaceline_colorscheme='space'
+"let g:spaceline_colorscheme='ayu_mirage'
 ""let g:spaceline_colorscheme='ayu_light'
 
 "" ===
