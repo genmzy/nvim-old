@@ -47,6 +47,7 @@ map sh <C-w>h
 map sj <C-w>j
 map sk <C-w>k
 map sl <C-w>l
+map .w <C-w>w
 
 " quick buffer-change
 map <LEADER>1 :buffer 1<CR>
