@@ -78,7 +78,7 @@
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "git.addedSign.text": "✚",
   "git.changedSign.text": "✹",
-  "git.removedSign.text": "_",
+  "git.removedSign.text": "✗",
   "git.topRemovedSign.text": "▔",
   "git.changeRemovedSign.text": "✹",
   "git.changedDecorator": "✹",
