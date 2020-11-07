@@ -88,6 +88,24 @@ let g:defx_icons_directory_symlink_icon = ''
 let g:defx_icons_nested_opened_tree_icon = ''
 let g:defx_icons_nested_closed_tree_icon = ''
 
+let g:defx_icons_extensions = {
+  \ 'ini': {'icon': '', 'color': '4c566a'},
+  \ 'yaml': {'icon': '', 'color': '4c566a'},
+  \ 'yml': {'icon': '', 'color': '4c566a'},
+  \ 'h': {'icon': '', 'color': 'B48EAD'},
+  \ 'hxx': {'icon': '', 'color': 'B48EAD'},
+  \ 'hpp': {'icon': '', 'color': 'B48EAD'},
+  \ 'zsh': {'icon': '', 'color': '834F79'},
+  \ 'bash': {'icon': '', 'color': '834F79'},
+  \ 'key': {'icon': '', 'color': 'c2e98d'},
+  \ }
+
+let g:defx_icons_exact_matches ={
+  \ 'makefile': {'icon': '', 'color': '4c566a'},
+  \ '.gitignore': {'icon': '', 'color': '5c6773'},
+  \ 'license': {'icon': '', 'color': 'c2e98d'},
+  \ }
+
 autocmd FileType defx setlocal nonumber
 autocmd FileType defx setlocal norelativenumber
 autocmd FileType defx setlocal signcolumn=no
