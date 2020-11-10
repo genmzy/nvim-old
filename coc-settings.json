@@ -4,14 +4,7 @@
       "enable": true,
       "command": "ccls",
       "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [
-        ".ccls",
-        ".ccls-root",
-        "compile_commands.json",
-        ".vim/",
-        ".git/",
-        ".hg/"
-      ],
+      "rootPatterns": [".ccls", ".ccls-root", ".vim/", ".git/", ".hg/"],
       "initializationOptions": {
         "cache": {
           "directory": "/tmp/ccls"
