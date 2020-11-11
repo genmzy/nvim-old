@@ -107,6 +107,11 @@ let g:defx_icons_exact_matches ={
   \ 'license': {'icon': '', 'color': 'c2e98d'},
   \ }
 
+call defx#custom#column('mark', {
+  \ 'readonly_icon': '✗',
+  \ 'selected_icon': '✓',
+  \ })
+
 autocmd FileType defx setlocal nonumber
 autocmd FileType defx setlocal norelativenumber
 autocmd FileType defx setlocal signcolumn=no
