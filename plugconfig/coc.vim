@@ -36,6 +36,7 @@ let g:coc_global_extensions = [
       \ 'coc-prettier',
       \ 'coc-snippets',
       \ 'coc-fzf-preview',
+      \ 'coc-translator',
       \ ]
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
@@ -131,6 +132,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
 nmap <silent> <leader>j <Plug>(coc-range-select)
 xmap <silent> <leader>j <Plug>(coc-range-select)
+
+nmap <silent> sm :CocCommand translator.popup<cr>
 
 " solve the huge file read problem
 let g:trigger_size = 0.5 * 1048576
