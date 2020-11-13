@@ -1,1 +1,2 @@
-map <leader><SPACE> <Plug>(wildfire-fuel)
+nmap <leader><SPACE> <cr>
+vmap <leader><space> <cr>
