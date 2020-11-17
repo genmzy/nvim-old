@@ -81,7 +81,7 @@ Plug 'SirVer/ultisnips'
 Plug 'vim-scripts/BufOnly.vim'
 
 " Debug tools
-Plug 'puremourning/vimspector' ", {'do': './install_gadget.py --enable-c --enable-python --enable-go'}
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --force-enable-java --enable-lua --enable-python'}
 
 " vim-go`
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
