@@ -7,7 +7,7 @@ filetype indent on
 filetype plugin on
 filetype plugin indent on
 
-"set cursorline
+set cursorline
 set wrap
 set nobackup
 set nowritebackup

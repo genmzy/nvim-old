@@ -33,7 +33,6 @@ nnoremap <silent> <leader>w :Config<cr>
 let g:fzf_colors =
   \ { 'fg':      ['fg', 'Normal'],
     \ 'bg':      ['bg', 'Normal'],
-    \ 'hl':      ['fg', 'Comment'],
     \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
     \ 'bg+':     ['bg', 'Keyword', 'CursorColumn'],
     \ 'hl+':     ['fg', 'Statement'],
