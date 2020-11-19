@@ -105,6 +105,7 @@ let g:defx_icons_exact_matches ={
   \ 'cmakelists.txt': {'icon': '', 'color': '4c566a'},
   \ '.gitignore': {'icon': '', 'color': '5c6773'},
   \ 'license': {'icon': '', 'color': 'c2e98d'},
+  \ 'conf': {'icon': '', 'color': '4c566a'},
   \ }
 
 call defx#custom#column('mark', {
