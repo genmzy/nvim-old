@@ -58,6 +58,7 @@ Plug 'hardcoreplayers/oceanic-material'
 Plug 'morhetz/gruvbox'
 Plug '986299679/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'sainnhe/forest-night'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent' " Parent background
