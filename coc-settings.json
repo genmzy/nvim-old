@@ -17,11 +17,13 @@
     },
     "lua": {
       "enable": true,
-      "command": "java",
+      "cwd": "/home/waves/Workspace/lua/ls/lua-language-server",
+      "command": "/home/waves/Workspace/lua/ls/lua-language-server/bin/Linux/lua-language-server",
       "args": [
-        "-cp",
-        "/home/waves/Workspace/lua/ls/EmmyLua-LS-all.jar",
-        "com.tang.vscode.MainKt"
+        "-E",
+        "-e",
+        "LANG=en",
+        "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
       ],
       "filetypes": ["lua"],
       "rootPatterns": [".git/"]

@@ -26,7 +26,6 @@ let g:coc_global_extensions = [
       \ 'coc-marketplace',
       \ 'coc-floaterm',
       \ 'coc-db',
-      \ 'coc-lua',
       \ 'coc-tsserver',
       \ 'coc-go',
       \ 'coc-markdownlint',
