@@ -42,18 +42,11 @@
   },
   // prettier
   "coc.preferences.formatOnSaveFiletypes": [
-    // "java",
     "html",
     "css",
     "markdown",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
     "go",
     "json"
-    // "c",
-    // "cpp"
   ],
   "prettier.statusItemText": " ",
   "prettier.eslintIntegration": true,
