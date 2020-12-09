@@ -63,7 +63,8 @@ Plug 'liuchengxu/space-vim-theme'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent' " Parent background
-Plug '986299679/vim-polyglot' " Enhancing syntax color of a lot of filetypes
+Plug 'sheerun/vim-polyglot' " Enhancing syntax color of a lot of filetypes
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 " Very nice completion plugin -> vim-IDE
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}

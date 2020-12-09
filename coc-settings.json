@@ -11,8 +11,8 @@
         },
         "client": {
           "snippetSupport": true
-        }
-        // "highlight": { "lsRanges": true }
+        },
+        "highlight": { "lsRanges": true }
       }
     },
     "lua": {

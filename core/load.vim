@@ -35,3 +35,5 @@ source $root/colors/colors.vim
 source $root/plugconfig/floaterm.vim
 
 source $root/plugconfig/wildfire.vim
+
+source $root/plugconfig/cxx-highlight.vim
