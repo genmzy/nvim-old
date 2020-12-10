@@ -1,4 +1,8 @@
-highlight link LspCxxHlGroupMemberVariable String
+if g:colors_name == "nord"
+  highlight LspCxxHlGroupMemberVariable ctermfg=LightCyan guifg=#83a598  cterm=none gui=none
+else
+  highlight link LspCxxHlGroupMemberVariable String
+endif
 
 highlight link LspCxxHlGroupEnumConstant Constant
 
