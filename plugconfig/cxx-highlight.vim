@@ -1,5 +1,5 @@
 if g:colors_name == "nord"
-  highlight LspCxxHlGroupMemberVariable ctermfg=LightCyan guifg=#83a598  cterm=none gui=none
+  highlight LspCxxHlGroupMemberVariable ctermfg=LightCyan guifg=#6cbfe0 cterm=none gui=none
 elseif g:colors_name == "lavender"
   highlight link LspCxxHlGroupMemberVariable Special
 else
