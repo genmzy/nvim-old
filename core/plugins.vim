@@ -60,6 +60,7 @@ Plug '986299679/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'sainnhe/forest-night'
 Plug 'liuchengxu/space-vim-theme'
+Plug 'pineapplegiant/spaceduck'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent' " Parent background

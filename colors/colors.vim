@@ -92,6 +92,8 @@
 let g:spaceline_colorscheme='nord'
 color nord
 
+"colorscheme spaceduck
+
 "" ===
 "" === solarized8
 "" ===
