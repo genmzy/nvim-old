@@ -7,7 +7,7 @@ else
   highlight link LspCxxHlGroupMemberVariable String
 endif
 
-highlight link LspCxxHlGroupEnumConstant Constant
+"highlight link LspCxxHlGroupEnumConstant Constant
 
 highlight link LspCxxHlGroupNamespace Label
 
