@@ -69,3 +69,5 @@ map = :tabnext<CR>
 
 " put a place holder to edit format-similar coding quickly
 nnoremap \\ <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+nmap . %
