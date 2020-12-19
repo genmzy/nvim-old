@@ -71,3 +71,4 @@ map = :tabnext<CR>
 nnoremap \\ <Esc>/<++><CR>:nohlsearch<CR>c4l
 
 nmap . %
+vmap . %
