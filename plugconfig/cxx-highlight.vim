@@ -1,14 +1,12 @@
-"if g:colors_name == "nord"
-  "highlight LspCxxHlGroupMemberVariable ctermfg=LightCyan guifg=#6cbfe0 cterm=none gui=none
-"elseif g:colors_name == "lavender"
-if g:colors_name == "lavender"
+if g:colors_name == "nord"
+  highlight LspCxxHlGroupEnumConstant guifg=#9a9aba cterm=none gui=none
+  highlight LspCxxHlGroupMemberVariable ctermfg=LightCyan guifg=#83a598 cterm=none gui=none
+elseif g:colors_name == "lavender"
   highlight link LspCxxHlGroupMemberVariable Special
 else
   highlight link LspCxxHlGroupMemberVariable String
 endif
 
-"highlight link LspCxxHlGroupEnumConstant Constant
+hi default link LspCxxHlSymMacro Constant
 
 highlight link LspCxxHlGroupNamespace Label
-
-hi default link LspCxxHlSymMacro Constant

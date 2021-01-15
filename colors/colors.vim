@@ -94,6 +94,8 @@ let g:spaceline_colorscheme='space_light'
 
 "colorscheme spaceduck
 
+"colorscheme spaceduck
+
 "" ===
 "" === solarized8
 "" ===
@@ -150,9 +152,9 @@ let g:spaceline_colorscheme='space_light'
 ""hi Normal ctermfg=252 ctermbg=none
 "let g:airline_theme='base16_snazzy'
 
-""===
-""=== gruvbox
-""===
+"" ===
+"" === gruvbox
+"" ===
 "set background=dark
 "let g:gruvbox_contrast_dark="soft"
 "color gruvbox
@@ -162,5 +164,8 @@ let g:spaceline_colorscheme='space_light'
 ""===
 "set background=light
 "color two-firewatch
+
+
+"colorscheme forest-night
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
