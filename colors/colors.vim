@@ -43,18 +43,18 @@
 """let g:indentLine_setColors = 0
 
 
-" ===
-" === lavender_dark
-" ===
-"let g:airline_theme='base16_nord'
-"let g:airline_theme='lucius'
-"hi Identifier cterm=none
-let g:lavender_italic = 0
-let g:lavender_italicize_strings = 0
-let g:lavender_transp_bg = 1
-set background=dark
-colorscheme lavender
-hi Comment guifg=#5C637f ctermfg=248
+"" ===
+"" === lavender_dark
+"" ===
+""let g:airline_theme='base16_nord'
+""let g:airline_theme='lucius'
+""hi Identifier cterm=none
+"let g:lavender_italic = 0
+"let g:lavender_italicize_strings = 0
+"let g:lavender_transp_bg = 1
+"set background=dark
+"colorscheme lavender
+"hi Comment guifg=#5C637f ctermfg=248
 
 
 "" ===
@@ -116,13 +116,13 @@ hi Comment guifg=#5C637f ctermfg=248
 "colorscheme ayu
 "let g:spaceline_colorscheme='ayu_light'
 
-"" ===
-"" === ayu_mirage
-"" ===
-"let ayucolor="mirage"
-"colorscheme ayu
-"let g:spaceline_colorscheme='ayu_mirage'
-""let g:spaceline_colorscheme='ayu_light'
+" ===
+" === ayu_mirage
+" ===
+let ayucolor="mirage"
+colorscheme ayu
+let g:spaceline_colorscheme='ayu_mirage'
+"let g:spaceline_colorscheme='ayu_light'
 
 "" ===
 "" === vim-one
