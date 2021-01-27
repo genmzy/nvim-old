@@ -11,8 +11,7 @@ let java_highlight_java_io=1
 function! HighLightOperator()
   syntax match _Bracket "[\[\]]"
   syntax match _Operator "[-+&|<>=!\~.:*%&^?]"
-  "syntax match _Operator "[-+&|<>=!\/~.,;:*%&^?(){}]"
-  syntax match _Identifier "[{}]"
+  syntax match _Identifier "[{};]"
   syntax match _Label "[()]"
   hi link _Bracket Constant
   hi link _Operator Operator
