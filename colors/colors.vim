@@ -43,18 +43,18 @@
 """let g:indentLine_setColors = 0
 
 
-"" ===
-"" === lavender_dark
-"" ===
-""let g:airline_theme='base16_nord'
-""let g:airline_theme='lucius'
-""hi Identifier cterm=none
-"let g:lavender_italic = 0
-"let g:lavender_italicize_strings = 0
-"let g:lavender_transp_bg = 1
-"set background=dark
-"colorscheme lavender
-"hi Comment guifg=#5C637f ctermfg=248
+" ===
+" === lavender_dark
+" ===
+"let g:airline_theme='base16_nord'
+"let g:airline_theme='lucius'
+"hi Identifier cterm=none
+let g:lavender_italic = 0
+let g:lavender_italicize_strings = 0
+let g:lavender_transp_bg = 1
+set background=dark
+colorscheme lavender
+hi Comment guifg=#5C637f ctermfg=248
 
 
 "" ===
@@ -66,17 +66,17 @@
 "let g:airline_theme='base16_nord'
 
 
-" ===
-" === lavender_light
-" ===
-let g:lavender_transp_bg = 0
-colorscheme lavender
-set background=light
-let g:spaceline_colorscheme='space_light'
-"hi Comment guifg=#8e9ecc ctermfg=248
-"hi Comment guifg=#5C637f ctermfg=59
-"hi Comment guifg=#8e9eaf ctermfg=248
-"let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
+"" ===
+"" === lavender_light
+"" ===
+"let g:lavender_transp_bg = 0
+"colorscheme lavender
+"set background=light
+"let g:spaceline_colorscheme='space_light'
+""hi Comment guifg=#8e9ecc ctermfg=248
+""hi Comment guifg=#5C637f ctermfg=59
+""hi Comment guifg=#8e9eaf ctermfg=248
+""let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
 
 
 "" ===
