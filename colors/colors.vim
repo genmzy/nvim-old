@@ -43,18 +43,18 @@
 """let g:indentLine_setColors = 0
 
 
-" ===
-" === lavender_dark
-" ===
-"let g:airline_theme='base16_nord'
-"let g:airline_theme='lucius'
-"hi Identifier cterm=none
-let g:lavender_italic = 0
-let g:lavender_italicize_strings = 0
-let g:lavender_transp_bg = 1
-set background=dark
-colorscheme lavender
-hi Comment guifg=#5C637f ctermfg=248
+"" ===
+"" === lavender_dark
+"" ===
+""let g:airline_theme='base16_nord'
+""let g:airline_theme='lucius'
+""hi Identifier cterm=none
+"let g:lavender_italic = 0
+"let g:lavender_italicize_strings = 0
+"let g:lavender_transp_bg = 1
+"set background=dark
+"colorscheme lavender
+"hi Comment guifg=#5C637f ctermfg=248
 
 
 "" ===
@@ -166,6 +166,9 @@ hi Comment guifg=#5C637f ctermfg=248
 "color two-firewatch
 
 
-"colorscheme forest-night
+let g:forest_night_enable_italic = 0
+let g:forest_night_disable_italic_comment = 1
+let g:spaceline_colorscheme='nord'
+colorscheme forest-night
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
