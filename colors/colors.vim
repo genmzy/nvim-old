@@ -168,7 +168,7 @@
 
 let g:forest_night_enable_italic = 0
 let g:forest_night_disable_italic_comment = 1
-let g:spaceline_colorscheme='nord'
+let g:spaceline_colorscheme='forest_night'
 colorscheme forest-night
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
