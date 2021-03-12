@@ -100,4 +100,7 @@ Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
 
+" kamilio syntax support
+Plug 'kamailio/vim-kamailio-syntax'
+
 call plug#end()
