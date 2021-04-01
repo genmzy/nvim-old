@@ -43,20 +43,20 @@
 """let g:indentLine_setColors = 0
 
 
-" ===
-" === lavender_dark
-" ===
-"let g:airline_theme='base16_nord'
-let g:airline_theme='lucius'
-"let g:airline_theme='violet'
-"let g:airline_theme='atomic'
-"hi Identifier cterm=none
-let g:lavender_italic = 0
-let g:lavender_italicize_strings = 0
-let g:lavender_transp_bg = 1
-set background=dark
-colorscheme lavender
-hi Comment guifg=#5C637f ctermfg=248
+"" ===
+"" === lavender_dark
+"" ===
+""let g:airline_theme='base16_nord'
+"let g:airline_theme='lucius'
+""let g:airline_theme='violet'
+""let g:airline_theme='atomic'
+""hi Identifier cterm=none
+"let g:lavender_italic = 0
+"let g:lavender_italicize_strings = 0
+"let g:lavender_transp_bg = 1
+"set background=dark
+"colorscheme lavender
+"hi Comment guifg=#5C637f ctermfg=248
 
 
 "" ===
@@ -161,16 +161,19 @@ hi Comment guifg=#5C637f ctermfg=248
 "let g:gruvbox_contrast_dark="soft"
 "color gruvbox
 
-""===
-""=== two-firewatch
-""===
+"" ===
+"" === two-firewatch
+"" ===
 "set background=light
 "color two-firewatch
 
 
-"let g:forest_night_enable_italic = 0
-"let g:forest_night_disable_italic_comment = 1
-"let g:spaceline_colorscheme='forest_night'
-"colorscheme forest-night
+" ===
+" === everforest
+" ===
+let g:everforest_enable_italic = 0
+let g:everforest_disable_italic_comment = 1
+let g:airline_theme="deus"
+colorscheme everforest
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A

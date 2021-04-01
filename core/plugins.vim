@@ -62,6 +62,7 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'sainnhe/forest-night'
 Plug 'liuchengxu/space-vim-theme'
 Plug 'pineapplegiant/spaceduck'
+Plug 'vim-scripts/peaksea'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent' " Parent background
