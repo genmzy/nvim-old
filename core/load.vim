@@ -26,7 +26,7 @@ source $root/plugconfig/whichkey.vim
 
 source $root/plugconfig/fzf.vim
 
-source $root/plugconfig/spaceline.vim
+source $root/plugconfig/statusline.vim
 
 source $root/plugconfig/defx.vim
 

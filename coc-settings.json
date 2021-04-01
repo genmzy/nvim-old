@@ -88,7 +88,6 @@
   "suggest.snippetIndicator": "🧊",
   "coc.preferences.snippetStatusText": "🧊",
   "suggest.disableMenuShortcut": false,
-  "coc.source.floaterm.enable": false,
   "snippets.shortcut": "",
   "coc.source.file.shortcut": "",
   "coc.source.db.shortcut": "",

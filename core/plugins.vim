@@ -2,8 +2,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Status line
-Plug '986299679/spaceline.vim'
-"Plug 'hardcoreplayers/spaceline.vim'
+"Plug '986299679/spaceline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " File navigation
 Plug 'ryanoasis/vim-devicons'

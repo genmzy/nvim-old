@@ -47,7 +47,9 @@
 " === lavender_dark
 " ===
 "let g:airline_theme='base16_nord'
-"let g:airline_theme='lucius'
+let g:airline_theme='lucius'
+"let g:airline_theme='violet'
+"let g:airline_theme='atomic'
 "hi Identifier cterm=none
 let g:lavender_italic = 0
 let g:lavender_italicize_strings = 0
