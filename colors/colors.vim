@@ -43,20 +43,20 @@
 """let g:indentLine_setColors = 0
 
 
-"" ===
-"" === lavender_dark
-"" ===
-""let g:airline_theme='base16_nord'
+" ===
+" === lavender_dark
+" ===
+let g:airline_theme='base16_spacemacs'
 "let g:airline_theme='lucius'
-""let g:airline_theme='violet'
-""let g:airline_theme='atomic'
-""hi Identifier cterm=none
-"let g:lavender_italic = 0
-"let g:lavender_italicize_strings = 0
-"let g:lavender_transp_bg = 1
-"set background=dark
-"colorscheme lavender
-"hi Comment guifg=#5C637f ctermfg=248
+"let g:airline_theme='violet'
+"let g:airline_theme='atomic'
+"hi Identifier cterm=none
+let g:lavender_italic = 0
+let g:lavender_italicize_strings = 0
+let g:lavender_transp_bg = 1
+set background=dark
+colorscheme lavender
+hi Comment guifg=#5C637f ctermfg=248
 
 
 "" ===
@@ -74,7 +74,8 @@
 "let g:lavender_transp_bg = 0
 "colorscheme lavender
 "set background=light
-"let g:spaceline_colorscheme='space_light'
+"let g:airline_theme="lucius"
+""let g:spaceline_colorscheme='space_light'
 ""hi Comment guifg=#8e9ecc ctermfg=248
 ""hi Comment guifg=#5C637f ctermfg=59
 ""hi Comment guifg=#8e9eaf ctermfg=248
@@ -123,8 +124,7 @@
 "" ===
 "let ayucolor="mirage"
 "colorscheme ayu
-"let g:spaceline_colorscheme='ayu_mirage'
-""let g:spaceline_colorscheme='ayu_light'
+""let g:spaceline_colorscheme='ayu_mirage'
 
 "" ===
 "" === vim-one
@@ -135,7 +135,7 @@
 "" ===
 "" === onedark
 "" ===
-"let g:spaceline_colorscheme='one'
+""let g:spaceline_colorscheme='one'
 "color onedark
 
 "" ===
@@ -168,12 +168,11 @@
 "color two-firewatch
 
 
-" ===
-" === everforest
-" ===
-let g:everforest_enable_italic = 0
-let g:everforest_disable_italic_comment = 1
-let g:airline_theme="deus"
-colorscheme everforest
+"" ===
+"" === everforest
+"" ===
+"let g:everforest_enable_italic = 0
+"let g:everforest_disable_italic_comment = 1
+"colorscheme everforest
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
