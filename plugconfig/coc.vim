@@ -37,6 +37,7 @@ let g:coc_global_extensions = [
       \ 'coc-fzf-preview',
       \ 'coc-translator',
       \ 'coc-ci',
+      \ 'coc-explorer',
       \ ]
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
@@ -109,6 +110,7 @@ au CursorHoldI * sil call CocActionAsync('showSignatureHelp')
 call coc#add_command('vista', ':Vista!!')
 call coc#add_command('table', ':TableModeToggle')
 
+nnoremap <silent> <leader>d :CocCommand explorer<CR>
 nnoremap <silent> <leader>r :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
