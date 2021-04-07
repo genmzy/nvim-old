@@ -20,6 +20,10 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
+inoremap “ “”<left>
+inoremap 【 【】<left>
+inoremap ‘ ‘’<left>
+inoremap （ （）<left>
 
 "" Cursor shape
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
