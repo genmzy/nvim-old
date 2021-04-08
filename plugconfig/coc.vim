@@ -30,7 +30,6 @@ let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-markdownlint',
       \ 'coc-markmap',
-      \ 'coc-bookmark',
       \ 'coc-git',
       \ 'coc-prettier',
       \ 'coc-snippets',
