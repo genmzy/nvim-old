@@ -20,6 +20,7 @@ Plug 'voldikss/vim-floaterm'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
