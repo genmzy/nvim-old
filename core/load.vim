@@ -39,3 +39,5 @@ source $root/plugconfig/wildfire.vim
 source $root/plugconfig/cxx-highlight.vim
 
 source $root/plugconfig/cword.vim
+
+source $root/plugconfig/gitgutter.vim
