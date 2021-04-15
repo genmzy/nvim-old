@@ -2,6 +2,7 @@
 "=== coc.nvim
 "===
 " Not only coc-snippets the that can jump among the arguments, but also ordinary coc completion
+inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
 let g:snips_author = 'GenmZy_'
