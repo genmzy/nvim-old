@@ -56,7 +56,7 @@ let g:lavender_italicize_strings = 0
 let g:lavender_transp_bg = 1
 set background=dark
 colorscheme lavender
-hi Comment guifg=#5C637f ctermfg=248
+hi Comment guifg=#747f92 ctermfg=248
 
 
 "" ===
