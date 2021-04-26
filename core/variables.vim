@@ -13,7 +13,7 @@ set nobackup
 set nowritebackup
 set shortmess+=c
 set updatetime=300
-set cmdheight=2
+set cmdheight=1
 set signcolumn=yes
 set number
 set relativenumber

@@ -60,7 +60,7 @@ Plug 'hardcoreplayers/oceanic-material'
 Plug 'morhetz/gruvbox'
 Plug '986299679/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'sainnhe/forest-night'
+Plug '986299679/forest-night'
 Plug 'liuchengxu/space-vim-theme'
 Plug 'pineapplegiant/spaceduck'
 Plug 'vim-scripts/peaksea'

@@ -43,19 +43,19 @@
 """let g:indentLine_setColors = 0
 
 
-" ===
-" === lavender_dark
-" ===
-let g:airline_theme='base16_spacemacs'
-"let g:airline_theme='lucius'
-"let g:airline_theme='violet'
-"let g:airline_theme='atomic'
-"hi Identifier cterm=none
-let g:lavender_italic = 0
-let g:lavender_italicize_strings = 0
-let g:lavender_transp_bg = 1
-set background=dark
-colorscheme lavender
+"" ===
+"" === lavender_dark
+"" ===
+"let g:airline_theme='base16_spacemacs'
+""let g:airline_theme='lucius'
+""let g:airline_theme='violet'
+""let g:airline_theme='atomic'
+""hi Identifier cterm=none
+"let g:lavender_italic = 0
+"let g:lavender_italicize_strings = 0
+"let g:lavender_transp_bg = 1
+"set background=dark
+"colorscheme lavender
 
 
 "" ===
@@ -167,11 +167,13 @@ colorscheme lavender
 "color two-firewatch
 
 
-"" ===
-"" === everforest
-"" ===
-"let g:everforest_enable_italic = 0
-"let g:everforest_disable_italic_comment = 1
-"colorscheme everforest
+" ===
+" === everforest
+" ===
+let g:everforest_enable_italic = 0
+let g:everforest_disable_italic_comment = 1
+set background=light
+let g:everforest_background = 'hard'
+colorscheme everforest
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
