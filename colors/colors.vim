@@ -67,18 +67,18 @@
 "let g:airline_theme='base16_nord'
 
 
-" ===
-" === lavender_light
-" ===
-let g:lavender_transp_bg = 0
-colorscheme lavender
-set background=light
-let g:airline_theme="lucius"
-"let g:spaceline_colorscheme='space_light'
-"hi Comment guifg=#8e9ecc ctermfg=248
-"hi Comment guifg=#5C637f ctermfg=59
-"hi Comment guifg=#8e9eaf ctermfg=248
-"let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
+"" ===
+"" === lavender_light
+"" ===
+"let g:lavender_transp_bg = 0
+"colorscheme lavender
+"set background=light
+"let g:airline_theme="lucius"
+""let g:spaceline_colorscheme='space_light'
+""hi Comment guifg=#8e9ecc ctermfg=248
+""hi Comment guifg=#5C637f ctermfg=59
+""hi Comment guifg=#8e9eaf ctermfg=248
+""let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
 
 
 "" ===
@@ -167,13 +167,13 @@ let g:airline_theme="lucius"
 "color two-firewatch
 
 
-"" ===
-"" === everforest
-"" ===
+" ===
+" === everforest
+" ===
 "let g:everforest_enable_italic = 0
 "let g:everforest_disable_italic_comment = 1
-"set background=light
-"let g:everforest_background = 'hard'
-"colorscheme everforest
+set background=light
+let g:everforest_background = 'hard'
+colorscheme everforest
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
