@@ -38,6 +38,7 @@
   "java.configuration.maven.userSettings": "/home/waves/.m2/settings.xml",
   "java.import.maven.enabled": true,
   "yank.enableCompletion": false,
+  "floaterm.completion.enable": false,
   "list.normalMappings": {
     "i": "do:previous"
   },
