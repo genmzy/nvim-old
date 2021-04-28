@@ -78,6 +78,7 @@
   "coc.preferences.colorSupport": true,
   "highlight.colors.enable": true,
   "highlight.document.enable": true,
+  "highlight.colorNames.enable": false,
   "diagnostic.enableSign": true,
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
