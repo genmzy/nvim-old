@@ -25,11 +25,11 @@ set incsearch
 set ignorecase
 set smartcase
 set autoindent
-set ts=2
+set tabstop=4
 set smartindent
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set scrolloff=5
 set nocompatible
 set encoding=utf-8
