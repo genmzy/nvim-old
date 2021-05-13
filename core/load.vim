@@ -41,3 +41,8 @@ source $root/plugconfig/cxx-highlight.vim
 source $root/plugconfig/cword.vim
 
 source $root/plugconfig/gitgutter.vim
+
+" load project vim configuration.
+if filereadable("./project.vim")
+  source ./project.vim
+endif

@@ -1,6 +1,7 @@
 "===
 "=== General settings
 "===
+
 syntax on
 filetype on
 filetype indent on
@@ -60,7 +61,3 @@ autocmd TermOpen term://* startinsert
 tnoremap <C-N> <C-\><C-N>
 
 let g:python_highlight_all=1
-
-if filereadable("./project.vim")
-  source ./project.vim
-endif

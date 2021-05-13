@@ -1,6 +1,7 @@
 " ===
 " === Compile And Run fuction
 " ===
+
 map <leader>\ :call CompileRunGcc()<CR>
 func! CompileRunGcc()
   exec "w"

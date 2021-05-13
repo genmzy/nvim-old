@@ -1,6 +1,7 @@
 " ===
 " === Ultisnips
 " ===
+
 let g:tex_flavor = "latex"
 inoremap <c-n> <nop>
 inoremap <c-b> <nop>

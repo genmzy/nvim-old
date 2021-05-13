@@ -1,3 +1,7 @@
+" ===
+" === c file 
+" ===
+
 " accelerated_jk
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
@@ -13,19 +17,20 @@ noremap <down> :res -5<CR>
 noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
-" better code in insert mode.
+" better code expandation in insert mode.
 inoremap { {}<Left>
 inoremap ( ()<Left>
 "inoremap < <><Left>
 inoremap [ []<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
+" better file editing expandation in insert mode for Chinese sign
 inoremap “ “”<left>
 inoremap 【 【】<left>
 inoremap ‘ ‘’<left>
 inoremap （ （）<left>
 
-"" Cursor shape
+"" Cursor shape (unnecessary on neovim)
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -37,7 +42,7 @@ map . <nop>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
 
-"Fold
+" All fold expand for current buffer
 map <LEADER>z zR
 
 map <F3> :tabe<CR>

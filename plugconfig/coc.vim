@@ -1,7 +1,9 @@
 "===
 "=== coc.nvim
 "===
+
 " Not only coc-snippets the that can jump among the arguments, but also ordinary coc completion
+
 inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
@@ -87,12 +89,6 @@ nnoremap <silent> se :CocFzfList location<cr>
 nnoremap <silent> st :CocFzfList outline<cr>
 nnoremap <silent> sg :CocCommand git.showCommit<cr>
 
-"--- Can be replace now
-"nmap <silent> so :CocAction('runCommand', 'editor.action.organizeImport')<CR>
-" coc-explorer
-"nmap <F2> :CocCommand explorer<CR>
-"nmap <F2> :CocCommand explorer --toggle --position=floating --sources=file+<CR>
-
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
 xmap hf <Plug>(coc-funcobj-i)
@@ -105,7 +101,7 @@ xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
 " coc-highlight
-"autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 au CursorHoldI * sil call CocActionAsync('showSignatureHelp')
 call coc#add_command('vista', ':Vista!!')
 call coc#add_command('table', ':TableModeToggle')

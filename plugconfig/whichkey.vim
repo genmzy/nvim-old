@@ -1,6 +1,7 @@
 " ===
 " === Which-Key
 " ===
+
 set timeoutlen=200
 nnoremap <silent> <leader> :WhichKey '<Space>'<cr>
 vnoremap <silent> <leader> :WhichKeyVisual '<space>'<cr>
