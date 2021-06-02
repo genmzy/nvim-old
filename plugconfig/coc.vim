@@ -7,7 +7,7 @@
 inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
-let g:snips_author = 'GenmZy_'
+let g:snips_author = 'genmzy'
 autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap if
 let g:coc_global_extensions = [
@@ -147,3 +147,13 @@ augroup hugefile
         \ endif |
         \ unlet size
 augroup END
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif

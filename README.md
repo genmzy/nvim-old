@@ -2,9 +2,9 @@
 
 - 💜 I wanna see you after COVID-19.
 
-![image-20200822191417615](https://github.com/986299679/pictures/blob/master/image-20200822191417615.png)
+![image-20200822191417615](https://github.com/genmzy/pictures/blob/master/image-20200822191417615.png)
 
-![image-20200822191441192](https://github.com/986299679/pictures/blob/master/image-20200822191441192.png)
+![image-20200822191441192](https://github.com/genmzy/pictures/blob/master/image-20200822191441192.png)
 
 
 
@@ -21,7 +21,7 @@
 > sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 >        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 >
-> git clone https://github.com/986299679/nvim.git ~/.config/
+> git clone https://github.com/genmzy/nvim.git ~/.config/
 > ```
 
 - Install plugins

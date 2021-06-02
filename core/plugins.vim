@@ -2,9 +2,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Status line
-"Plug '986299679/spaceline.vim'
+"Plug 'genmzy/spaceline.vim'
 Plug 'vim-airline/vim-airline'
-Plug '986299679/vim-airline-themes'
+Plug 'genmzy/vim-airline-themes'
 
 " File navigation
 Plug 'ryanoasis/vim-devicons'
@@ -50,18 +50,19 @@ Plug 'lifepillar/vim-colortemplate'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 
 " Colorscheme
-Plug '986299679/ayu-vim'
-Plug '986299679/nord-vim', {'branch': 'master'}
-Plug '986299679/vim-waves'
-Plug '986299679/deus'
-Plug '986299679/lavender'
-Plug '986299679/snazzy'
+Plug 'genmzy/ayu-vim'
+Plug 'genmzy/nord-vim', {'branch': 'master'}
+Plug 'genmzy/vim-waves'
+"Plug 'ajmwagar/vim-deus'
+Plug 'genmzy/deus'
+Plug 'genmzy/lavender.vim'
+Plug 'genmzy/snazzy'
 Plug 'hardcoreplayers/oceanic-material'
 Plug 'morhetz/gruvbox'
-Plug '986299679/onedark.vim'
+Plug 'genmzy/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug '986299679/forest-night'
-Plug 'liuchengxu/space-vim-theme'
+Plug 'genmzy/forest-night'
+Plug 'genmzy/space-vim-theme'
 Plug 'pineapplegiant/spaceduck'
 Plug 'vim-scripts/peaksea'
 

@@ -8,22 +8,22 @@
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "set background=dark    " Setting dark mode
 "let g:deus_termcolors=256
-"let g:spaceline_colorscheme='nord'
-"let g:terminal_color_0  = '#000000'
-"let g:terminal_color_1  = '#d26487'
-"let g:terminal_color_2  = '#50FA7B'
-"let g:terminal_color_3  = '#F1FA8C'
-"let g:terminal_color_4  = '#BD93F9'
-"let g:terminal_color_5  = '#FF79C6'
-"let g:terminal_color_6  = '#8BE9FD'
-"let g:terminal_color_7  = '#BFBFBF'
-"let g:terminal_color_8  = '#4D4D4D'
-"let g:terminal_color_9  = '#FF6E67'
-"let g:terminal_color_10 = '#5AF78E'
-"let g:terminal_color_11 = '#F4F99D'
-"let g:terminal_color_12 = '#CAA9FA'
-"let g:terminal_color_13 = '#FF92D0'
-"let g:terminal_color_14 = '#9AEDFE'
+""let g:spaceline_colorscheme='nord'
+""let g:terminal_color_0  = '#000000'
+""let g:terminal_color_1  = '#d26487'
+""let g:terminal_color_2  = '#50FA7B'
+""let g:terminal_color_3  = '#F1FA8C'
+""let g:terminal_color_4  = '#BD93F9'
+""let g:terminal_color_5  = '#FF79C6'
+""let g:terminal_color_6  = '#8BE9FD'
+""let g:terminal_color_7  = '#BFBFBF'
+""let g:terminal_color_8  = '#4D4D4D'
+""let g:terminal_color_9  = '#FF6E67'
+""let g:terminal_color_10 = '#5AF78E'
+""let g:terminal_color_11 = '#F4F99D'
+""let g:terminal_color_12 = '#CAA9FA'
+""let g:terminal_color_13 = '#FF92D0'
+""let g:terminal_color_14 = '#9AEDFE'
 
 
 "" ===
@@ -67,18 +67,18 @@
 "let g:airline_theme='base16_nord'
 
 
-" ===
-" === lavender_light
-" ===
-let g:lavender_transp_bg = 0
-colorscheme lavender
-set background=light
-let g:airline_theme="lucius"
-"let g:spaceline_colorscheme='space_light'
-"hi Comment guifg=#8e9ecc ctermfg=248
-"hi Comment guifg=#5C637f ctermfg=59
-"hi Comment guifg=#8e9eaf ctermfg=248
-"let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
+"" ===
+"" === lavender_light
+"" ===
+"let g:lavender_transp_bg = 0
+"colorscheme lavender
+"set background=light
+"let g:airline_theme="lucius"
+""let g:spaceline_colorscheme='space_light'
+""hi Comment guifg=#8e9ecc ctermfg=248
+""hi Comment guifg=#5C637f ctermfg=59
+""hi Comment guifg=#8e9eaf ctermfg=248
+""let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
 
 
 "" ===
@@ -88,15 +88,16 @@ let g:airline_theme="lucius"
 "let g:airline_theme='dracula'
 "let g:dracula_colorterm = 1
 
+
 "" ===
 "" === nord
 "" ===
 "let g:spaceline_colorscheme='nord'
 "color nord
 
-"colorscheme spaceduck
 
 "colorscheme spaceduck
+
 
 "" ===
 "" === solarized8
@@ -118,6 +119,7 @@ let g:airline_theme="lucius"
 "colorscheme ayu
 "let g:spaceline_colorscheme='ayu_light'
 
+
 "" ===
 "" === ayu_mirage
 "" ===
@@ -125,17 +127,20 @@ let g:airline_theme="lucius"
 "colorscheme ayu
 ""let g:spaceline_colorscheme='ayu_mirage'
 
+
 "" ===
 "" === vim-one
 "" ===
 "set background=dark
 "color one
 
+
 "" ===
 "" === onedark
 "" ===
 ""let g:spaceline_colorscheme='one'
 "color onedark
+
 
 "" ===
 "" === onehalf
@@ -153,12 +158,14 @@ let g:airline_theme="lucius"
 ""hi Normal ctermfg=252 ctermbg=none
 "let g:airline_theme='base16_snazzy'
 
+
 "" ===
 "" === gruvbox
 "" ===
 "set background=dark
 "let g:gruvbox_contrast_dark="soft"
 "color gruvbox
+
 
 "" ===
 "" === two-firewatch
@@ -168,7 +175,7 @@ let g:airline_theme="lucius"
 
 
 "" ===
-"" === everforest
+"" === everforest_light
 "" ===
 ""let g:everforest_enable_italic = 0
 ""let g:everforest_disable_italic_comment = 1
@@ -176,8 +183,24 @@ let g:airline_theme="lucius"
 "let g:everforest_background = 'hard'
 "colorscheme everforest
 
-"let g:airline_theme="lucius"
-"set background=light
-"colorscheme space_vim_theme
+
+"" ===
+"" === everforest_dark
+"" ===
+""let g:everforest_enable_italic = 0
+""let g:everforest_disable_italic_comment = 1
+"set background=dark
+"let g:everforest_background = 'hard'
+"colorscheme everforest
+
+
+" ===
+" === space_vim_theme
+" ===
+let g:airline_theme="lucius"
+set background=light
+colorscheme space_vim_theme
+hi Comment guifg=#b8b0b0 ctermfg=59
+
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
