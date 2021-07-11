@@ -7,10 +7,10 @@ let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = ' '
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = ' '
-"let g:airline#extensions#tabline#enabled=1
-"let g:airline#extensions#tabline#buffer_nr_show=1
-"let g:airline#extensions#tabline#tabs_label = '﬘'
-"let g:airline#extensions#tabline#buffers_label = ''
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_nr_show=1
+let g:airline#extensions#tabline#tabs_label = '﬘'
+let g:airline#extensions#tabline#buffers_label = ''
 function! StatusDiagnostic() abort
   let info = get(b:, 'coc_diagnostic_info', {})
   if empty(info) | return '' | endif

@@ -30,7 +30,7 @@ nnoremap <silent> <leader>l :BLines<cr>
 " Git searches
 nnoremap <silent> <leader>gf :GFiles?<cr>
 nnoremap <silent> <leader>gl :Commits<cr>
-nnoremap <silent> si :History<cr>
+nnoremap <silent> <leader>si :History<cr>
 
 command! -bang Config call fzf#vim#files($root, <bang>0)
 nnoremap <silent> <leader>w :Config<cr>

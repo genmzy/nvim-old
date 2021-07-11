@@ -17,7 +17,7 @@ noremap <down> :res -5<CR>
 noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
-" better code expandation in insert mode.
+" Better code expandation in insert mode.
 inoremap { {}<Left>
 inoremap ( ()<Left>
 "inoremap < <><Left>

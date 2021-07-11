@@ -43,9 +43,11 @@ set termguicolors
 "set mouse=a
 set foldmethod=marker
 
+
 "" pmenu semi-transparent
 "set pumblend=15
 "hi PmenuSel blend=0
+
 
 "map leader
 let g:mapleader="\<Space>"
@@ -56,8 +58,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 
-let g:neoterm_autoscroll = 1
 autocmd TermOpen term://* startinsert
 tnoremap <C-N> <C-\><C-N>
+
 
 let g:python_highlight_all=1

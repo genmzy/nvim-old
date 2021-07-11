@@ -1,7 +1,6 @@
 " ===
 " === Vista.vim
 " ===
-
 noremap <F4> :Vista!!<CR>
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 "let g:vista_default_executive = 'ctags'

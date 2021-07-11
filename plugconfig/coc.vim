@@ -8,7 +8,9 @@ inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
 let g:snips_author = 'genmzy'
-autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = [
+      \"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
+\]
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap if
 let g:coc_global_extensions = [
       \ 'coc-python',
@@ -67,7 +69,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
 "endif
 
 " Useful commands
-"nnoremap <silent> sy :<C-u>CocList -A yank<cr>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -79,7 +80,6 @@ nmap <silent> sr <Plug>(coc-rename)
 nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
 
-"nnoremap <silent> so :CocFzfList actions<cr>
 nnoremap <silent> sy :CocFzfList yank<cr>
 nnoremap <silent> so :CocAction<cr>
 nnoremap <silent> sd :CocFzfList diagnostics<cr>
