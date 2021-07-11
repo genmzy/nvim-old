@@ -1,5 +1,5 @@
 " ===
-" === c file 
+" === mappings(not for plugins)
 " ===
 
 " accelerated_jk

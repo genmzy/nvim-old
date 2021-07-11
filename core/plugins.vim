@@ -65,6 +65,7 @@ Plug 'genmzy/forest-night'
 Plug 'genmzy/space-vim-theme'
 Plug 'pineapplegiant/spaceduck'
 Plug 'vim-scripts/peaksea'
+Plug 'folke/tokyonight.nvim'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent' " Parent background

@@ -16,7 +16,7 @@ silent! call defx#custom#option('_', {
 \ })
 
 " Launch Defx.
-nnoremap <silent> <F2> :Defx -columns=git:mark:indent:icons:filename:type -no-toggle -search=`expand('%:p')` `getcwd()`<CR>
+nnoremap <silent> <F2> :Defx -columns=git:mark:indent:icons:space:filename:type -no-toggle -search=`expand('%:p')` `getcwd()`<CR>
 
 augroup defxsettings
   autocmd!

@@ -25,6 +25,7 @@
         "LANG=en",
         "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
       ],
+      "trace.server": "verbose",
       "filetypes": ["lua"],
       "rootPatterns": [".git/"]
     }
@@ -168,7 +169,7 @@
     "yy": "copyFile",
     "dd": "cutFile",
     "pp": "pasteFile",
-    "dD": "deleteForever",
+    "DD": "deleteForever",
     "a": "addFile",
     "A": "addDirectory",
     "cw": "rename",
