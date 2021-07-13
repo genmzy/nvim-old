@@ -1,7 +1,7 @@
 " ===
 " === dot-h filetype change
 " ===
-" Set `*.h` file filetype to cpp, set to c (write c only)
+" If filetype of `*.h` file is cpp, objc, objcpp, set filetype to c (write c only)
 function! FT_h2c()
   if expand('%:e') == 'h'
     set filetype=c

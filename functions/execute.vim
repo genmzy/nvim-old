@@ -3,6 +3,7 @@
 " ===
 
 map <leader>\ :call RunSigleFile()<CR>
+
 func! RunSigleFile()
   exec "w"
   let file_name_no_tail = expand('%:t:r')
