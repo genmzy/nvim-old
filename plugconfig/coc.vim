@@ -70,12 +70,16 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
 
 " Useful commands
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gk <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" both coc-declaration and references-used
+nmap <silent> gj <Plug>(coc-references)
+nmap <silent> gr <Plug>(coc-references-used)
 nmap <silent> gl <Plug>(coc-declaration)
 nmap <silent> go <Plug>(coc-refactor)
+
 nmap <silent> sn <Plug>(coc-diagnostic-next)
+nmap <silent> sN <Plug>(coc-diagnostic-prev)
 nmap <silent> sr <Plug>(coc-rename)
 nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
