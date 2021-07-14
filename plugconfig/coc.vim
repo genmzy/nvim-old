@@ -13,7 +13,7 @@ autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = [
 \]
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap if
 let g:coc_global_extensions = [
-      \ 'coc-python',
+      \ 'coc-pyright',
       \ 'coc-html',
       \ 'coc-json',
       \ 'coc-css',
