@@ -16,7 +16,7 @@ function! HighLightOperator()
 
   hi link _Bracket Constant
   hi link _Operator Operator
-  hi link _Identifier Macro
+  hi link _Identifier Identifier
   hi link _Label Label
 endfunction
 
