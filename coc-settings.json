@@ -9,8 +9,7 @@
         "go"
       ],
       "initializationOptions": {
-        "gocodeCompletionEnabled": true,
-        "diagnosticsEnabled": true
+        "usePlaceholders": true
       }
     },
     "ccls": {
