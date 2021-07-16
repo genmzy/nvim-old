@@ -42,6 +42,8 @@ source $root/plugconfig/cword.vim
 
 source $root/plugconfig/gitgutter.vim
 
+source $root/plugconfig/vim_go.vim
+
 " load project vim configuration.
 if filereadable("./project.vim")
   source ./project.vim

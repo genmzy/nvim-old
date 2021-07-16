@@ -20,4 +20,4 @@ function! HighLightOperator()
   hi link _Label Label
 endfunction
 
-autocmd! FileType c,cpp,java,go call HighLightOperator()
+autocmd! FileType c,cpp,java call HighLightOperator()

@@ -109,4 +109,10 @@ Plug 'kristijanhusak/defx-git'
 " Kamilio syntax support
 Plug 'kamailio/vim-kamailio-syntax'
 
+" Go
+Plug 'fatih/vim-go' , {
+    \'for': ['go', 'vim-plug'],
+    \'tag': '*'
+\}
+
 call plug#end()

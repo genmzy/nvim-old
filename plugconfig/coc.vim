@@ -32,7 +32,6 @@ let g:coc_global_extensions = [
       \ 'coc-floaterm',
       \ 'coc-db',
       \ 'coc-tsserver',
-      \ 'coc-go',
       \ 'coc-markdownlint',
       \ 'coc-markmap',
       \ 'coc-git',
