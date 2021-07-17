@@ -1,6 +1,7 @@
 " The plugins that VIM-PLUG manage
 call plug#begin('~/.config/nvim/plugged')
 
+
 " Status line
 Plug 'vim-airline/vim-airline'
 Plug 'genmzy/vim-airline-themes'
@@ -109,10 +110,5 @@ Plug 'kristijanhusak/defx-git'
 " Kamilio syntax support
 Plug 'kamailio/vim-kamailio-syntax'
 
-" Go
-Plug 'fatih/vim-go' , {
-    \'for': ['go', 'vim-plug'],
-    \'tag': '*'
-\}
 
 call plug#end()

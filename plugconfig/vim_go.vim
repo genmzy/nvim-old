@@ -1,7 +1,9 @@
 " ===
 " === vim-go
 " ===
-
+" NOTE: although we did not use vim-go(performance problem), but these can still work for
+" vim-polyglot because vim-polyglot have already itegrate the syntax part of vim-go,
+" so the final plan is : using `coc-go + vim-polyglot + vim-go configuration`
 let g:go_echo_go_info = 0
 let g:go_doc_popup_window = 1
 let g:go_def_mapping_enabled = 0

@@ -1,17 +1,7 @@
 {
+  // no language client
   "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": [
-        "go.mod"
-      ],
-      "filetypes": [
-        "go"
-      ],
-      "initializationOptions": {
-        "usePlaceholders": true
-      }
-    },
+    // clang
     "ccls": {
       "enable": true,
       "command": "ccls",
@@ -27,6 +17,7 @@
         "highlight": { "lsRanges": true }
       }
     },
+    // lua
     "lua": {
       "enable": true,
       "cwd": "/home/waves/Workspace/lua/ls/lua-language-server",
@@ -37,12 +28,11 @@
         "LANG=en",
         "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
       ],
-      "trace.server": "verbose",
       "filetypes": ["lua"],
       "rootPatterns": [".git/"]
     }
   },
-  // java and java debug
+  // coc-java(and java debug)
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.home": "/opt/environment/java/jdk-13.0.2",
   // "java.home": "/opt/environment/java/jdk1.8",
@@ -55,7 +45,7 @@
   "list.normalMappings": {
     "i": "do:previous"
   },
-  // prettier
+  // coc-prettier
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
@@ -67,7 +57,11 @@
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": true,
   "prettier.stylelintIntegration": true,
-  // git
+  // coc-go
+  "go.goplsOptions": {
+    "usePlaceholders": true
+  },
+  // coc-git
   "git.showCommitInFloating": true,
   "git.enableGutters": true,
   "git.branchCharacter": "\uf418",
@@ -109,7 +103,6 @@
   "coc.source.around.shortcut": "",
   "coc.source.buffer.shortcut": "﬘",
   "coc.source.issues.shortcut": "",
-  "python.jediShortcut": "",
   "suggest.completionItemKindLabels": {
     "keyword": "",
     // "keyword": "גּ",
@@ -138,10 +131,12 @@
     "typeParameter": "",
     "default": ""
   },
+  // coc-yaml
   "yaml.format.enable": true,
   "yaml.schemas": {
     "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
   },
+  // coc-explorer
   "explorer.width": 30,
   "explorer.quitOnOpen": false,
   "explorer.sources": [
@@ -154,7 +149,6 @@
       "expand": true
     }
   ],
-
   "explorer.file.column.indent.indentLine": true,
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
