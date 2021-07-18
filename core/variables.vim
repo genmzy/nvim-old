@@ -28,11 +28,13 @@ set smartcase
 set autoindent
 set tabstop=4
 set smartindent
-if &filetype == "go"
+
+if filereadable("./go.mod") || filereadable("./go.sum")
     set noexpandtab
 else
     set expandtab
 endif
+
 set shiftwidth=4
 set softtabstop=4
 set scrolloff=5
