@@ -174,38 +174,39 @@
 "color two-firewatch
 
 
-"" ===
-"" === everforest_light
-"" ===
-""let g:everforest_enable_italic = 0
-""let g:everforest_disable_italic_comment = 1
-"set background=light
-"let g:everforest_background = 'hard'
-"colorscheme everforest
+" ===
+" === everforest_light
+" ===
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 0
+set background=light
+let g:everforest_background = 'hard'
+colorscheme everforest
 
 
 "" ===
 "" === everforest_dark
 "" ===
-""let g:everforest_enable_italic = 0
-""let g:everforest_disable_italic_comment = 1
+"let g:everforest_enable_italic = 1
+"let g:everforest_disable_italic_comment = 0
 "set background=dark
 "let g:everforest_background = 'hard'
 "colorscheme everforest
 
 
-" ===
-" === space_vim_theme
-" ===
-let g:airline_theme="lucius"
-set background=light
-colorscheme space_vim_theme
-hi Comment guifg=#b8b0b0 ctermfg=59
+"" ===
+"" === space_vim_theme
+"" ===
+"let g:airline_theme="lucius"
+"set background=light
+"colorscheme space_vim_theme
+"hi Comment guifg=#b8b0b0 ctermfg=59
 
 
 "" ===
 "" === tokyonight
 "" ===
+"let g:tokyonight_transparent=1
 "let g:tokyonight_style = "storm"
 "let g:tokyonight_italic_functions = 1
 "let g:airline_theme="zenburn"
