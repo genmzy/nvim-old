@@ -29,8 +29,6 @@
 "" ===
 "" === waves
 "" ===
-"let g:airline_theme='lucius'
-""let g:airline_theme='lucius'
 ""hi Identifier cterm=none
 "let g:waves_italic = 0
 "let g:waves_italicize_strings = 0
@@ -46,10 +44,6 @@
 "" ===
 "" === lavender_dark
 "" ===
-"let g:airline_theme='base16_spacemacs'
-""let g:airline_theme='lucius'
-""let g:airline_theme='violet'
-""let g:airline_theme='atomic'
 ""hi Identifier cterm=none
 "let g:lavender_italic = 0
 "let g:lavender_italicize_strings = 0
@@ -64,7 +58,6 @@
 "set background=dark
 "let g:oceanic_material_transparent_background = 1
 "color oceanic_material
-"let g:airline_theme='base16_nord'
 
 
 "" ===
@@ -73,19 +66,16 @@
 "let g:lavender_transp_bg = 0
 "colorscheme lavender
 "set background=light
-"let g:airline_theme="lucius"
 ""let g:spaceline_colorscheme='space_light'
 ""hi Comment guifg=#8e9ecc ctermfg=248
 ""hi Comment guifg=#5C637f ctermfg=59
 ""hi Comment guifg=#8e9eaf ctermfg=248
-""let g:airline_theme='lucius'                    " for snpace-vim-theme and deus
 
 
 "" ===
 "" === dracula
 "" ===
 "colorscheme dracula
-"let g:airline_theme='dracula'
 "let g:dracula_colorterm = 1
 
 
@@ -156,7 +146,6 @@
 "let g:SnazzyTransparent=1
 "color snazzy
 ""hi Normal ctermfg=252 ctermbg=none
-"let g:airline_theme='base16_snazzy'
 
 
 "" ===
@@ -174,14 +163,14 @@
 "color two-firewatch
 
 
-" ===
-" === everforest_light
-" ===
-let g:everforest_enable_italic = 1
-let g:everforest_disable_italic_comment = 0
-set background=light
-let g:everforest_background = 'hard'
-colorscheme everforest
+"" ===
+"" === everforest_light
+"" ===
+"let g:everforest_enable_italic = 1
+"let g:everforest_disable_italic_comment = 0
+"set background=light
+"let g:everforest_background = 'hard'
+"colorscheme everforest
 
 
 "" ===
@@ -194,14 +183,20 @@ colorscheme everforest
 "colorscheme everforest
 
 
-"" ===
-"" === space_vim_theme
-"" ===
-"let g:airline_theme="lucius"
-"set background=light
-"colorscheme space_vim_theme
-"hi Comment guifg=#b8b0b0 ctermfg=59
+" ===
+" === space_vim_theme
+" ===
+set background=light
+colorscheme space_vim_theme
+hi Comment guifg=#b8b0b0 ctermfg=59
 
+"" ===
+"" === color sonokai
+"" ===
+"let g:sonokai_style = 'andromeda'
+"let g:sonokai_enable_italic = 0
+"let g:sonokai_disable_italic_comment = 1
+"colorscheme sonokai
 
 "" ===
 "" === tokyonight
@@ -209,7 +204,6 @@ colorscheme everforest
 "let g:tokyonight_transparent=1
 "let g:tokyonight_style = "storm"
 "let g:tokyonight_italic_functions = 1
-"let g:airline_theme="zenburn"
 "colorscheme tokyonight
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A

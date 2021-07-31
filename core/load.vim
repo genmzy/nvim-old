@@ -26,8 +26,6 @@ source $root/plugconfig/whichkey.vim
 
 source $root/plugconfig/fzf.vim
 
-source $root/plugconfig/statusline.vim
-
 source $root/plugconfig/defx.vim
 
 source $root/colors/colors.vim
@@ -43,6 +41,8 @@ source $root/plugconfig/cword.vim
 source $root/plugconfig/gitgutter.vim
 
 source $root/plugconfig/vim_go.vim
+
+source $root/lua/luaload.vim
 
 " load project vim configuration.
 if filereadable("./project.vim")

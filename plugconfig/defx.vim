@@ -68,13 +68,13 @@ augroup end
 
 "icons
 call defx#custom#column('git', 'indicators', {
-  \ 'Modified'  : '✹',
-  \ 'Staged'    : '✚',
-  \ 'Untracked' : '✭',
-  \ 'Renamed'   : '➜',
+  \ 'Modified'  : '➜',
+  \ 'Staged'    : '+',
+  \ 'Untracked' : '.',
+  \ 'Renamed'   : '$',
   \ 'Unmerged'  : '═',
-  \ 'Ignored'   : '☒',
-  \ 'Deleted'   : '✗',
+  \ 'Ignored'   : '!',
+  \ 'Deleted'   : '_',
   \ 'Unknown'   : '?'
   \ })
 scriptencoding UTF-8

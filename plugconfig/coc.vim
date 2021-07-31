@@ -43,7 +43,7 @@ let g:coc_global_extensions = [
       \ 'coc-explorer',
       \ 'coc-go',
       \ ]
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
