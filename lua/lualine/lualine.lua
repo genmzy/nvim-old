@@ -138,9 +138,57 @@ local spacelightTheme = {
 -- }}} Theme spacelight --
 
 -- Functions for show extra mode status {{{ --
-local function showBufNr()
-  local buff = api.nvim_get_current_buf()
-  return " " .. buff
+
+-- file size with format show function
+local bufIcon = {
+  help             = ' ',
+  defx             = ' ',
+  ['coc-explorer'] = ' ',
+  nerdtree         = ' ',
+  denite           = ' ',
+  ['vim-plug']     = ' ',
+  vista            = '識',
+  vista_kind       = ' ',
+  dbui             = ' ',
+  magit            = ' ',
+  NvimTree         = ' ',
+}
+
+local function fileSize(file)
+  local size = vim.fn.getfsize(file)
+  if size == 0 or size == -1 or size == -2 then
+    return ''
+  end
+  if size < 1024 then
+    size = size .. 'B'
+  elseif size < 1024*1024 then
+    size = string.format('%.1f', size/1024) .. 'K'
+  elseif size < 1024*1024*1024 then
+    size = string.format('%.1f', size/1024/1024) .. 'M'
+  else
+    size = string.format('%.1f', size/1024/1024/1024) .. 'G'
+  end
+  return size .. ''
+end
+
+local function showBufSize()
+  local file = vim.fn.expand('%:p')
+  if string.len(file) == 0 then return end
+  return ' ' .. fileSize(file)
+end
+
+local function showBufInfo()
+  local special = bufIcon[vim.bo.filetype]
+  if special then
+    return special .. api.nvim_get_current_buf()
+  else
+    local prefix = " " .. api.nvim_get_current_buf()
+    local file = vim.fn.expand('%:p')
+    if string.len(file) == 0 then
+      return prefix
+    end
+    return prefix .. ": " .. fileSize(file)
+  end
 end
 
 local function showPaste()
@@ -168,7 +216,7 @@ end
 
 --------------------------------------------------------------------------------------
 
--- Theme Presetting setting {{{ --
+-- Theme Pre settings {{{ --
 if theme.name == "spacelight" then
   theme.theme = spacelightTheme
   theme.addGreen = spacelightColor.green
@@ -182,7 +230,7 @@ elseif theme.name == "sonokai" then
   theme.deleteRed = sonokaiColor.red
   theme.infoOrange = sonokaiColor.orange
 end
--- }}} Format setting --
+-- }}} Theme pre settings --
 
 -- Configuration table {{{ --
 local configuration = {
@@ -201,7 +249,7 @@ local configuration = {
     lualine_b = {
       {
         'branch',
-        icon = ''
+        icon = 'שׂ'
       },
       {
         'diff',
@@ -211,13 +259,13 @@ local configuration = {
         color_modified = theme.modifyYellow,
         color_removed = theme.deleteRed,
       },
-      showBufNr
+      showBufSize
     },
     lualine_c = {
       {
         'filename',
         file_status = true, -- displays file status (readonly status, modified status)
-        path = 1            -- 0 = just filename, 1 = relative path, 2 = absolute path
+        path = 0            -- 0 = just filename, 1 = relative path, 2 = absolute path
       },
       {
         'diagnostics',
@@ -260,7 +308,7 @@ local configuration = {
       }
     },
     lualine_x = {},
-    lualine_y = { showBufNr },
+    lualine_y = { showBufInfo },
     lualine_z = {}
   },
   -- }}} Inactive sections --
