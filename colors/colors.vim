@@ -183,26 +183,26 @@
 "colorscheme everforest
 
 
-"" ===
-"" === space_vim_theme
-"" ===
-"set background=light
-"colorscheme space_vim_theme
-"let g:lualine_theme="spacelight"
-"hi Comment guifg=#b8b0b0 ctermfg=59
+" ===
+" === space_vim_theme
+" ===
+set background=light
+colorscheme space_vim_theme
+let g:lualine_theme="spacelight"
+hi Comment guifg=#b8b0b0 ctermfg=59
 
 
-" ===
-" === color sonokai
-" ===
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 0
-let g:lualine_theme="sonokai"
-colorscheme sonokai
-let g:cursorword_highlight = 0
-highlight CursorWord0 guibg=#333648
-highlight CursorWord1 guibg=#333648
+"" ===
+"" === color sonokai
+"" ===
+"let g:sonokai_style = 'andromeda'
+"let g:sonokai_enable_italic = 1
+"let g:sonokai_disable_italic_comment = 0
+"let g:lualine_theme="sonokai"
+"colorscheme sonokai
+"let g:cursorword_highlight = 0
+"highlight CursorWord0 guibg=#333648
+"highlight CursorWord1 guibg=#333648
 
 
 "" ===

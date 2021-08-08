@@ -2,6 +2,10 @@
 
 - 💜 I wanna see you after COVID-19.
 
+![spacelight_vista_explorer](https://github.com/genmzy/pictures/blob/master/spacelight_vista_explorer.png)
+
+![spacelight](https://github.com/genmzy/pictures/blob/master/spacelight.png)
+
 ![picture_dashboard](https://github.com/genmzy/pictures/blob/master/dashboard.png)
 
 ![picture_complete](https://github.com/genmzy/pictures/blob/master/微信图片_20210807201434.png)
