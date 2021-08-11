@@ -72,6 +72,9 @@ map <LEADER>9 :buffer 9<CR>
 " Instead of Shift+K for `man` helper
 map <silent> <leader>h :Man<cr>
 
+" leader n for not show search highlight
+map <leader>n :noh<cr>
+
 " quick tabpage-change
 map - :-tabnext<CR>
 map = :tabnext<CR>

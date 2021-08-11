@@ -57,6 +57,73 @@ local sonokaiColor = {
 }
 -- }}} Colors for sonokai --
 
+-- Theme everforest_light {{{ --
+local lightForestColor = {
+  fg        = '#5c6a72',
+  red       = '#f85552',
+  orange    = '#f57d26',
+  yellow    = '#dfa000',
+  green     = '#8da101',
+  aqua      = '#35a77c',
+  blue      = '#41A8B0',
+  purple    = '#d67ba7',
+  grey0     = '#a0a79a',
+  grey1     = '#999f93',
+  grey2     = '#92978c',
+  bGreen    = '#93b259',
+  bg0       = '#fff9e8',
+  bg1       = '#f7f2e0',
+  bg2       = '#f0eed9',
+  bg3       = '#e9e8d2',
+  bg4       = '#e1ddcb',
+  bg_visual = '#edf0cd',
+  bg_red    = '#fce5dc',
+  bg_green  = '#f1f3d4',
+  bg_blue   = '#eaf2eb',
+  bg_yellow = '#fbefd0',
+}
+-- }}} Theme everforest_light --
+
+-- Theme everforest_light {{{ --
+local lightForestTheme = {
+  normal = {
+    a = { bg = lightForestColor.aqua, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  insert = {
+    a = { bg = lightForestColor.blue, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  visual = {
+    a = { bg = lightForestColor.yellow, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  replace = {
+    a = { bg = lightForestColor.green, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  command = {
+    a = { bg = lightForestColor.purple, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  terminal = {
+    a = { bg = lightForestColor.green, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  },
+  inactive = {
+    a = { bg = lightForestColor.white, fg = lightForestColor.bg0, gui = 'bold' },
+    b = { bg = lightForestColor.bg4, fg = lightForestColor.orange },
+    c = { bg = lightForestColor.bg2, fg = lightForestColor.bGreen }
+  }
+}
+-- }}} Theme everforest_light --
+
 -- Theme sonokai {{{ --
 local sonokaiTheme = {
   normal = {
@@ -229,6 +296,12 @@ elseif theme.name == "sonokai" then
   theme.modifyYellow = sonokaiColor.yellow
   theme.deleteRed = sonokaiColor.red
   theme.infoOrange = sonokaiColor.orange
+elseif theme.name == "lightForest" then
+  theme.theme = lightForestTheme
+  theme.addGreen = lightForestColor.aqua
+  theme.modifyYellow = lightForestColor.yellow
+  theme.deleteRed = lightForestColor.red
+  theme.infoOrange = lightForestColor.orange
 end
 -- }}} Theme pre settings --
 
@@ -249,7 +322,7 @@ local configuration = {
     lualine_b = {
       {
         'branch',
-        icon = 'שׂ'
+        icon = ''
       },
       {
         'diff',

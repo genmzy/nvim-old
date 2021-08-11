@@ -163,14 +163,19 @@
 "color two-firewatch
 
 
-"" ===
-"" === everforest_light
-"" ===
-"let g:everforest_enable_italic = 1
-"let g:everforest_disable_italic_comment = 0
-"set background=light
-"let g:everforest_background = 'hard'
-"colorscheme everforest
+" ===
+" === everforest_light
+" ===
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 0
+let g:lualine_theme="lightForest"
+set background=light
+let g:everforest_background = 'hard'
+colorscheme everforest
+let g:cursorword_highlight = 0
+highlight CursorWord0 guibg=#f7f2e0
+highlight CursorWord1 guibg=#f7f2e0
+highlight _Label guifg=#DFA000
 
 
 "" ===
@@ -183,13 +188,13 @@
 "colorscheme everforest
 
 
-" ===
-" === space_vim_theme
-" ===
-set background=light
-colorscheme space_vim_theme
-let g:lualine_theme="spacelight"
-hi Comment guifg=#b8b0b0 ctermfg=59
+"" ===
+"" === space_vim_theme
+"" ===
+"set background=light
+"colorscheme space_vim_theme
+"let g:lualine_theme="spacelight"
+"hi Comment guifg=#b8b0b0 ctermfg=59
 
 
 "" ===
@@ -203,6 +208,8 @@ hi Comment guifg=#b8b0b0 ctermfg=59
 "let g:cursorword_highlight = 0
 "highlight CursorWord0 guibg=#333648
 "highlight CursorWord1 guibg=#333648
+"highlight _Identifier guifg=#f89860
+"highlight _Bracket    guifg=#f89860
 
 
 "" ===
