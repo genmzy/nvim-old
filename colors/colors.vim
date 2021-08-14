@@ -163,24 +163,25 @@
 "color two-firewatch
 
 
-" ===
-" === everforest_light
-" ===
-let g:everforest_enable_italic = 1
-let g:everforest_disable_italic_comment = 0
-let g:lualine_theme="lightForest"
-set background=light
-let g:everforest_background = 'hard'
-colorscheme everforest
-let g:cursorword_highlight = 0
-highlight CursorWord0 guibg=#f7f2e0
-highlight CursorWord1 guibg=#f7f2e0
-highlight _Label guifg=#DFA000
+"" ===
+"" === everforest_light
+"" ===
+"let g:everforest_enable_italic = 1
+"let g:everforest_disable_italic_comment = 0
+"let g:lualine_theme="lightForest"
+"set background=light
+"let g:everforest_background = 'hard'
+"colorscheme everforest
+"let g:cursorword_highlight = 0
+"highlight CursorWord0 guibg=#f7f2e0
+"highlight CursorWord1 guibg=#f7f2e0
+"highlight _Label guifg=#DFA000
 
 
 "" ===
 "" === everforest_dark
 "" ===
+"let g:lualine_theme = "everforest"
 "let g:everforest_enable_italic = 1
 "let g:everforest_disable_italic_comment = 0
 "set background=dark
@@ -197,19 +198,19 @@ highlight _Label guifg=#DFA000
 "hi Comment guifg=#b8b0b0 ctermfg=59
 
 
-"" ===
-"" === color sonokai
-"" ===
-"let g:sonokai_style = 'andromeda'
-"let g:sonokai_enable_italic = 1
-"let g:sonokai_disable_italic_comment = 0
-"let g:lualine_theme="sonokai"
-"colorscheme sonokai
-"let g:cursorword_highlight = 0
-"highlight CursorWord0 guibg=#333648
-"highlight CursorWord1 guibg=#333648
-"highlight _Identifier guifg=#f89860
-"highlight _Bracket    guifg=#f89860
+" ===
+" === color sonokai
+" ===
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 0
+let g:lualine_theme="sonokai"
+colorscheme sonokai
+let g:cursorword_highlight = 0
+highlight CursorWord0 guibg=#333648
+highlight CursorWord1 guibg=#333648
+highlight _Identifier guifg=#f89860
+highlight _Bracket    guifg=#f89860
 
 
 "" ===

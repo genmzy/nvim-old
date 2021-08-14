@@ -284,24 +284,38 @@ end
 --------------------------------------------------------------------------------------
 
 -- Theme Pre settings {{{ --
-if theme.name == "spacelight" then
-  theme.theme = spacelightTheme
-  theme.addGreen = spacelightColor.green
-  theme.modifyYellow = spacelightColor.orange
-  theme.deleteRed = spacelightColor.red
-  theme.infoOrange = spacelightColor.orange
-elseif theme.name == "sonokai" then
+if not theme.name then
   theme.theme = sonokaiTheme
   theme.addGreen = sonokaiColor.green
   theme.modifyYellow = sonokaiColor.yellow
   theme.deleteRed = sonokaiColor.red
   theme.infoOrange = sonokaiColor.orange
-elseif theme.name == "lightForest" then
-  theme.theme = lightForestTheme
-  theme.addGreen = lightForestColor.aqua
-  theme.modifyYellow = lightForestColor.yellow
-  theme.deleteRed = lightForestColor.red
-  theme.infoOrange = lightForestColor.orange
+else
+  if theme.name == "spacelight" then
+    theme.theme = spacelightTheme
+    theme.addGreen = spacelightColor.green
+    theme.modifyYellow = spacelightColor.orange
+    theme.deleteRed = spacelightColor.red
+    theme.infoOrange = spacelightColor.orange
+  elseif theme.name == "sonokai" then
+    theme.theme = sonokaiTheme
+    theme.addGreen = sonokaiColor.green
+    theme.modifyYellow = sonokaiColor.yellow
+    theme.deleteRed = sonokaiColor.red
+    theme.infoOrange = sonokaiColor.orange
+  elseif theme.name == "lightForest" then
+    theme.theme = lightForestTheme
+    theme.addGreen = lightForestColor.aqua
+    theme.modifyYellow = lightForestColor.yellow
+    theme.deleteRed = lightForestColor.red
+    theme.infoOrange = lightForestColor.orange
+  else
+    theme.theme = theme.name
+    theme.addGreen = sonokaiColor.green
+    theme.modifyYellow = sonokaiColor.yellow
+    theme.deleteRed = sonokaiColor.red
+    theme.infoOrange = sonokaiColor.orange
+  end
 end
 -- }}} Theme pre settings --
 

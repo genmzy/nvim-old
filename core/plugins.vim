@@ -60,6 +60,7 @@ Plug 'pineapplegiant/spaceduck'
 Plug 'vim-scripts/peaksea'
 Plug 'folke/tokyonight.nvim'
 Plug 'sainnhe/sonokai'
+Plug 'jacoborus/tender.vim'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent'      " Parent background
