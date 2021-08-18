@@ -1,6 +1,7 @@
 "" ===
 "" === deus
 "" ===
+"let g:deus_italic = 1
 "let g:deus_bold = 0
 "color deus
 "set t_Co=256
@@ -148,12 +149,16 @@
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-"" ===
-"" === gruvbox
-"" ===
-"set background=dark
-"let g:gruvbox_contrast_dark="soft"
-"color gruvbox
+" ===
+" === gruvbox
+" ===
+set background=dark
+let g:gruvbox_italic=1
+let g:gruvbox_bold=0
+let g:gruvbox_contrast_dark="soft"
+let g:lualine_theme="gruvbox"
+let g:gruvbox_italicize_strings=1
+color gruvbox
 
 
 "" ===
@@ -198,19 +203,19 @@
 "hi Comment guifg=#b8b0b0 ctermfg=59
 
 
-" ===
-" === color sonokai
-" ===
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 0
-let g:lualine_theme="sonokai"
-colorscheme sonokai
-let g:cursorword_highlight = 0
-highlight CursorWord0 guibg=#333648
-highlight CursorWord1 guibg=#333648
-highlight _Identifier guifg=#f89860
-highlight _Bracket    guifg=#f89860
+"" ===
+"" === color sonokai
+"" ===
+"let g:sonokai_style = 'andromeda'
+"let g:sonokai_enable_italic = 1
+"let g:sonokai_disable_italic_comment = 0
+"let g:lualine_theme="sonokai"
+"colorscheme sonokai
+"let g:cursorword_highlight = 0
+"highlight CursorWord0 guibg=#333648
+"highlight CursorWord1 guibg=#333648
+"highlight _Identifier guifg=#f89860
+"highlight _Bracket    guifg=#f89860
 
 
 "" ===

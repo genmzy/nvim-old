@@ -45,11 +45,12 @@ Plug 'genmzy/nord-vim', {
     \'branch': 'master'
 \}
 Plug 'genmzy/vim-waves'
-Plug 'genmzy/deus'
+"Plug 'genmzy/deus'
+Plug 'ajmwagar/vim-deus'
 Plug 'genmzy/lavender.vim'
 Plug 'genmzy/snazzy'
 Plug 'hardcoreplayers/oceanic-material'
-Plug 'morhetz/gruvbox'
+Plug 'genmzy/gruvbox'
 Plug 'genmzy/onedark.vim'
 Plug 'sonph/onehalf', {
     \'rtp': 'vim/'
@@ -61,6 +62,9 @@ Plug 'vim-scripts/peaksea'
 Plug 'folke/tokyonight.nvim'
 Plug 'sainnhe/sonokai'
 Plug 'jacoborus/tender.vim'
+Plug 'challenger-deep-theme/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sts10/vim-pink-moon'
 
 " Color enhancement
 Plug 'Kjwon15/vim-transparent'      " Parent background

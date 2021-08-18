@@ -84,6 +84,30 @@ local lightForestColor = {
 }
 -- }}} Theme everforest_light --
 
+
+-- Theme gruvbox {{{ --
+local gruvboxColorfulTheme = require'lualine.themes.gruvbox'
+-- Change the background of lualine_c section for normal mode
+gruvboxColorfulTheme.normal.a.bg = '#fabd2f' -- rgb colors are supported
+gruvboxColorfulTheme.insert.c.bg = gruvboxColorfulTheme.normal.c.bg
+gruvboxColorfulTheme.visual.c.bg = gruvboxColorfulTheme.normal.c.bg
+gruvboxColorfulTheme.command.c.bg = gruvboxColorfulTheme.normal.c.bg
+
+gruvboxColorfulTheme.normal.b.fg = gruvboxColorfulTheme.command.a.bg
+gruvboxColorfulTheme.insert.b.fg = gruvboxColorfulTheme.command.a.bg
+gruvboxColorfulTheme.visual.b.fg = gruvboxColorfulTheme.command.a.bg
+gruvboxColorfulTheme.replace.b.fg = gruvboxColorfulTheme.command.a.bg
+gruvboxColorfulTheme.command.b.fg = gruvboxColorfulTheme.command.a.bg
+
+gruvboxColorfulTheme.normal.c.fg = gruvboxColorfulTheme.insert.a.bg
+gruvboxColorfulTheme.insert.c.fg = gruvboxColorfulTheme.insert.a.bg
+gruvboxColorfulTheme.visual.c.fg = gruvboxColorfulTheme.insert.a.bg
+gruvboxColorfulTheme.replace.c.fg = gruvboxColorfulTheme.insert.a.bg
+gruvboxColorfulTheme.command.c.fg = gruvboxColorfulTheme.insert.a.bg
+--sonokaiColor.orange
+-- }}} Theme gruvbox --
+
+
 -- Theme everforest_light {{{ --
 local lightForestTheme = {
   normal = {
@@ -309,6 +333,12 @@ else
     theme.modifyYellow = lightForestColor.yellow
     theme.deleteRed = lightForestColor.red
     theme.infoOrange = lightForestColor.orange
+  elseif theme.name == "gruvbox" then
+    theme.theme = theme.name
+    theme.addGreen = gruvboxColorfulTheme.command.a.bg
+    theme.modifyYellow = gruvboxColorfulTheme.normal.a.bg
+    theme.deleteRed = gruvboxColorfulTheme.replace.a.bg
+    theme.infoOrange = gruvboxColorfulTheme.visual.a.bg
   else
     theme.theme = theme.name
     theme.addGreen = sonokaiColor.green
