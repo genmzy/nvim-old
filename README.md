@@ -2,6 +2,20 @@
 
 - 💜 I wanna see you after COVID-19.
 
+![gruvbox+dashborad](https://github.com/genmzy/pictures/blob/master/gruvbox+dashborad.png)
+
+![gruvbox+customFont+codeComplete](https://github.com/genmzy/pictures/blob/master/gruvbox+customFont+codeComplete.png)
+
+![gruvbox+customFont+explorer+vista](https://github.com/genmzy/pictures/blob/master/gruvbox+customFont+explorer+vista.png)
+
+![gruvbox+lazygit](https://github.com/genmzy/pictures/blob/master/gruvbox+lazygit.png)
+
+![gruvbox+floaterm](https://github.com/genmzy/pictures/blob/master/gruvbox+floaterm.png)
+
+![rg_panic](https://github.com/genmzy/pictures/blob/master/rg_panic.png)
+
+- Above fonts see [here](https://github.com/genmzy/recursive-code-config/tree/main/fonts/RecMonoGenmzyCasual/NerdFonts)
+
 ![lightForest](https://github.com/genmzy/pictures/blob/master/lightForest.png)
 
 ![lightForestVistaExplorer](https://github.com/genmzy/pictures/blob/master/lightForestVistaExplorer.png)
@@ -10,21 +24,7 @@
 
 ![spacelight](https://github.com/genmzy/pictures/blob/master/spacelight.png)
 
-![picture_dashboard](https://github.com/genmzy/pictures/blob/master/dashboard.png)
-
-![picture_complete](https://github.com/genmzy/pictures/blob/master/微信图片_20210807201434.png)
-
-![picture_normal](https://github.com/genmzy/pictures/blob/master/微信图片_20210807201505.png)
-
-![picture_vista](https://github.com/genmzy/pictures/blob/master/微信图片_20210807201511.png)
-
-![picture_visual](https://github.com/genmzy/pictures/blob/master/微信图片_20210807201516.png)
-
-![picture_lazygit](https://github.com/genmzy/pictures/blob/master/lazygit.png)
-
-![picture_floaterm](https://github.com/genmzy/pictures/blob/master/floaterm.png)
-
-![picture_fzf](https://github.com/genmzy/pictures/blob/master/fzf.png)
+- More pictures, see [here](https://github.com/genmzy/pictures)
 
 
 ## Installation
