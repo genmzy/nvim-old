@@ -157,7 +157,7 @@ let g:gruvbox_italic=1
 let g:gruvbox_bold=0
 let g:gruvbox_contrast_dark="soft"
 let g:lualine_theme="gruvbox"
-let g:gruvbox_italicize_strings=1
+let g:gruvbox_italicize_strings=0
 color gruvbox
 
 
@@ -227,3 +227,5 @@ color gruvbox
 "colorscheme tokyonight
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
+"hi CocUnusedHighlight ctermfg=Grey guifg=#665c54
+hi link CocUnusedHighlight GruvboxBg4
