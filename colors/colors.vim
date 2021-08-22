@@ -212,4 +212,3 @@ let g:lualine_theme='deus'
 "colorscheme tokyonight
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
-hi CocUnusedHighlight ctermfg=Grey guifg=#665c54
