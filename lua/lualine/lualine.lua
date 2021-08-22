@@ -87,25 +87,27 @@ local lightForestColor = {
 
 -- Theme gruvbox {{{ --
 local gruvboxColorfulTheme = require'lualine.themes.gruvbox'
--- Change the background of lualine_c section for normal mode
-gruvboxColorfulTheme.normal.a.bg = '#fabd2f' -- rgb colors are supported
-gruvboxColorfulTheme.insert.c.bg = gruvboxColorfulTheme.normal.c.bg
-gruvboxColorfulTheme.visual.c.bg = gruvboxColorfulTheme.normal.c.bg
-gruvboxColorfulTheme.command.c.bg = gruvboxColorfulTheme.normal.c.bg
-
-gruvboxColorfulTheme.normal.b.fg = gruvboxColorfulTheme.command.a.bg
-gruvboxColorfulTheme.insert.b.fg = gruvboxColorfulTheme.command.a.bg
-gruvboxColorfulTheme.visual.b.fg = gruvboxColorfulTheme.command.a.bg
-gruvboxColorfulTheme.replace.b.fg = gruvboxColorfulTheme.command.a.bg
-gruvboxColorfulTheme.command.b.fg = gruvboxColorfulTheme.command.a.bg
-
-gruvboxColorfulTheme.normal.c.fg = gruvboxColorfulTheme.insert.a.bg
-gruvboxColorfulTheme.insert.c.fg = gruvboxColorfulTheme.insert.a.bg
-gruvboxColorfulTheme.visual.c.fg = gruvboxColorfulTheme.insert.a.bg
-gruvboxColorfulTheme.replace.c.fg = gruvboxColorfulTheme.insert.a.bg
-gruvboxColorfulTheme.command.c.fg = gruvboxColorfulTheme.insert.a.bg
---sonokaiColor.orange
+  gruvboxColorfulTheme.normal.a.bg = '#fabd2f' -- rgb colors are supported
+  for _, mode in pairs(gruvboxColorfulTheme) do
+    mode.c.bg = gruvboxColorfulTheme.normal.c.bg
+    mode.b.fg = gruvboxColorfulTheme.command.a.bg
+    mode.c.fg = gruvboxColorfulTheme.insert.a.bg
+  end
 -- }}} Theme gruvbox --
+
+
+-- Theme deus {{{ --
+if theme.name == "deus" then
+  gruvboxColorfulTheme.command.a.bg = "#fabd2f"
+  gruvboxColorfulTheme.normal.a.bg = "#98C379"
+  for _, mode in pairs(gruvboxColorfulTheme) do
+    mode.b.bg = "#3B434F"
+    mode.c.bg = "#242a32"
+    mode.b.fg = gruvboxColorfulTheme.normal.a.bg
+  end
+  theme.name = gruvboxColorfulTheme
+end
+-- }}} Theme deus --
 
 
 -- Theme everforest_light {{{ --

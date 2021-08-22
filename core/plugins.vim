@@ -45,8 +45,7 @@ Plug 'genmzy/nord-vim', {
     \'branch': 'master'
 \}
 Plug 'genmzy/vim-waves'
-"Plug 'genmzy/deus'
-Plug 'ajmwagar/vim-deus'
+Plug 'genmzy/vim-deus'
 Plug 'genmzy/lavender.vim'
 Plug 'genmzy/snazzy'
 Plug 'hardcoreplayers/oceanic-material'

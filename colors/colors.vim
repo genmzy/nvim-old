@@ -1,30 +1,15 @@
-"" ===
-"" === deus
-"" ===
-"let g:deus_italic = 1
-"let g:deus_bold = 0
-"color deus
-"set t_Co=256
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"set background=dark    " Setting dark mode
-"let g:deus_termcolors=256
-""let g:spaceline_colorscheme='nord'
-""let g:terminal_color_0  = '#000000'
-""let g:terminal_color_1  = '#d26487'
-""let g:terminal_color_2  = '#50FA7B'
-""let g:terminal_color_3  = '#F1FA8C'
-""let g:terminal_color_4  = '#BD93F9'
-""let g:terminal_color_5  = '#FF79C6'
-""let g:terminal_color_6  = '#8BE9FD'
-""let g:terminal_color_7  = '#BFBFBF'
-""let g:terminal_color_8  = '#4D4D4D'
-""let g:terminal_color_9  = '#FF6E67'
-""let g:terminal_color_10 = '#5AF78E'
-""let g:terminal_color_11 = '#F4F99D'
-""let g:terminal_color_12 = '#CAA9FA'
-""let g:terminal_color_13 = '#FF92D0'
-""let g:terminal_color_14 = '#9AEDFE'
+" ===
+" === deus
+" ===
+let g:deus_italic = 1
+let g:deus_bold = 0
+color deus
+set t_Co=256
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set background=dark    " Setting dark mode
+let g:deus_termcolors=256
+let g:lualine_theme='deus'
 
 
 "" ===
@@ -149,16 +134,16 @@
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-" ===
-" === gruvbox
-" ===
-set background=dark
-let g:gruvbox_italic=1
-let g:gruvbox_bold=0
-let g:gruvbox_contrast_dark="soft"
-let g:lualine_theme="gruvbox"
-let g:gruvbox_italicize_strings=0
-color gruvbox
+"" ===
+"" === gruvbox
+"" ===
+"set background=dark
+"let g:gruvbox_italic=1
+"let g:gruvbox_bold=0
+"let g:gruvbox_contrast_dark="soft"
+"let g:lualine_theme="gruvbox"
+"let g:gruvbox_italicize_strings=0
+"color gruvbox
 
 
 "" ===
@@ -227,5 +212,4 @@ color gruvbox
 "colorscheme tokyonight
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A
-"hi CocUnusedHighlight ctermfg=Grey guifg=#665c54
-hi link CocUnusedHighlight GruvboxBg4
+hi CocUnusedHighlight ctermfg=Grey guifg=#665c54
