@@ -103,6 +103,7 @@
   "coc.source.around.shortcut": "",
   "coc.source.buffer.shortcut": "﬘",
   "coc.source.issues.shortcut": "",
+  "translator.engines": ["bing"],
   "suggest.completionItemKindLabels": {
     "keyword": "",
     // "keyword": "גּ",
