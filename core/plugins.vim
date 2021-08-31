@@ -66,7 +66,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sts10/vim-pink-moon'
 
 " Color enhancement
-Plug 'Kjwon15/vim-transparent'      " Parent background
+Plug 'genmzy/vim-transparent'       " Transparent background
 Plug 'sheerun/vim-polyglot'         " Enhancing syntax color of a lot of filetypes
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
