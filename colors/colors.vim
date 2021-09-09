@@ -1,15 +1,15 @@
-" ===
-" === deus
-" ===
-let g:deus_italic = 1
-let g:deus_bold = 0
-color deus
-set t_Co=256
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set background=dark    " Setting dark mode
-let g:deus_termcolors=256
-let g:lualine_theme='deus'
+"" ===
+"" === deus
+"" ===
+"let g:deus_italic = 1
+"let g:deus_bold = 0
+"color deus
+"set t_Co=256
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"set background=dark    " Setting dark mode
+"let g:deus_termcolors=256
+"let g:lualine_theme='deus'
 
 
 "" ===
@@ -52,7 +52,7 @@ let g:lualine_theme='deus'
 "let g:lavender_transp_bg = 0
 "colorscheme lavender
 "set background=light
-""let g:spaceline_colorscheme='space_light'
+"let g:lualine_theme='spacelight'
 ""hi Comment guifg=#8e9ecc ctermfg=248
 ""hi Comment guifg=#5C637f ctermfg=59
 ""hi Comment guifg=#8e9eaf ctermfg=248
@@ -68,7 +68,7 @@ let g:lualine_theme='deus'
 "" ===
 "" === nord
 "" ===
-"let g:spaceline_colorscheme='nord'
+"let g:lualine_theme='nord'
 "color nord
 
 
@@ -91,17 +91,17 @@ let g:lualine_theme='deus'
 "" ===
 "let ayucolor="light"
 ""let ayucolor="dark"
-""let g:spaceline_seperate_style="arrow"
 "colorscheme ayu
-"let g:spaceline_colorscheme='ayu_light'
+"let g:lualine_theme="ayu_light"
 
 
 "" ===
 "" === ayu_mirage
 "" ===
+"let g:vim_transparent_enable=1
 "let ayucolor="mirage"
 "colorscheme ayu
-""let g:spaceline_colorscheme='ayu_mirage'
+"let g:lualine_theme='ayu_mirage'
 
 
 "" ===
@@ -114,7 +114,7 @@ let g:lualine_theme='deus'
 "" ===
 "" === onedark
 "" ===
-""let g:spaceline_colorscheme='one'
+""let g:lualine_theme='onedark'
 "color onedark
 
 
@@ -134,16 +134,18 @@ let g:lualine_theme='deus'
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-"" ===
-"" === gruvbox
-"" ===
-"set background=dark
-"let g:gruvbox_italic=1
-"let g:gruvbox_bold=0
-"let g:gruvbox_contrast_dark="soft"
-"let g:lualine_theme="gruvbox"
-"let g:gruvbox_italicize_strings=0
-"color gruvbox
+" ===
+" === gruvbox
+" ===
+set background=dark
+let g:gruvbox_italic=1
+let g:gruvbox_bold=0
+let g:gruvbox_contrast_dark="soft"
+let g:lualine_theme="gruvbox"
+let g:gruvbox_italicize_strings=0
+let g:gruvbox_faded_strings=0
+color gruvbox
+let g:vim_transparent_enable=1
 
 
 "" ===
@@ -191,6 +193,7 @@ let g:lualine_theme='deus'
 "" ===
 "" === color sonokai
 "" ===
+"let g:vim_transparent_enable=1
 "let g:sonokai_style = 'andromeda'
 "let g:sonokai_enable_italic = 1
 "let g:sonokai_disable_italic_comment = 0
@@ -209,6 +212,7 @@ let g:lualine_theme='deus'
 "let g:tokyonight_transparent=1
 "let g:tokyonight_style = "storm"
 "let g:tokyonight_italic_functions = 1
+"let g:lualine_theme='tokyonight'
 "colorscheme tokyonight
 
 hi CocErrorSign  ctermfg=Red guifg=#BF616A

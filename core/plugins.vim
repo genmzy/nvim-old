@@ -26,7 +26,6 @@ Plug 'airblade/vim-gitgutter'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
-Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 
 " Bookmarks
 Plug 'kshenoy/vim-signature'
