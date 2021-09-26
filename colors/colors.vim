@@ -10,6 +10,7 @@
 "set background=dark    " Setting dark mode
 "let g:deus_termcolors=256
 "let g:lualine_theme='deus'
+"let g:vim_transparent_enable=1
 
 
 "" ===
@@ -134,18 +135,18 @@
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-"" ===
-"" === gruvbox
-"" ===
-"set background=dark
-"let g:gruvbox_italic=1
-"let g:gruvbox_bold=0
-"let g:gruvbox_contrast_dark="soft"
-"let g:lualine_theme="gruvbox"
-"let g:gruvbox_italicize_strings=0
-"let g:gruvbox_faded_strings=0
-"color gruvbox
-"let g:vim_transparent_enable=1
+" ===
+" === gruvbox
+" ===
+set background=dark
+let g:gruvbox_italic=1
+let g:gruvbox_bold=0
+let g:gruvbox_contrast_dark="soft"
+let g:lualine_theme="gruvbox"
+let g:gruvbox_italicize_strings=0
+let g:gruvbox_faded_strings=0
+color gruvbox
+let g:vim_transparent_enable=1
 
 
 "" ===
@@ -190,17 +191,17 @@
 "hi Comment guifg=#b8b0b0 ctermfg=59
 
 
-" ===
-" === color sonokai
-" ===
-let g:vim_transparent_enable=1
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 0
-let g:sonokai_disable_italic_comment = 0
-let g:lualine_theme="sonokai"
-colorscheme sonokai
-highlight _Identifier guifg=#f89860
-highlight _Bracket    guifg=#f89860
+"" ===
+"" === color sonokai
+"" ===
+"let g:vim_transparent_enable=1
+"let g:sonokai_style = 'andromeda'
+"let g:sonokai_enable_italic = 0
+"let g:sonokai_disable_italic_comment = 0
+"let g:lualine_theme="sonokai"
+"colorscheme sonokai
+"highlight _Identifier guifg=#f89860
+"highlight _Bracket    guifg=#f89860
 
 
 "" ===
