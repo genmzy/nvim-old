@@ -289,6 +289,7 @@ local function showPaste()
   if isPaste then
     return "PASTE"
   end
+  return ""
 end
 
 local function showComplete()
@@ -296,6 +297,7 @@ local function showComplete()
   if mode == 'ix' or mode == 'ic' then
     return "COMPL"
   end
+  return ""
 end
 
 local function showSpell()
@@ -303,6 +305,7 @@ local function showSpell()
   if isSpell == 1 or isSpell == "1" then
     return "SPELL"
   end
+  return ""
 end
 -- }}} show extra mode status --
 
@@ -357,8 +360,8 @@ local configuration = {
   options = {
     icons_enabled = true,
     theme = theme.theme,
-    component_separators = { ' ', ' ' },
-    section_separators = { ' ', ' ' },
+    component_separators = { left = ' ', right = ' ' },
+    section_separators = { left = ' ', right = ' ' },
     disabled_filetypes = {}
   },
   -- }}} Options --
