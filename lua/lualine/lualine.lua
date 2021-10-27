@@ -377,9 +377,14 @@ local configuration = {
         'diff',
         -- Is it me or the symbol for modified us really weird
         symbols = { added = ' ', modified = ' ', removed = ' ' },
-        color_added = theme.addGreen,
-        color_modified = theme.modifyYellow,
-        color_removed = theme.deleteRed,
+        -- color_added = theme.addGreen,
+        -- color_modified = theme.modifyYellow,
+        -- color_removed = theme.deleteRed,
+        diff_color = {
+          added    = { fg = theme.addGreen },
+          modified = { fg = theme.modifyYellow },
+          removed  = { fg = theme.deleteRed },
+        },
       },
       showBufSize
     },
@@ -393,10 +398,12 @@ local configuration = {
         'diagnostics',
         sources = { 'coc' },
         symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
-        color_error = theme.deleteRed,
-        color_warn  = theme.modifyYellow,
-        color_info  = theme.infoOrange,
-        color_hint  = theme.addGreen
+        diagnostics_color = {
+          error = { fg = theme.deleteRed },
+          warn  = { fg = theme.modifyYellow },
+          info  = { fg = theme.infoOrange },
+          hint  = { fg = theme.addGreen },
+        },
       },
       'g:coc_status'
     },
