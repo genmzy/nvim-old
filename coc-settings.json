@@ -29,7 +29,38 @@
         "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
       ],
       "filetypes": ["lua"],
-      "rootPatterns": [".git/"]
+      "rootPatterns": [".git/"],
+      // lua environment
+      "settings": {
+        "Lua": {
+          "workspace": {
+            "library": {
+              //"/path/to/hammerspoon-completion/build/stubs": true,
+              "/usr/local/nvim-linux64/share/nvim/runtime/lua/": true
+            },
+            "maxPreload": 2000,
+            "preloadFileSize": 1000
+          },
+          "runtime": {
+            "version": "LuaJIT"
+          },
+          "diagnostics": {
+            "enable": true,
+            "globals": [
+              "hs",
+              "vim",
+              "it",
+              "describe",
+              "before_each",
+              "after_each"
+            ],
+            "disable": ["lowercase-global"]
+          }
+          //"completion": {
+            //"keywordSnippet": "Disable"
+          //}
+        }
+      }
     }
   },
   // coc-java(and java debug)
