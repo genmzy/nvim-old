@@ -371,7 +371,7 @@ local configuration = {
     lualine_b = {
       {
         'branch',
-        icon = ''
+        icon = ''
       },
       {
         'diff',

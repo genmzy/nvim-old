@@ -140,7 +140,8 @@
 " ===
 set background=dark
 let g:gruvbox_italic=1
-let g:gruvbox_bold=0
+let g:gruvbox_bold=1
+let g:gruvbox_func_bold=0
 let g:gruvbox_contrast_dark="soft"
 let g:lualine_theme="gruvbox"
 let g:gruvbox_italicize_strings=0
