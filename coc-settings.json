@@ -90,7 +90,12 @@
   "prettier.stylelintIntegration": true,
   // coc-go
   "go.goplsOptions": {
-    "usePlaceholders": true
+    "usePlaceholders": true,
+    "analyses": {
+      "nilfunc": true,
+      "nilness": true,
+      "unusedwrite": true
+    }
   },
   // coc-git
   "git.showCommitInFloating": true,
