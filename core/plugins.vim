@@ -63,6 +63,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'challenger-deep-theme/vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sts10/vim-pink-moon'
+Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 
 " Color enhancement
 Plug 'genmzy/vim-transparent'       " Transparent background

@@ -149,6 +149,10 @@ let g:gruvbox_faded_strings=0
 color gruvbox
 let g:vim_transparent_enable=1
 
+"set lualine_theme="aquarium"
+"let g:aquarium_style="light"
+"colorscheme aquarium
+
 
 "" ===
 "" === two-firewatch
