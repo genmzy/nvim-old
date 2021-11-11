@@ -145,11 +145,14 @@ let g:gruvbox_func_bold=0
 let g:gruvbox_contrast_dark="soft"
 let g:lualine_theme="gruvbox"
 let g:gruvbox_italicize_strings=0
-let g:gruvbox_faded_strings=0
+let g:gruvbox_faded_strings=1
 color gruvbox
 let g:vim_transparent_enable=1
 
-"set lualine_theme="aquarium"
+"" ===
+"" === aquarium
+"" ===
+"let g:lualine_theme="aquarium"
 "let g:aquarium_style="light"
 "colorscheme aquarium
 
@@ -165,6 +168,7 @@ let g:vim_transparent_enable=1
 "" === everforest_light
 "" ===
 "let g:everforest_enable_italic = 0
+"let g:vim_transparent_enable = 1
 "let g:everforest_disable_italic_comment = 0
 "let g:lualine_theme="lightForest"
 "set background=light
