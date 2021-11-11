@@ -266,7 +266,7 @@ end
 
 local function showBufSize()
   local file = vim.fn.expand('%:p')
-  if string.len(file) == 0 then return end
+  if string.len(file) == 0 then return '' end
   return ' ' .. fileSize(file)
 end
 
