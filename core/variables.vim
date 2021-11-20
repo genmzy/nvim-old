@@ -43,8 +43,24 @@ set encoding=utf-8
 set hidden
 set list
 set listchars=tab:¦\ ,trail:→
+
 " For WSL yank and paste support, see: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
-set clipboard+=unnamedplus
+if executable("clip.exe") && executable("win32yank.exe")
+    set clipboard+=unnamedplus
+    let g:clipboard = {
+        \   'name': 'genmzy_clipboard',
+        \   'copy': {
+        \      '+': ['clip.exe'],
+        \      '*': ['clip.exe'],
+        \    },
+        \   'paste': {
+        \      '+': ['win32yank.exe', '-o', '--lf'],
+        \      '*': ['win32yank.exe', '-o', '--lf'],
+        \   },
+        \   'cache_enabled': 1,
+        \ }
+endif
+
 set termguicolors
 "set mouse=a
 set foldmethod=marker

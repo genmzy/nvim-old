@@ -46,3 +46,25 @@
 - Install plugins
 
   Enter vim and execute `:PlugInstall`
+
+## More
+
+- I use [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal)
+- for WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), but when I change my system to Windows11, some bugs happened, paste will cause long-time no respond(more than 5 minutes). I cannot find the reason, as I see the win32yank got a paste [error](https://github.com/equalsraf/win32yank/issues/9#issue-463019718), I tried a lot of times and I think it is a copy issue, not a paste issue, so I use the system clipboard redirector, which path is `/mnt/c/Windows/System32/clip.exe`, works okay so far.
+```vim
+if executable("clip.exe") && executable("win32yank.exe")
+    set clipboard+=unnamedplus
+    let g:clipboard = {
+        \   'name': 'genmzy_clipboard',
+        \   'copy': {
+        \      '+': ['clip.exe'],
+        \      '*': ['clip.exe'],
+        \    },
+        \   'paste': {
+        \      '+': ['win32yank.exe', '-o', '--lf'],
+        \      '*': ['win32yank.exe', '-o', '--lf'],
+        \   },
+        \   'cache_enabled': 1,
+        \ }
+endif
+```
