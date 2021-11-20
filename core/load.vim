@@ -28,7 +28,7 @@ source $root/plugconfig/fzf.vim
 
 source $root/plugconfig/defx.vim
 
-source $root/colors/colors.vim
+source $root/themes/themes.vim
 
 source $root/plugconfig/floaterm.vim
 
