@@ -88,7 +88,7 @@ Plug 'vim-scripts/BufOnly.vim'
 
 " Debug tools
 Plug 'puremourning/vimspector', {
-    \'do': './install_gadget.py --enable-c --force-enable-java --enable-lua --enable-python --enable-go'
+    \'do': './install_gadget.py --enable-c --force-enable-java --enable-lua --enable-go'
 \}
 
 " Sudo read/write
