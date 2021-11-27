@@ -67,7 +67,7 @@ Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 
 " Color enhancement
 Plug 'genmzy/vim-transparent'       " Transparent background
-Plug 'sheerun/vim-polyglot'         " Enhancing syntax color of a lot of filetypes
+Plug 'genmzy/vim-polyglot'          " Enhancing syntax color of a lot of filetypes
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 " Extraordinary code completion plugin
