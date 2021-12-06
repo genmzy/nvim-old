@@ -28,6 +28,11 @@ source $root/plugconfig/fzf.vim
 
 source $root/plugconfig/defx.vim
 
+" load project vim configuration.
+if filereadable("./genmzy.vim")
+  source ./genmzy.vim
+endif
+
 source $root/themes/themes.vim
 
 source $root/plugconfig/floaterm.vim
@@ -43,8 +48,3 @@ source $root/plugconfig/gitgutter.vim
 source $root/plugconfig/vim_go.vim
 
 source $root/lua/luaload.vim
-
-" load project vim configuration.
-if filereadable("./project.vim")
-  source ./project.vim
-endif
