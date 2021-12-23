@@ -142,6 +142,10 @@
   "coc.source.buffer.ignoreGitignore": true,
   "coc.source.buffer.firstMatch": true,
   "translator.engines": ["bing"],
+  "hover.floatConfig": {"border": true},
+  "suggest.floatConfig": {"border": true},
+  "diagnostic.floatConfig": {"border": true},
+  "signature.floatConfig": {"border": true},
   "suggest.completionItemKindLabels": {
     "keyword": "",
     "variable": "",
