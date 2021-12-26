@@ -37,7 +37,6 @@ let g:coc_global_extensions = [
       \ 'coc-git',
       \ 'coc-prettier',
       \ 'coc-snippets',
-      \ 'coc-fzf-preview',
       \ 'coc-translator',
       \ 'coc-ci',
       \ 'coc-explorer',
