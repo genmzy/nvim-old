@@ -136,7 +136,10 @@ command! -nargs=0 OR     :call CocAction('runCommand', 'editor.action.organizeIm
 nmap <silent> <leader>j <Plug>(coc-range-select)
 xmap <silent> <leader>j <Plug>(coc-range-select)
 
-nmap <silent> sm :CocCommand translator.popup<cr>
+" NOTE: do NOT use `nore` mappings
+" popup
+nmap sm <Plug>(coc-translator-p)
+vmap sm <Plug>(coc-translator-pv)
 
 " solve the huge file read problem
 let g:trigger_size = 0.5 * 1048576
