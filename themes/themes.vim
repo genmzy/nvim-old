@@ -14,20 +14,20 @@ else
 endif
 
 
-" ===
-" === deus
-" ===
-let g:deus_bold = 1
-let g:deus_func_bold = 0
-let g:deus_directory_bold = 0
-color deus
-set t_Co=256
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set background=dark    " Setting dark mode
-let g:deus_termcolors=256
-let g:lualine_theme='deus'
-let g:vim_transparent_enable=1
+"" ===
+"" === deus
+"" ===
+"let g:deus_bold = 1
+"let g:deus_func_bold = 0
+"let g:deus_directory_bold = 0
+"color deus
+"set t_Co=256
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"set background=dark    " Setting dark mode
+"let g:deus_termcolors=256
+"let g:lualine_theme='deus'
+"let g:vim_transparent_enable=1
 
 
 "" ===
@@ -152,18 +152,18 @@ let g:vim_transparent_enable=1
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-"" ===
-"" === gruvbox
-"" ===
-"set background=dark
-"let g:gruvbox_bold=1
-"let g:gruvbox_func_bold=0
-"let g:gruvbox_contrast_dark="soft"
-"let g:lualine_theme="gruvbox"
-"let g:gruvbox_italicize_strings=0
-"let g:gruvbox_faded_strings=0
-"color gruvbox
-"let g:vim_transparent_enable=1
+" ===
+" === gruvbox
+" ===
+set background=dark
+let g:gruvbox_bold=1
+let g:gruvbox_func_bold=0
+let g:gruvbox_contrast_dark="hard"
+let g:lualine_theme="gruvbox"
+let g:gruvbox_italicize_strings=0
+let g:gruvbox_faded_strings=0
+color gruvbox
+let g:vim_transparent_enable=1
 
 "" ===
 "" === aquarium
