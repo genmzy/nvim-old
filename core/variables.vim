@@ -42,7 +42,8 @@ set nocompatible
 set encoding=utf-8
 set hidden
 set list
-set listchars=tab:¦\ ,trail:→
+"set listchars=tab:¦\ ,trail:→,eol:↵,space:·
+set listchars=tab:¦\ ,trail:→,eol:↵
 
 " For WSL yank and paste support, see: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
 if executable("clip.exe") && executable("win32yank.exe")
