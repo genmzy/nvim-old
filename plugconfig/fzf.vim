@@ -6,11 +6,8 @@ let g:vista_fzf_preview = ['down:50%']
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 set rtp+=/usr/local/opt/fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
-let g:coc_fzf_preview='right:50%'
-let g:fzf_preview_window = 'right:50%'
-
-"" Change the position, if set this, the window will split right
-"let g:fzf_layout = { 'right': '~50%' }
+let g:coc_fzf_preview='up:50%'
+let g:fzf_preview_window = 'up:50%'
 
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
