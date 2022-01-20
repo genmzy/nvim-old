@@ -88,16 +88,20 @@ local lightForestColor = {
 -- Theme gruvbox {{{ --
 local gruvboxColorfulTheme = require'lualine.themes.gruvbox'
 gruvboxColorfulTheme.normal.a.bg = '#fabd2f' -- rgb colors are supported
-for _, mode in pairs(gruvboxColorfulTheme) do
-  if api.nvim_get_var('gruvbox_contrast_dark') == "hard" then
-    mode.c.bg = "#282828"
-    mode.b.bg = "#3c3836"
-  else
-    mode.c.bg = gruvboxColorfulTheme.normal.c.bg
+
+local ok, v = pcall(api.nvim_get_var, 'gruvbox_contrast_dark')
+if ok then
+  for _, mode in pairs(gruvboxColorfulTheme) do
+    if v == "hard" then
+      mode.c.bg = "#282828"
+      mode.b.bg = "#3c3836"
+    else
+      mode.c.bg = gruvboxColorfulTheme.normal.c.bg
+    end
+    -- fore grounds
+    mode.b.fg = gruvboxColorfulTheme.command.a.bg
+    mode.c.fg = gruvboxColorfulTheme.insert.a.bg
   end
-  -- fore grounds
-  mode.b.fg = gruvboxColorfulTheme.command.a.bg
-  mode.c.fg = gruvboxColorfulTheme.insert.a.bg
 end
 -- }}} Theme gruvbox --
 
