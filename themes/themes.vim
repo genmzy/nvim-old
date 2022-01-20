@@ -152,18 +152,18 @@ endif
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-" ===
-" === gruvbox
-" ===
-set background=dark
-let g:gruvbox_bold=1
-let g:gruvbox_func_bold=0
-let g:gruvbox_contrast_dark="hard"
-let g:lualine_theme="gruvbox"
-let g:gruvbox_italicize_strings=0
-let g:gruvbox_faded_strings=0
-color gruvbox
-let g:vim_transparent_enable=1
+"" ===
+"" === gruvbox
+"" ===
+"set background=dark
+"let g:gruvbox_bold=1
+"let g:gruvbox_func_bold=0
+"let g:gruvbox_contrast_dark="hard"
+"let g:lualine_theme="gruvbox"
+"let g:gruvbox_italicize_strings=0
+"let g:gruvbox_faded_strings=0
+"color gruvbox
+"let g:vim_transparent_enable=1
 
 "" ===
 "" === aquarium
@@ -208,13 +208,13 @@ let g:vim_transparent_enable=1
 "colorscheme everforest
 
 
-"" ===
-"" === space_vim_theme
-"" ===
-"set background=light
-"colorscheme space_vim_theme
-"let g:lualine_theme="spacelight"
-"hi Comment guifg=#b8b0b0 ctermfg=59
+" ===
+" === space_vim_theme
+" ===
+set background=light
+colorscheme space_vim_theme
+let g:lualine_theme="spacelight"
+hi Comment guifg=#b8b0b0 ctermfg=59
 
 
 "" ===
