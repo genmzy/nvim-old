@@ -117,7 +117,6 @@
   "git.conflictedDecorator": "@",
   "git.stagedDecorator": "$",
   "git.untrackedDecorator": ">",
-  "coc.preferences.colorSupport": true,
   "highlight.colors.enable": true,
   "highlight.document.enable": true,
   "highlight.colorNames.enable": false,

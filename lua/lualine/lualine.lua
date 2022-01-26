@@ -23,7 +23,7 @@ local spacelightColor = {
   blue     = '#715ab1',
   bWhite   = '#efeae9',
   gold     = '#b1951d',
-  bBlue    = '#4495b4 ',
+  bBlue    = '#4495b4',
   cyan     = '#35a8a5',
 }
 -- }}} Colors for spacelight --
