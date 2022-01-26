@@ -152,18 +152,18 @@ endif
 ""hi Normal ctermfg=252 ctermbg=none
 
 
-" ===
-" === gruvbox
-" ===
-set background=dark
-let g:gruvbox_bold=1
-let g:gruvbox_func_bold=0
-let g:gruvbox_contrast_dark="hard"
-let g:lualine_theme="gruvbox"
-let g:gruvbox_italicize_strings=0
-let g:gruvbox_faded_strings=0
-color gruvbox
-let g:vim_transparent_enable=1
+"" ===
+"" === gruvbox
+"" ===
+"set background=dark
+"let g:gruvbox_bold=1
+"let g:gruvbox_func_bold=0
+"let g:gruvbox_contrast_dark="hard"
+"let g:lualine_theme="gruvbox"
+"let g:gruvbox_italicize_strings=0
+"let g:gruvbox_faded_strings=0
+"color gruvbox
+"let g:vim_transparent_enable=1
 
 "" ===
 "" === aquarium
@@ -197,15 +197,15 @@ let g:vim_transparent_enable=1
 "highlight _Label guifg=#DFA000
 
 
-"" ===
-"" === everforest_dark
-"" ===
-"let g:lualine_theme = "everforest"
-"let g:vim_transparent_enable = 1
-"let g:everforest_enable_italic = 0
-"set background=dark
-"let g:everforest_background = 'hard'
-"colorscheme everforest
+" ===
+" === everforest_dark
+" ===
+let g:lualine_theme = "everforest"
+let g:vim_transparent_enable = 1
+let g:everforest_enable_italic = 0
+set background=dark
+let g:everforest_background = 'hard'
+colorscheme everforest
 
 
 "" ===

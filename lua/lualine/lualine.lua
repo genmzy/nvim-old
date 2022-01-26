@@ -105,6 +105,14 @@ if ok then
 end
 -- }}} Theme gruvbox --
 
+-- Theme forest_night {{{ --
+local everforestNight = require('lualine.themes.everforest')
+for _, mode in pairs(everforestNight) do
+  mode.b.fg = '#dbbc7f'
+end
+everforestNight.insert.a.bg = '#7fbbb3'
+-- }}} Theme forest_night --
+
 
 -- Theme deus {{{ --
 if theme.name == "deus" then
@@ -342,7 +350,13 @@ else
     theme.modifyYellow = sonokaiColor.yellow
     theme.deleteRed = sonokaiColor.red
     theme.infoOrange = sonokaiColor.orange
-  elseif theme.name == "lightForest" then
+  elseif theme.name == "everforest" then  -- forest night
+    theme.theme = everforestNight
+    theme.addGreen = sonokaiColor.green
+    theme.modifyYellow = sonokaiColor.yellow
+    theme.deleteRed = sonokaiColor.red
+    theme.infoOrange = sonokaiColor.orange
+  elseif theme.name == "lightForest" then -- forest light
     theme.theme = lightForestTheme
     theme.addGreen = lightForestColor.aqua
     theme.modifyYellow = lightForestColor.yellow
