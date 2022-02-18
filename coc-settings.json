@@ -21,7 +21,7 @@
     "lua": {
       "enable": true,
       "cwd": "/home/waves/Workspace/lua/ls/lua-language-server",
-      "command": "/home/waves/Workspace/lua/ls/lua-language-server/bin/Linux/lua-language-server",
+      "command": "/home/waves/Workspace/lua/ls/lua-language-server/bin/lua-language-server",
       "args": [
         "-E",
         "-e",
