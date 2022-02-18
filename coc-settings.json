@@ -33,12 +33,14 @@
       // lua environment
       "settings": {
         "Lua": {
+          "format": {
+            "enable": true
+          },
           "telemetry": {
             "enable": true
           },
           "workspace": {
             "library": {
-              //"/path/to/hammerspoon-completion/build/stubs": true,
               "/usr/local/nvim-linux64/share/nvim/runtime/lua/": true
             },
             "maxPreload": 2000,
@@ -59,9 +61,6 @@
             ],
             "disable": ["lowercase-global"]
           }
-          //"completion": {
-            //"keywordSnippet": "Disable"
-          //}
         }
       }
     }
@@ -120,7 +119,6 @@
   "git.conflictedDecorator": "@",
   "git.stagedDecorator": "$",
   "git.untrackedDecorator": ">",
-  "coc.preferences.colorSupport": true,
   "highlight.colors.enable": true,
   "highlight.document.enable": true,
   "highlight.colorNames.enable": false,
@@ -145,10 +143,10 @@
   "coc.source.buffer.ignoreGitignore": true,
   "coc.source.buffer.firstMatch": true,
   "translator.engines": ["bing"],
-  "hover.floatConfig": {"border": true},
-  "suggest.floatConfig": {"border": true},
-  "diagnostic.floatConfig": {"border": true},
-  "signature.floatConfig": {"border": true},
+  "hover.floatConfig": { "border": true },
+  "suggest.floatConfig": { "border": true },
+  "diagnostic.floatConfig": { "border": true },
+  "signature.floatConfig": { "border": true },
   "suggest.completionItemKindLabels": {
     "keyword": "",
     "variable": "",
