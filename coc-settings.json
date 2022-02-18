@@ -33,9 +33,11 @@
       // lua environment
       "settings": {
         "Lua": {
+          "telemetry": {
+            "enable": true
+          },
           "workspace": {
             "library": {
-              //"/path/to/hammerspoon-completion/build/stubs": true,
               "/usr/local/nvim-linux64/share/nvim/runtime/lua/": true
             },
             "maxPreload": 2000,
