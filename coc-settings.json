@@ -33,6 +33,9 @@
       // lua environment
       "settings": {
         "Lua": {
+          "telemetry": {
+            "enable": true
+          },
           "workspace": {
             "library": {
               //"/path/to/hammerspoon-completion/build/stubs": true,
