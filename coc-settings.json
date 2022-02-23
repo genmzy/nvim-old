@@ -86,9 +86,6 @@
     "json"
   ],
   "prettier.statusItemText": " ",
-  "prettier.eslintIntegration": true,
-  "prettier.tslintIntegration": true,
-  "prettier.stylelintIntegration": true,
   // coc-go
   "go.goplsOptions": {
     "usePlaceholders": true,
@@ -142,7 +139,7 @@
   "coc.source.around.firstMatch": true,
   "coc.source.buffer.ignoreGitignore": true,
   "coc.source.buffer.firstMatch": true,
-  "translator.engines": ["bing"],
+  "translator.engines": ["youdao"],
   "hover.floatConfig": { "border": true },
   "suggest.floatConfig": { "border": true },
   "diagnostic.floatConfig": { "border": true },
