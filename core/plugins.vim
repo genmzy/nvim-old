@@ -70,6 +70,8 @@ Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'genmzy/vim-transparent'       " Transparent background
 Plug 'genmzy/vim-polyglot'          " Enhancing syntax color of a lot of filetypes
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'kamailio/vim-kamailio-syntax' " Kamilio/OpenSIPs syntax support
+Plug 'zchee/vim-goasm'              " syntax for go assembly
 
 " Extraordinary code completion plugin
 Plug 'neoclide/coc.nvim', {
@@ -101,9 +103,6 @@ Plug 'Shougo/defx.nvim', {
 \}
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
-
-" Kamilio/OpenSIPs syntax support
-Plug 'kamailio/vim-kamailio-syntax'
 
 
 call plug#end()
