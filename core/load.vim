@@ -45,4 +45,6 @@ source $root/plugconfig/gitgutter.vim
 
 source $root/plugconfig/vim_go.vim
 
+source $root/plugconfig/db.vim
+
 source $root/lua/luaload.vim
