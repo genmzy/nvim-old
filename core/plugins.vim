@@ -34,7 +34,7 @@ Plug 'itchyny/vim-cursorword'
 " Other useful utilities
 Plug 'godlygeek/tabular'           " type :Tabularize /= to align the =
 Plug 'gcmt/wildfire.vim'            " in Visual mode, type i' to select all text in '', or type i) i] i} ip
-Plug 'scrooloose/nerdcommenter'     " in <LEADER>cc to comment a line
+Plug 'scrooloose/nerdcommenter'     " in <leader>cc to comment a line
 Plug 'vimwiki/vimwiki'
 Plug 'rhysd/accelerated-jk'
 
@@ -103,6 +103,10 @@ Plug 'Shougo/defx.nvim', {
 \}
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
+
+" DB
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 
 
 call plug#end()
