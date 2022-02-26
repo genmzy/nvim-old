@@ -42,7 +42,9 @@ let g:coc_global_extensions = [
       \ 'coc-explorer',
       \ 'coc-go',
       \ 'coc-thrift-syntax-support',
-      \ 'coc-protobuf'
+      \ 'coc-protobuf',
+      \ 'coc-db',
+      \ 'coc-sql'
       \ ]
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
