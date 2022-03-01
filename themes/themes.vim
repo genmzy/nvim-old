@@ -186,14 +186,14 @@ endif
 " === everforest_light
 " ===
 let g:everforest_enable_italic = 0
-let g:vim_transparent_enable = 1
+let g:vim_transparent_enable = 0
 let g:lualine_theme="lightForest"
 set background=light
 let g:everforest_background = 'hard'
 colorscheme everforest
-let g:cursorword_highlight = 0
-highlight CursorWord0 guibg=#f7f2e0
-highlight CursorWord1 guibg=#f7f2e0
+" let g:cursorword_highlight = 0
+" highlight CursorWord0 guibg=#f7f2e0
+" highlight CursorWord1 guibg=#f7f2e0
 highlight _Label guifg=#DFA000
 
 
