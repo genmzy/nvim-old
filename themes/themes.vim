@@ -237,5 +237,3 @@ highlight _Label guifg=#DFA000
 "let g:tokyonight_italic_functions = 1
 "let g:lualine_theme='tokyonight'
 "colorscheme tokyonight
-
-hi CocErrorSign  ctermfg=Red guifg=#BF616A
