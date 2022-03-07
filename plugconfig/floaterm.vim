@@ -10,7 +10,7 @@ nnoremap <silent> <Leader>t :<C-u>FloatermToggle<CR>
 nnoremap <silent> <F9> :<C-u>FloatermNext<CR>
 nnoremap <silent> <F10> :<C-u>FloatermNew<CR>
 nnoremap <silent> <F12> :<C-u>FloatermPrev<CR>
-hi link FloatermBorder QuickFixLine
+hi link FloatermBorder Constant
 
 " ===
 " === lazygit
