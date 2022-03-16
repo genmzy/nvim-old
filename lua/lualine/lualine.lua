@@ -442,7 +442,9 @@ local configuration = {
       },
       {
         'filetype',
-        color = { fg = theme.infoOrange, bg = nil, gui = nil }
+        -- color = { fg = theme.infoOrange, bg = theme.theme.normal.a.bg, gui = nil },
+        -- icon = { color = { bg = configuration.sections.lualine_x.bg } },
+        icon_only = true
       }
     },
     lualine_y = { 'progress' },
