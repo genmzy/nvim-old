@@ -41,7 +41,6 @@ let g:coc_global_extensions = [
       \ 'coc-ci',
       \ 'coc-explorer',
       \ 'coc-go',
-      \ 'coc-thrift-syntax-support',
       \ 'coc-protobuf',
       \ 'coc-db',
       \ 'coc-sql'
