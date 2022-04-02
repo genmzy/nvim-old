@@ -16,6 +16,14 @@ else
 endif
 
 
+" ===
+" === aquarium
+" ===
+let g:vim_transparent_enable=1
+colorscheme aquarium
+let g:lualine_theme = 'aquarium'
+
+
 "" ===
 "" === deus
 "" ===
@@ -168,15 +176,15 @@ endif
 "let g:vim_transparent_enable=1
 
 
-" ===
-" === gruvbox_genmzy
-" ===
-let g:lualine_theme = "gruvbox"
-let g:vim_transparent_enable = 1
-let g:gruvbox_genmzy_enable_italic = 0
-set background=dark
-colorscheme gruvbox_genmzy
-let g:gruvbox_contrast_dark="hard"
+"" ===
+"" === gruvbox_genmzy
+"" ===
+"let g:lualine_theme = "gruvbox"
+"let g:vim_transparent_enable = 1
+"let g:gruvbox_genmzy_enable_italic = 0
+"set background=dark
+"colorscheme gruvbox_genmzy
+"let g:gruvbox_contrast_dark="hard"
 
 
 "" ===
@@ -251,5 +259,3 @@ let g:gruvbox_contrast_dark="hard"
 "let g:tokyonight_italic_functions = 1
 "let g:lualine_theme='tokyonight'
 "colorscheme tokyonight
-
-hi CocErrorSign  ctermfg=Red guifg=#BF616A
