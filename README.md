@@ -2,7 +2,9 @@
 
 - 💜 I wanna see you after COVID-19.
 
-![aquarium](https://github.com/genmzy/pictures/blob/master/genmzy.png)
+![dashboard](https://github.com/genmzy/pictures/blob/master/genmzy_pikachu.png)
+![genmzy](https://github.com/genmzy/pictures/blob/master/genmzy.png)
+![info](https://github.com/genmzy/pictures/blob/master/info.png)
 
 ## ColorScheme
 
@@ -115,6 +117,7 @@ endif
   "theme": "dark"
 }
 ```
+
 - Icon [picture](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
 
 - More themes, see [here](https://github.com/genmzy/nvim/blob/aquarium/themes.md)
