@@ -84,6 +84,17 @@ local lightForestColor = {
 }
 -- }}} Theme everforest_light --
 
+-- colors for aquarium {{{ --
+local aquarium_theme = {
+  green  = '#B1DBA4',
+  red    = '#EBB9B9',
+  yellow = '#E8CCA7',
+  purple = '#F6BBE7',
+  cyan   = '#B8DEEB',
+  blue   = '#CDDBF9'
+}
+-- }}} colors for aquarium --
+
 
 -- Theme gruvbox {{{ --
 local gruvboxColorfulTheme = require'lualine.themes.gruvbox'
@@ -368,6 +379,12 @@ else
     theme.modifyYellow = gruvboxColorfulTheme.normal.a.bg
     theme.deleteRed = gruvboxColorfulTheme.replace.a.bg
     theme.infoOrange = gruvboxColorfulTheme.visual.a.bg
+  elseif theme.name == "aquarium" then
+    theme.theme = theme.name
+    theme.addGreen = aquarium_theme.green
+    theme.modifyYellow = aquarium_theme.yellow
+    theme.deleteRed = aquarium_theme.red
+    theme.infoOrange = aquarium_theme.cyan
   else
     theme.theme = theme.name
     theme.addGreen = sonokaiColor.green
