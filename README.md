@@ -5,10 +5,12 @@
 ![dashboard](https://github.com/genmzy/pictures/blob/master/genmzy_pikachu.png)
 ![genmzy](https://github.com/genmzy/pictures/blob/master/genmzy_complete.png)
 ![info](https://github.com/genmzy/pictures/blob/master/genmzy_info.png)
+![git](https://github.com/genmzy/pictures/blob/master/genmzy_git.png)
 
 ## ColorScheme
 
-- [aquarium-vim](https://github.com/genmzy/aquarium-vim): a fork version from [original](https://github.com/FrenzyExists/aquarium-vim) with background transparent plugin: [vim-transparent](https://github.com/genmzy/vim-transparent) forked from [original](https://github.com/tribela/vim-transparent)
+- [aquarium-vim](https://github.com/genmzy/aquarium-vim): a fork version from [original](https://github.com/FrenzyExists/aquarium-vim)
+- transparent background: a plugin [vim-transparent](https://github.com/genmzy/vim-transparent) fork version from [original](https://github.com/tribela/vim-transparent)
 - background picture, a [pokemon picture](https://github.com/genmzy/pictures/blob/master/448.jpg) from [pokemon-terminal](https://github.com/LazoCoder/Pokemon-Terminal)
 
 ## Installation
