@@ -117,4 +117,4 @@ endif
 ```
 - icon picture in [here](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
 
-- more themes, see [here](https://github.com/genmzy/nvim/theme.md)
+- more themes, see [here](https://github.com/genmzy/nvim/blob/aquarium/themes.md)
