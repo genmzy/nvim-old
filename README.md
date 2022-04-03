@@ -2,7 +2,7 @@
 
 - 💜 I wanna see you after COVID-19.
 
-[aquarium](https://github.com/genmzy/pictures/blob/master/genmzy.png)
+![aquarium](https://github.com/genmzy/pictures/blob/master/genmzy.png)
 
 ## ColorScheme
 
@@ -116,3 +116,5 @@ endif
 }
 ```
 - icon picture in [here](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
+
+- more themes, see [here](https://github.com/genmzy/nvim/theme.md)
