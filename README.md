@@ -7,7 +7,7 @@
 ## ColorScheme
 
 - [aquarium-vim](https://github.com/genmzy/aquarium-vim): a fork version from [original](https://github.com/FrenzyExists/aquarium-vim) with background transparent plugin: [vim-transparent](https://github.com/genmzy/vim-transparent) forked from [original](https://github.com/tribela/vim-transparent)
-- background picture, a [pokemon picture](https://github.com/genmzy/pictures/blob/master/448.jpg) from [pokemon-terinal](https://github.com/LazoCoder/Pokemon-Terminal)
+- background picture, a [pokemon picture](https://github.com/genmzy/pictures/blob/master/448.jpg) from [pokemon-terminal](https://github.com/LazoCoder/Pokemon-Terminal)
 
 ## Installation
 
@@ -31,7 +31,7 @@
 
 ## More
 
-- With [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal) (please use version: v1.10.2383.0, [link](https://github.com/microsoft/terminal/releases/download/v1.10.2383.0/Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle_Windows10_PreinstallKit.zip))
+- With [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal) (please use version: [v1.10.2383.0](https://github.com/microsoft/terminal/releases/download/v1.10.2383.0/Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle_Windows10_PreinstallKit.zip))
 - For WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), win11 [issue](https://github.com/equalsraf/win32yank/issues/9#issue-463019718), use `/mnt/c/Windows/System32/clip.exe` instead copy in win32yank, works okay so far. Configuration is:
 ```vim
 if executable("clip.exe") && executable("win32yank.exe")
@@ -51,7 +51,7 @@ if executable("clip.exe") && executable("win32yank.exe")
 endif
 ```
 
-- font: `LigaSrcPro NF`:[link here](https://github.com/Bo-Fone/Liga-Sauce-Code-Pro-Nerd-Font)
+- Font :[LigaSrcPro NF](https://github.com/Bo-Fone/Liga-Sauce-Code-Pro-Nerd-Font)
 
 - Partial configurations in WindowsTerminal:
 ```json
@@ -115,6 +115,8 @@ endif
   "theme": "dark"
 }
 ```
-- icon picture in [here](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
+- Icon [picture](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
 
-- more themes, see [here](https://github.com/genmzy/nvim/blob/aquarium/themes.md)
+- More themes, see [here](https://github.com/genmzy/nvim/blob/aquarium/themes.md)
+
+- ZSH configurations and Oh-My-Zsh configurations, see: [file](https://github.com/genmzy/dotfiles/blob/master/.zshrc)
