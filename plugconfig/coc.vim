@@ -129,9 +129,6 @@ command! -nargs=? Fold   :call CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR     :call CocAction('runCommand', 'editor.action.organizeImport')
 
-"xmap <silent> <leader>k :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-"nmap <silent> <leader>k :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
 nmap <silent> <leader>j <Plug>(coc-range-select)
