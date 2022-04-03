@@ -12,7 +12,6 @@ local aquarium_theme = {
 -- }}} colors for aquarium --
 
 
-
 -- Configuration table {{{ --
 local configuration = {
   -- Options {{{ --

@@ -3,8 +3,8 @@
 - 💜 I wanna see you after COVID-19.
 
 ![dashboard](https://github.com/genmzy/pictures/blob/master/genmzy_pikachu.png)
-![genmzy](https://github.com/genmzy/pictures/blob/master/genmzy.png)
-![info](https://github.com/genmzy/pictures/blob/master/info.png)
+![genmzy](https://github.com/genmzy/pictures/blob/master/genmzy_complete.png)
+![info](https://github.com/genmzy/pictures/blob/master/genmzy_info.png)
 
 ## ColorScheme
 
