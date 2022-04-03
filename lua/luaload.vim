@@ -2,4 +2,4 @@
 " === lua settings load
 " ===
 
-luafile $root/lua/lualine/lualine.lua
+luafile $root/lua/galaxyline/galaxyline.lua

@@ -42,8 +42,13 @@ set nocompatible
 set encoding=utf-8
 set hidden
 set list
-"set listchars=tab:¦\ ,trail:→,eol:↵,space:·
 set listchars=tab:¦\ ,trail:→,eol:↵
+
+" Gui Cursor!
+:set guicursor=n-v-c:underline,i-ci-ve:ver25,r-cr:hor20,o:hor50
+            \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+            \,sm:block-blinkwait175-blinkoff150-blinkon175
+
 
 " For WSL yank and paste support, see: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
 if executable("clip.exe") && executable("win32yank.exe")
@@ -63,7 +68,6 @@ if executable("clip.exe") && executable("win32yank.exe")
 endif
 
 set termguicolors
-"set mouse=a
 set foldmethod=marker
 
 
