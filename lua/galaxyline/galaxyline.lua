@@ -1,23 +1,52 @@
 -- ===
 -- === galaxyline
 -- ===
+local api = vim.api
 
 local gl = require("galaxyline")
 local gls = gl.section
 
-gl.short_line_list = { " " }
+gl.short_line_list = {
+    'LuaTree',
+    'vista',
+    'dbui',
+    'defx',
+    'coc-explorer',
+    'nerdtree',
+    'denite',
+    'vim-plug',
+    'vista',
+    'vista_kind',
+    'magit',
+    'NvimTree'
+}
+
+local buf_icon = {
+  help             = ' ',
+  defx             = ' ',
+  ['coc-explorer'] = ' ',
+  nerdtree         = ' ',
+  denite           = ' ',
+  ['vim-plug']     = ' ',
+  vista            = ' ',
+  vista_kind       = ' ',
+  dbui             = ' ',
+  magit            = ' ',
+  NvimTree         = ' ',
+}
+
 
 local colors = {
-    bg = "#1b1b23",
-    fg = "#abb2bf",
-    green = "#8fc587",
-    red = "#ebb9b9",
-    lightbg = "#2c2e3e",
+    bg       = "#1b1b23",
+    fg       = "#abb2bf",
+    green    = "#8fc587",
+    red      = "#ebb9b9",
+    lightbg  = "#2c2e3e",
     lightbg2 = "#3b3b4d",
-    blue = "#cddbf9",
-    yellow = "#ffcf85",
-    grey = "#8791a3",
-    magenta = "#bf83b5"
+    blue     = "#cddbf9",
+    yellow   = "#ffcf85",
+    grey     = "#8791a3",
+    magenta  = "#bf83b5"
 }
 
 
@@ -27,6 +56,62 @@ local buffer_not_empty = function()
     end
     return false
 end
+
+
+local checkwidth = function()
+    local squeeze_width = vim.fn.winwidth(0) / 2
+    if squeeze_width > 30 then
+        return true
+    end
+    return false
+end
+
+
+gls.short_line_left[1] = {
+    inactive_left_start = {
+        provider = function()
+            return "  "
+        end,
+        highlight = { colors.lightbg2, colors.bg }
+    }
+}
+
+
+gls.short_line_left[2] = {
+    relative_path = {
+        provider = function()
+            return vim.fn.expand('%:~:.')
+        end,
+        highlight = { colors.fg, colors.lightbg2 }
+    }
+}
+
+gls.short_line_left[3] = {
+    inactive_left_end = {
+        provider = function()
+            return "  "
+        end,
+        highlight = { colors.lightbg2, colors.bg }
+    }
+}
+
+gls.short_line_right[1] = {
+    inactive_right_start = {
+        separator = "",
+        separator_highlight = { colors.lightbg2, colors.bg },
+        provider = function()
+            local special = buf_icon[vim.bo.filetype]
+            if special then
+                return special .. api.nvim_get_current_buf()
+            else
+                return "   " .. api.nvim_get_current_buf()
+            end
+        end,
+        highlight = { colors.fg, colors.lightbg2 }
+    }
+}
+
+gls.short_line_right[2] = gls.short_line_left[3]
 
 
 gls.left[1] = {
@@ -39,7 +124,6 @@ gls.left[1] = {
         separator_highlight = { colors.blue, colors.bg }
     }
 }
-
 
 gls.left[2] = {
     statusIcon = {
@@ -81,14 +165,6 @@ gls.left[5] = {
         separator_highlight = { colors.lightbg2, colors.bg }
     }
 }
-
-local checkwidth = function()
-    local squeeze_width = vim.fn.winwidth(0) / 2
-    if squeeze_width > 30 then
-        return true
-    end
-    return false
-end
 
 gls.left[6] = {
     DiffAdd = {
