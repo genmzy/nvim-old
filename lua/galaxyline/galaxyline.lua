@@ -1,10 +1,14 @@
 -- ===
 -- === galaxyline
 -- ===
-local api = vim.api
 
+local api = vim.api
 local gl = require("galaxyline")
 local gls = gl.section
+
+
+require("utils")
+
 
 gl.short_line_list = {
     'LuaTree',
@@ -19,20 +23,6 @@ gl.short_line_list = {
     'vista_kind',
     'magit',
     'NvimTree'
-}
-
-local buf_icon = {
-  help             = ' ',
-  defx             = ' ',
-  ['coc-explorer'] = ' ',
-  nerdtree         = ' ',
-  denite           = ' ',
-  ['vim-plug']     = ' ',
-  vista            = ' ',
-  vista_kind       = ' ',
-  dbui             = ' ',
-  magit            = ' ',
-  NvimTree         = ' ',
 }
 
 
@@ -65,6 +55,33 @@ local checkwidth = function()
     end
     return false
 end
+
+
+--|  performance issue: git worksapce checking for windows directory |--
+local wsl2windows = function()
+    local rltv_path = vim.fn.expand('%:~:.') -- relative path
+    if string.has_prefix(rltv_path, "/mnt/c/") or
+        string.has_prefix(rltv_path, "/mnt/d/") or
+        string.has_prefix(rltv_path, "/mnt/e/") then
+        return false
+    end
+    return require("galaxyline.condition").check_git_workspace()
+end
+
+
+local buf_icon = {
+  help             = ' ',
+  defx             = ' ',
+  ['coc-explorer'] = ' ',
+  nerdtree         = ' ',
+  denite           = ' ',
+  ['vim-plug']     = ' ',
+  vista            = ' ',
+  vista_kind       = ' ',
+  dbui             = ' ',
+  magit            = ' ',
+  NvimTree         = ' ',
+}
 
 
 gls.short_line_left[1] = {
@@ -104,10 +121,10 @@ gls.short_line_right[1] = {
             if special then
                 return special .. api.nvim_get_current_buf()
             else
-                return "   " .. api.nvim_get_current_buf()
+                return "  " .. api.nvim_get_current_buf()
             end
         end,
-        highlight = { colors.fg, colors.lightbg2 }
+        highlight = { colors.fg, colors.lightbg2, 'italicbold' }
     }
 }
 
@@ -230,7 +247,6 @@ gls.right[1] = {
         provider = function()
             return "   "
         end,
-        condition = require("galaxyline.provider_vcs").check_git_workspace,
         highlight = { colors.grey, colors.lightbg },
         separator = "",
         separator_highlight = { colors.lightbg, colors.bg }
@@ -240,7 +256,7 @@ gls.right[1] = {
 gls.right[2] = {
     GitBranch = {
         provider = "GitBranch",
-        condition = require("galaxyline.provider_vcs").check_git_workspace,
+        condition = wsl2windows,
         highlight = { colors.grey, colors.lightbg }
     }
 }
@@ -257,19 +273,29 @@ gls.right[3] = {
 }
 
 gls.right[4] = {
-  ViMode = {
-    provider = function()
-        local alias = { n = '  Normal ', i = '  Insert ', c = '  Command ', v = '  Visual ', V = '  Visual Line ', [''] = '  Visual Block ' }
-        return alias[vim.fn.mode()]
-    end,
-    separator_highlight = { colors.blue, function()
-                                if not buffer_not_empty() then
-                                    return colors.blue
-                                end
-                                return colors.yellow
-                            end },
-    highlight = { colors.red, colors.lightbg, 'italicbold' },
-  },
+    ViMode = {
+        provider = function()
+            local alias = {
+                n = '  Normal ',
+                i = '  Insert ',
+                c = '  Command ',
+                v = '  Visual ',
+                V = '  Visual Line ',
+                [''] = '  Visual Block '
+            }
+            return alias[vim.fn.mode()]
+        end,
+        separator_highlight = {
+            colors.blue,
+            function()
+                if not buffer_not_empty() then
+                    return colors.blue
+                end
+                return colors.yellow
+            end
+        },
+        highlight = { colors.red, colors.lightbg, 'italicbold' },
+    },
 }
 
 gls.right[5] = {
