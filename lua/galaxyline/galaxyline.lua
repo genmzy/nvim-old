@@ -57,8 +57,8 @@ local checkwidth = function()
 end
 
 
---|  performance issue: git worksapce checking for windows directory |--
-local wsl2windows = function()
+--|  performance issue: git worksapce checking for windows directory from wsl2 |--
+local should_and_do_check_git = function()
     local rltv_path = vim.fn.expand('%:~:.') -- relative path
     if string.has_prefix(rltv_path, "/mnt/c/") or
         string.has_prefix(rltv_path, "/mnt/d/") or
@@ -256,7 +256,7 @@ gls.right[1] = {
 gls.right[2] = {
     GitBranch = {
         provider = "GitBranch",
-        condition = wsl2windows,
+        condition = should_and_do_check_git,
         highlight = { colors.grey, colors.lightbg }
     }
 }
