@@ -45,7 +45,7 @@ set list
 set listchars=tab:¦\ ,trail:→,eol:↵
 
 " Gui Cursor!
-:set guicursor=n-v-c:underline,i-ci-ve:ver25,r-cr:hor20,o:hor50
+set guicursor=n-v-c:underline,i-ci-ve:ver40,r-cr:hor20,o:hor50
             \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
             \,sm:block-blinkwait175-blinkoff150-blinkon175
 

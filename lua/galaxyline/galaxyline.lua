@@ -281,7 +281,8 @@ gls.right[4] = {
                 c = '  Command ',
                 v = '  Visual ',
                 V = '  Visual Line ',
-                [''] = '  Visual Block '
+                [''] = '  Visual Block ',
+                s = '  Select '
             }
             return alias[vim.fn.mode()]
         end,
