@@ -245,7 +245,7 @@ gls.left[12] = {
 gls.right[1] = {
     GitIcon = {
         provider = function()
-            return "   "
+            return "   "
         end,
         highlight = { colors.grey, colors.lightbg },
         separator = "",
