@@ -32,6 +32,7 @@ local colors = {
     green    = "#8fc587",
     red      = "#ebb9b9",
     lightbg  = "#2c2e3e",
+    lightbg1 = "#63718B",
     lightbg2 = "#3b3b4d",
     blue     = "#cddbf9",
     yellow   = "#ffcf85",
@@ -69,6 +70,17 @@ local should_and_do_check_git = function()
 end
 
 
+local coc_status = function ()
+    local return_val = vim['g']['coc_status']
+    if return_val == nil then
+        return ''
+    end
+    local ok
+    ok, return_val = pcall(tostring, return_val)
+    return ok and return_val or ''
+end
+
+
 local buf_icon = {
   help             = ' ',
   defx             = ' ',
@@ -92,7 +104,6 @@ gls.short_line_left[1] = {
         highlight = { colors.lightbg2, colors.bg }
     }
 }
-
 
 gls.short_line_left[2] = {
     relative_path = {
@@ -239,6 +250,13 @@ gls.left[12] = {
         provider = "DiagnosticHint",
         icon = "   ",
         highlight = { colors.green, colors.bg }
+    }
+}
+
+gls.left[13] = {
+    coc_status = {
+        provider = coc_status,
+        highlight = { colors.lightbg1 , colors.bg }
     }
 }
 
