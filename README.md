@@ -55,7 +55,8 @@ if executable("clip.exe") && executable("win32yank.exe")
 endif
 ```
 
-- Font :[LigaSrcPro NF](https://github.com/Bo-Fone/Liga-Sauce-Code-Pro-Nerd-Font)
+- ~~Font :[LigaSrcPro NF](https://github.com/Bo-Fone/Liga-Sauce-Code-Pro-Nerd-Font)~~
+- Font: [CursorPrimeSans NF](https://github.com/genmzy/dotfiles/blob/master/Backup/CourierPrimeSansNF), a [nerd-font](https://github.com/ryanoasis/nerd-fonts) version of [CourierPrimeSans](https://github.com/quoteunquoteapps/CourierPrimeSans) font, but this font is not ligatured, so ...
 
 - Partial configurations in WindowsTerminal:
 ```json
