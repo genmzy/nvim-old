@@ -121,7 +121,7 @@ gls.short_line_right[1] = {
             if special then
                 return special .. api.nvim_get_current_buf()
             else
-                return "  " .. api.nvim_get_current_buf()
+                return "  " .. api.nvim_get_current_buf()
             end
         end,
         highlight = { colors.fg, colors.lightbg2, 'italicbold' }
