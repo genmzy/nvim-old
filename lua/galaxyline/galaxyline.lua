@@ -75,9 +75,7 @@ local coc_status = function ()
     if return_val == nil then
         return ''
     end
-    local ok
-    ok, return_val = pcall(tostring, return_val)
-    return ok and return_val or ''
+    return return_val
 end
 
 
