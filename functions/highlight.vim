@@ -14,7 +14,7 @@ function! HighLightOperator()
   syntax match _Identifier "[{}]"
   syntax match _Label "[()]"
 
-  hi def link _Bracket Constant
+  hi def link _Bracket Conditional
   hi def link _Operator Operator
   hi def link _Identifier Identifier
   hi def link _Label Label
