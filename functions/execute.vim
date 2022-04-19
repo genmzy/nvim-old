@@ -2,9 +2,9 @@
 " === Compile And Run fuction
 " ===
 
-map <leader>\ :call RunSigleFile()<CR>
+map <leader>\ :call RunSingleFile()<CR>
 
-func! RunSigleFile()
+func! RunSingleFile()
   exec "w"
   let file_name_no_tail = expand('%:t:r')
   let file_name = expand('%:p')
