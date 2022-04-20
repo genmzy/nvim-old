@@ -187,7 +187,7 @@ endif
 " ===
 " === everforest_light
 " ===
-let g:everforest_enable_italic = 0
+let g:everforest_enable_italic = 1
 let g:vim_transparent_enable = 1
 let g:lualine_theme="lightForest"
 set background=light
