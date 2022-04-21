@@ -3,7 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 
 " Status line
-Plug 'hoob3rt/lualine.nvim'
+Plug 'glepnir/galaxyline.nvim' , { 'branch': 'main' }
+
 " If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
