@@ -298,7 +298,8 @@ gls.right[4] = {
                 v = '  Visual ',
                 V = '  Visual Line ',
                 [''] = '  Visual Block ',
-                s = '  Select '
+                s = '  Select ',
+                R = '  Replace '
             }
             return alias[vim.fn.mode()]
         end,
