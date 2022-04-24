@@ -75,7 +75,7 @@ local coc_status = function ()
     if return_val == nil then
         return ''
     end
-    return return_val
+    return " " .. return_val
 end
 
 
