@@ -55,7 +55,7 @@ inoremap <silent><expr> <Tab>
             \ pumvisible() ? "\<C-n>" :
             \ <SID>check_back_space() ? "\<Tab>" :
             \ coc#refresh()
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> to trigger the full snippets complete(including '()' and arguments)
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
@@ -99,7 +99,14 @@ omap ac <Plug>(coc-classobj-a)
 
 " coc-highlight
 " autocmd CursorHold * silent call CocActionAsync('highlight')
-au CursorHoldI * sil call CocActionAsync('showSignatureHelp')
+augroup sigHelp
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
 call coc#add_command('vista', ':Vista!!')
 call coc#add_command('table', ':TableModeToggle')
 
@@ -130,28 +137,13 @@ xmap <silent> <leader>j <Plug>(coc-range-select)
 nmap sm <Plug>(coc-translator-p)
 vmap sm <Plug>(coc-translator-pv)
 
-" solve the huge file read problem
-let g:trigger_size = 0.5 * 1048576
-augroup hugefile
-  autocmd!
-  autocmd BufReadPre *
-        \ let size = getfsize(expand('<afile>')) |
-        \ if (size > g:trigger_size) || (size == -2) |
-        \   echohl WarningMsg | echomsg 'WARNING: altering options for this huge file!' | echohl None |
-        \   exec 'CocDisable' |
-        \ else |
-        \   exec 'CocEnable' |
-        \ endif |
-        \ unlet size
-augroup END
-
 " Remap <C-j> and <C-k> for scroll float windows/popups for insert mode
 " (only use for documention)
-"
-" NOTE: I do not need normal version because I use `<leader>r` to show the
-" document and scroll it by `sw` to switch to float window, and normal jk to
-" scroll
 if has('nvim-0.4.0') || has('patch-8.2.0750')
-  inoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<C-j>"
-  inoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<C-k>"
+  nnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
+  nnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
+  inoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
+  vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
 endif
