@@ -87,6 +87,7 @@
   ],
   "prettier.statusItemText": " ",
   // coc-go
+  "go.checkForUpdates": "disabled",
   "go.goplsOptions": {
     "usePlaceholders": true,
     "analyses": {
@@ -144,9 +145,7 @@
   "coc.source.around.shortcut": "ﮜ",
   "coc.source.buffer.shortcut": "",
   "coc.source.issues.shortcut": "",
-  "coc.source.around.firstMatch": true,
   "coc.source.buffer.ignoreGitignore": true,
-  "coc.source.buffer.firstMatch": true,
   "translator.engines": ["youdao"],
   "hover.floatConfig": { "border": true },
   "suggest.floatConfig": { "border": true },
