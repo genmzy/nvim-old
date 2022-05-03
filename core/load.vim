@@ -47,4 +47,6 @@ source $root/plugconfig/vim_go.vim
 
 source $root/plugconfig/db.vim
 
+source $root/plugconfig/wiki.vim
+
 source $root/lua/luaload.vim
