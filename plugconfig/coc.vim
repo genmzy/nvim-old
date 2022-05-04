@@ -149,16 +149,13 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 
 " solve the huge file read problem
-let g:trigger_size = 0.5 * 1048576
+let g:huge_file_trigger_size = 0.5 * 1048576
 augroup hugefile
   autocmd!
   autocmd BufReadPre *
         \ let size = getfsize(expand('%:p')) |
-        \ if (size > g:trigger_size) || (size == -2) |
-        \   echohl WarningMsg | echomsg 'WARNING: altering options for this huge file!' | echohl None |
-        \   exec 'CocDisable' |
-        \ else |
-        \   exec 'CocEnable' |
+        \ if (size > g:huge_file_trigger_size) || (size == -2) |
+        \   let b:coc_enabled = 0 |
         \ endif |
         \ unlet size
 augroup END
