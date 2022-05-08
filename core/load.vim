@@ -28,6 +28,10 @@ source $root/plugconfig/fzf.vim
 
 source $root/plugconfig/defx.vim
 
+if filereadable($HOME."/.genmzy.vim")
+  source $HOME/.genmzy.vim
+endif
+
 " load project vim configuration.
 if filereadable("./genmzy.vim")
   source ./genmzy.vim

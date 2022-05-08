@@ -27,7 +27,7 @@ gl.short_line_list = {
 
 
 local colors = {
-    bg           = "#fff9e8",
+    bg           = (api.nvim_eval('exists("g:genmzy_transparent")') == 1 and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
     fg           = "#5c6a72",
     green        = "#35a77c",
     red          = "#f85552",
@@ -156,7 +156,7 @@ gls.left[2] = {
         provider = function()
             return "  "
         end,
-        highlight = { colors.bg, colors.blue },
+        highlight = { colors.lightbg, colors.blue },
         separator = "  ",
         separator_highlight = { colors.blue, colors.lightbg }
     }
@@ -282,7 +282,7 @@ gls.right[3] = {
         provider = function()
             return "  "
         end,
-        highlight = { colors.bg, colors.red },
+        highlight = { colors.lightbg, colors.red },
         separator = " ",
         separator_highlight = { colors.red, colors.lightbg }
     }
