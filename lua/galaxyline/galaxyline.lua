@@ -22,7 +22,9 @@ gl.short_line_list = {
     'vista',
     'vista_kind',
     'magit',
-    'NvimTree'
+    'NvimTree',
+    'VimspectorPrompt',
+    '',
 }
 
 

@@ -53,4 +53,6 @@ source $root/plugconfig/db.vim
 
 source $root/plugconfig/wiki.vim
 
+source $root/plugconfig/vimspector.vim
+
 source $root/lua/luaload.vim
