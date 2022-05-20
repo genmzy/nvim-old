@@ -152,7 +152,7 @@ endif
 let g:huge_file_trigger_size = 0.5 * 1048576
 augroup hugefile
   autocmd!
-  autocmd BufReadPre *
+  autocmd BufNew,BufEnter,BufRead,BufNewFile,BufReadPre *
         \ let size = getfsize(expand('%:p')) |
         \ if (size > g:huge_file_trigger_size) || (size == -2) |
         \   let b:coc_enabled = 0 |
@@ -160,3 +160,12 @@ augroup hugefile
         \ unlet size
 augroup END
 
+" avoid coc-highlight frequently refreshing for file://_vimspector_log_Vimspector
+" which will cause high CPU occupy
+augroup vimspectorlog
+  autocmd!
+  autocmd BufNew,BufEnter,BufRead,BufNewFile *
+        \ if match(expand('%:r'), 'vimspector') >= 0 |
+        \   let b:coc_enabled = 0 |
+        \ endif |
+augroup END
