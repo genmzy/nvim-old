@@ -165,7 +165,7 @@ augroup END
 augroup vimspectorlog
   autocmd!
   autocmd BufNew,BufEnter,BufRead,BufNewFile *
-        \ if match(expand('%:r'), 'vimspector') >= 0 |
+        \ if match(expand('%:r'), 'vimspector') >= 0 && &filetype != 'json' && &filetype != 'vim' |
         \   let b:coc_enabled = 0 |
         \ endif |
 augroup END
