@@ -22,7 +22,9 @@ gl.short_line_list = {
     'vista',
     'vista_kind',
     'magit',
-    'NvimTree'
+    'NvimTree',
+    'VimspectorPrompt',
+    '',
 }
 
 
@@ -75,7 +77,7 @@ local coc_status = function ()
     if return_val == nil then
         return ''
     end
-    return return_val
+    return " " .. return_val
 end
 
 

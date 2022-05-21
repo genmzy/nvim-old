@@ -28,6 +28,10 @@ source $root/plugconfig/fzf.vim
 
 source $root/plugconfig/defx.vim
 
+if filereadable($HOME."/.genmzy.vim")
+  source $HOME/.genmzy.vim
+endif
+
 " load project vim configuration.
 if filereadable("./genmzy.vim")
   source ./genmzy.vim
@@ -46,5 +50,9 @@ source $root/plugconfig/gitgutter.vim
 source $root/plugconfig/vim_go.vim
 
 source $root/plugconfig/db.vim
+
+source $root/plugconfig/wiki.vim
+
+source $root/plugconfig/vimspector.vim
 
 source $root/lua/luaload.vim

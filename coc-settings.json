@@ -87,6 +87,7 @@
   ],
   "prettier.statusItemText": " ",
   // coc-go
+  "go.checkForUpdates": "disabled",
   "go.goplsOptions": {
     "usePlaceholders": true,
     "analyses": {

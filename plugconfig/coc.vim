@@ -147,3 +147,25 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
   vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
 endif
+
+" solve the huge file read problem
+let g:huge_file_trigger_size = 0.5 * 1048576
+augroup hugefile
+  autocmd!
+  autocmd BufNew,BufEnter,BufRead,BufNewFile,BufReadPre *
+        \ let size = getfsize(expand('%:p')) |
+        \ if (size > g:huge_file_trigger_size) || (size == -2) |
+        \   let b:coc_enabled = 0 |
+        \ endif |
+        \ unlet size
+augroup END
+
+" avoid coc-highlight frequently refreshing for file://_vimspector_log_Vimspector
+" which will cause high CPU occupy
+augroup vimspectorlog
+  autocmd!
+  autocmd BufNew,BufEnter,BufRead,BufNewFile *
+        \ if match(expand('%:r'), 'vimspector') >= 0 && &filetype != 'json' && &filetype != 'vim' |
+        \   let b:coc_enabled = 0 |
+        \ endif |
+augroup END
