@@ -9,8 +9,8 @@
 
 ## ColorScheme
 
-- [aquarium-vim](https://github.com/genmzy/aquarium-vim): a fork version from [original](https://github.com/FrenzyExists/aquarium-vim)
-- transparent background: a plugin [vim-transparent](https://github.com/genmzy/vim-transparent) fork version from [original](https://github.com/tribela/vim-transparent)
+- [aquarium-vim](https://github.com/genmzy/aquarium-vim): a forked version from [original](https://github.com/FrenzyExists/aquarium-vim)
+- transparent background: a plugin [vim-transparent](https://github.com/genmzy/vim-transparent) forked version from [original](https://github.com/tribela/vim-transparent)
 - background picture, a [pokemon picture](https://github.com/genmzy/pictures/blob/master/448.jpg) from [pokemon-terminal](https://github.com/LazoCoder/Pokemon-Terminal)
 
 ## Installation
