@@ -29,17 +29,18 @@ gl.short_line_list = {
 
 
 local colors = {
-    bg           = (api.nvim_eval('exists("g:genmzy_transparent")') == 1 and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
-    fg           = "#5c6a72",
-    green        = "#35a77c",
-    red          = "#f85552",
-    lightbg      = "#f0eed9",
-    lightbg1     = "#e9e8d2",
-    lightbg2     = "#e1ddcb",
-    blue         = "#41A8B0",
-    yellow       = "#dfa000",
-    grey         = "#a0a79a",
-    magenta      = "#d67ba7"
+    bg       = (api.nvim_eval('exists("g:genmzy_transparent")') == 1
+        and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
+    fg       = "#5c6a72",
+    green    = "#35a77c",
+    red      = "#f85552",
+    lightbg  = "#f0eed9",
+    lightbg1 = "#e9e8d2",
+    lightbg2 = "#e1ddcb",
+    blue     = "#41A8B0",
+    yellow   = "#dfa000",
+    grey     = "#a0a79a",
+    magenta  = "#d67ba7"
 }
 
 
@@ -72,7 +73,7 @@ local should_and_do_check_git = function()
 end
 
 
-local coc_status = function ()
+local coc_status = function()
     local return_val = vim['g']['coc_status']
     if return_val == nil then
         return ''
@@ -82,17 +83,17 @@ end
 
 
 local buf_icon = {
-  help             = ' ',
-  defx             = ' ',
-  ['coc-explorer'] = ' ',
-  nerdtree         = ' ',
-  denite           = ' ',
-  ['vim-plug']     = ' ',
-  vista            = ' ',
-  vista_kind       = ' ',
-  dbui             = ' ',
-  magit            = ' ',
-  NvimTree         = ' ',
+    help             = ' ',
+    defx             = ' ',
+    ['coc-explorer'] = ' ',
+    nerdtree         = ' ',
+    denite           = ' ',
+    ['vim-plug']     = ' ',
+    vista            = ' ',
+    vista_kind       = ' ',
+    dbui             = ' ',
+    magit            = ' ',
+    NvimTree         = ' ',
 }
 
 
@@ -256,7 +257,7 @@ gls.left[12] = {
 gls.left[13] = {
     coc_status = {
         provider = coc_status,
-        highlight = { colors.grey , colors.bg }
+        highlight = { colors.grey, colors.bg }
     }
 }
 

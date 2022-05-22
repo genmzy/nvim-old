@@ -37,7 +37,6 @@ augroup defxsettings
       \ defx#is_directory()
         \ ? defx#do_action('open_or_close_tree')
         \ : defx#do_action('drop')
-    "nnoremap <buffer><silent><expr> j defx#do_action('close_tree')
     nnoremap <buffer><silent><expr> h defx#do_action('close_tree')
     nnoremap <buffer><silent><expr> L defx#do_action('cd', defx#get_candidate().action__path)
     nnoremap <buffer><silent><expr> u defx#do_action('cd', ['..'])

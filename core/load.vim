@@ -6,10 +6,6 @@ source $root/core/variables.vim
 
 source $root/mappings/mappings.vim
 
-source $root/functions/highlight.vim
-
-source $root/functions/features.vim
-
 source $root/core/plugins.vim
 
 source $root/plugconfig/dashboard.vim
@@ -43,11 +39,7 @@ source $root/plugconfig/floaterm.vim
 
 source $root/plugconfig/wildfire.vim
 
-source $root/plugconfig/cxx-highlight.vim
-
 source $root/plugconfig/gitgutter.vim
-
-source $root/plugconfig/vim_go.vim
 
 source $root/plugconfig/db.vim
 
