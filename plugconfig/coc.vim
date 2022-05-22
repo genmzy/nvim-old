@@ -8,6 +8,7 @@ inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
 let g:snips_author = 'genmzy'
+"let g:coc-semantic-highlights=1
 autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = [
       \"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
 \]
@@ -43,7 +44,9 @@ let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-protobuf',
       \ 'coc-db',
-      \ 'coc-sql'
+      \ 'coc-sql',
+      \ 'coc-clangd',
+      \ 'coc-sumneko-lua'
       \ ]
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
@@ -149,7 +152,7 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 
 " solve the huge file read problem
-let g:huge_file_trigger_size = 0.5 * 1048576
+let g:huge_file_trigger_size = 1048576
 augroup hugefile
   autocmd!
   autocmd BufNew,BufEnter,BufRead,BufNewFile,BufReadPre *

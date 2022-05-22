@@ -1,70 +1,7 @@
 {
-  // no language client
-  "languageserver": {
-    // clang
-    "ccls": {
-      "enable": true,
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [".ccls", ".ccls-root", ".vim/", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        },
-        "client": {
-          "snippetSupport": true
-        },
-        "highlight": { "lsRanges": true }
-      }
-    },
-    // lua
-    "lua": {
-      "enable": true,
-      "cwd": "/home/waves/Workspace/lua/ls/lua-language-server",
-      "command": "/home/waves/Workspace/lua/ls/lua-language-server/bin/lua-language-server",
-      "args": [
-        "-E",
-        "-e",
-        "LANG=en",
-        "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
-      ],
-      "filetypes": ["lua"],
-      "rootPatterns": [".git/"],
-      // lua environment
-      "settings": {
-        "Lua": {
-          "format": {
-            "enable": true
-          },
-          "telemetry": {
-            "enable": true
-          },
-          "workspace": {
-            "library": {
-              "/usr/local/nvim-linux64/share/nvim/runtime/lua/": true
-            },
-            "maxPreload": 2000,
-            "preloadFileSize": 1000
-          },
-          "runtime": {
-            "version": "LuaJIT"
-          },
-          "diagnostics": {
-            "enable": true,
-            "globals": [
-              "hs",
-              "vim",
-              "it",
-              "describe",
-              "before_each",
-              "after_each"
-            ],
-            "disable": ["lowercase-global"]
-          }
-        }
-      }
-    }
-  },
+  // coc-clangd
+  "clangd.inlayHints.enable": true,
+  "clangd.inlayHints.sep": " ",
   // coc-java(and java debug)
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.home": "/opt/environment/java/jdk-13.0.2",
@@ -146,6 +83,7 @@
   "coc.source.buffer.shortcut": "",
   "coc.source.issues.shortcut": "",
   "coc.source.buffer.ignoreGitignore": true,
+  "semanticTokens.filetypes": ["c", "cpp"],
   "translator.engines": ["youdao"],
   "hover.floatConfig": { "border": true },
   "suggest.floatConfig": { "border": true },
@@ -245,5 +183,16 @@
     "]c": "gitNext",
     "<<": "gitStage",
     ">>": "gitUnstage"
-  }
+  },
+  // coc-sumneko-lua
+  "Lua.semantic.enable": true,
+  "Lua.telemetry.enable": false,
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.diagnostics.disable": ["lowercase-global"],
+  "Lua.workspace.useGitIgnore": true,
+  "Lua.diagnostics.globals": ["freeswitch", "session", "params", "XML_STRING", "XML_REQUEST", "argv"],
+  "Lua.hint.paramName": "All",
+  "sumneko-lua.enableNvimLuaDev": true,
+  "sumneko-lua.inlayHints.typeHintsPrefix": " ",
+  "sumneko-lua.inlayHints.paramHintsPrefix": " "
 }
