@@ -46,7 +46,8 @@ let g:coc_global_extensions = [
       \ 'coc-db',
       \ 'coc-sql',
       \ 'coc-clangd',
-      \ 'coc-sumneko-lua'
+      \ 'coc-sumneko-lua',
+      \ 'coc-leetcode'
       \ ]
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
@@ -80,6 +81,7 @@ nmap <silent> sr <Plug>(coc-rename)
 nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
 
+nnoremap <silent> <leader><space> :CocFzfList<cr>
 nnoremap <silent> sy :CocFzfList yank<cr>
 nnoremap <silent> so :CocAction<cr>
 nnoremap <silent> sd :CocFzfList diagnostics<cr>

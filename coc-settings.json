@@ -192,5 +192,9 @@
   "Lua.hint.paramName": "All",
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.inlayHints.typeHintsPrefix": " ",
-  "sumneko-lua.inlayHints.paramHintsPrefix": " "
+  "sumneko-lua.inlayHints.paramHintsPrefix": " ",
+  // leetcode
+  "leetcode.enabled": true,
+  "leetcode.language": "golang",
+  "leetcode.trace.server": "verbose"
 }
