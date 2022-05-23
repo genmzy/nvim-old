@@ -41,6 +41,8 @@ source $root/plugconfig/wildfire.vim
 
 source $root/plugconfig/gitgutter.vim
 
+source $root/plugconfig/vim_go.vim
+
 source $root/plugconfig/db.vim
 
 source $root/plugconfig/wiki.vim
