@@ -16,4 +16,3 @@ let g:lualine_theme="lightForest"
 set background=light
 let g:everforest_background = 'hard'
 colorscheme everforest
-highlight _Label guifg=#DFA000

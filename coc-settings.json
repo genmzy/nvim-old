@@ -195,6 +195,5 @@
   "sumneko-lua.inlayHints.paramHintsPrefix": " ",
   // leetcode
   "leetcode.enabled": true,
-  "leetcode.language": "golang",
-  "leetcode.trace.server": "verbose"
+  "leetcode.language": "golang"
 }
