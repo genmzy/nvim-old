@@ -16,3 +16,6 @@ let g:lualine_theme="lightForest"
 set background=light
 let g:everforest_background = 'hard'
 colorscheme everforest
+
+" temp set for additional_vim_regex_highlighting
+autocmd! FileType go,java hi link TSComment NONE
