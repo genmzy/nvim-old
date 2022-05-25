@@ -1,6 +1,6 @@
-"===
-"=== General settings
-"===
+" ===
+" === General settings
+" ===
 
 syntax on
 filetype on
