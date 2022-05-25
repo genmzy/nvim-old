@@ -3,7 +3,7 @@
 -- ===
 require 'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
-    ensure_installed = { "vim", "c", "cpp", "lua", "java", "go", "json", "jsonc" },
+    ensure_installed = { "vim", "c", "cpp", "lua", "java", "go" },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
