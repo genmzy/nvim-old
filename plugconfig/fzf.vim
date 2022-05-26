@@ -3,7 +3,7 @@
 " ===
 
 let $FZF_DEFAULT_OPTS='--tabstop=4'
-let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore .github -g ""'
+let $FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 let $FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || cat {}) 2> /dev/null'
 
 let g:vista_fzf_preview = ['down:50%']
