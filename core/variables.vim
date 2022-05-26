@@ -29,6 +29,9 @@ set autoindent
 set tabstop=4
 set smartindent
 
+" now only for which key
+set timeoutlen=200
+
 if filereadable("./go.mod") || filereadable("./go.sum")
     set noexpandtab
 else

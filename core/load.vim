@@ -18,8 +18,6 @@ source $root/functions/execute.vim
 
 source $root/plugconfig/snippet.vim
 
-source $root/plugconfig/whichkey.vim
-
 source $root/plugconfig/fzf.vim
 
 source $root/plugconfig/defx.vim

@@ -79,7 +79,7 @@ Plug 'zchee/vim-goasm'              " syntax for go assembly
 Plug 'neoclide/coc.nvim', {
     \'do': 'yarn install --frozen-lockfile'
 \}
-Plug 'liuchengxu/vim-which-key'
+Plug 'folke/which-key.nvim'
 
 " Quick start
 Plug 'hardcoreplayers/dashboard-nvim'
