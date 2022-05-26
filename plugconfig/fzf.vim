@@ -2,6 +2,10 @@
 " === FZF
 " ===
 
+let $FZF_DEFAULT_OPTS='--tabstop=4'
+let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore .github -g ""'
+let $FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || cat {}) 2> /dev/null'
+
 let g:vista_fzf_preview = ['down:50%']
 let g:fzf_layout = {
     \'window': {
@@ -12,46 +16,9 @@ let g:fzf_layout = {
     \},
 \}
 
-function! s:blinesHandler(lines) abort
-    if len(a:lines) < 2
-        return
-    endif
-    execute split(a:lines, '\t')[0]
-    normal! zvzz
-endfunction
-
-function! s:blinesList() abort
-    let fmtexpr = 'printf("%4d\t%s", v:key + 1, v:val)'
-    let lines = getline(1, '$')
-    return map(lines, fmtexpr)
-endfunction
-
-function! s:FzfBLines(...) abort
-    if a:0 == 0
-        let l:query = ""
-    else
-        let l:query = a:1
-    endif
-
-    let l:cur_buf_name = expand('%')
-    let s:options = [
-                \ '--prompt=BLines> ',
-                \ '--query', l:query,
-                \ '--preview-window=up:0%:wrap'
-            \ ]
-    if empty(l:cur_buf_name)
-      let s:options[4] = '--preview=echo please save first to preview'
-    endif
-    call fzf#run(fzf#wrap({
-            \ 'source': s:blinesList(),
-            \ 'sink': function('<SID>blinesHandler'),
-            \ 'options': s:options,
-            \ }))
-endfunction
-command! -bang -nargs=* FzfBLines call s:FzfBLines()
-
 let g:coc_fzf_preview='up:50%:wrap:sharp'
-let g:fzf_preview_window = 'up:50%:wrap:sharp'
+let g:fzf_preview_window=['up:50%:wrap:sharp', 'ctrl-/']
+let g:coc_fzf_preview_toggle_key='ctrl-/'
 
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
@@ -64,9 +31,8 @@ nnoremap <silent> <leader>ss :Snippets<cr>
 nnoremap <silent> <leader>ct :Colors<cr>
 nnoremap <silent> <leader>mk :Marks<cr>
 
-" For fuzzy finding current file lines, much better than '/' to search
-"nnoremap <silent> <leader>l :BLines<cr>
-nnoremap <silent> <leader>l :FzfBLines<cr>
+" fuzzy finding in current buffer, instead of `/`
+nnoremap <silent> <leader>l :BLines<cr>
 
 " Git searches
 nnoremap <silent> <leader>gf :GFiles?<cr>

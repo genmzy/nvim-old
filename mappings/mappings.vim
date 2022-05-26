@@ -53,17 +53,6 @@ map sk <C-w>k
 map sl <C-w>l
 map sw <C-w>w
 
-" quick buffer-change
-map <LEADER>1 :buffer 1<CR>
-map <LEADER>2 :buffer 2<CR>
-map <LEADER>3 :buffer 3<CR>
-map <LEADER>4 :buffer 4<CR>
-map <LEADER>5 :buffer 5<CR>
-map <LEADER>6 :buffer 6<CR>
-map <LEADER>7 :buffer 7<CR>
-map <LEADER>8 :buffer 8<CR>
-map <LEADER>9 :buffer 9<CR>
-
 " Instead of Shift+K for `man` helper
 map <silent> <leader>h :Man<cr>
 

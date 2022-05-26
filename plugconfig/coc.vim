@@ -1,6 +1,6 @@
-"===
-"=== coc.nvim
-"===
+" ===
+" === coc.nvim
+" ===
 
 " Not only coc-snippets the that can jump among the arguments, but also ordinary coc completion
 
@@ -46,7 +46,8 @@ let g:coc_global_extensions = [
       \ 'coc-db',
       \ 'coc-sql',
       \ 'coc-clangd',
-      \ 'coc-sumneko-lua'
+      \ 'coc-sumneko-lua',
+      \ 'coc-leetcode'
       \ ]
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
@@ -80,14 +81,19 @@ nmap <silent> sr <Plug>(coc-rename)
 nmap <silent> sf <Plug>(coc-format)
 vmap <silent> sf <Plug>(coc-format-selected)
 
+nnoremap <silent> <leader><space> :CocFzfList<cr>
 nnoremap <silent> sy :CocFzfList yank<cr>
-nnoremap <silent> so :CocAction<cr>
+nnoremap <silent> so :CocFzfList actions<cr>
 nnoremap <silent> sd :CocFzfList diagnostics<cr>
 nnoremap <silent> ss :CocFzfList symbols<cr>
 nnoremap <silent> sc :CocFzfList commands<cr>
 nnoremap <silent> se :CocFzfList location<cr>
 nnoremap <silent> st :CocFzfList outline<cr>
-nnoremap <silent> sg :CocCommand git.showCommit<cr>
+
+" git stuff
+nnoremap <silent> <leader>gr :CocCommand git.showCommit<cr>
+nnoremap <silent> <leader>gk :CocCommand git.keepBoth<cr>
+nnoremap <silent> <leader>gu :CocCommand git.chunkUndo<cr>
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -119,26 +125,21 @@ function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   else
-    call CocAction('doHover')
+    call CocActionAsync('doHover')
   endif
 endfunction
 
 " Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
+command! -nargs=0 Format :call CocActionAsync('format')
 " Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold   :call CocAction('fold', <f-args>)
+command! -nargs=? Fold   :call CocActionAsync('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR     :call CocAction('runCommand', 'editor.action.organizeImport')
-
-" Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
-nmap <silent> <leader>j <Plug>(coc-range-select)
-xmap <silent> <leader>j <Plug>(coc-range-select)
+command! -nargs=0 OR     :call CocActionAsync('runCommand', 'editor.action.organizeImport')
 
 " NOTE: do NOT use `nore` mappings
 " popup
-nmap sm <Plug>(coc-translator-p)
-vmap sm <Plug>(coc-translator-pv)
+nmap <leader>mt <Plug>(coc-translator-p)
+vmap <leader>mt <Plug>(coc-translator-pv)
 
 " Remap <C-j> and <C-k> for scroll float windows/popups for insert mode
 " (only use for documention)

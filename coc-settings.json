@@ -5,7 +5,6 @@
   // coc-java(and java debug)
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.home": "/opt/environment/java/jdk-13.0.2",
-  // "java.home": "/opt/environment/java/jdk1.8",
   "java.jdt.ls.vmargs": "-javaagent:/home/waves/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar",
   "java.configuration.maven.userSettings": "/home/waves/.m2/settings.xml",
   "java.import.maven.enabled": true,
@@ -83,7 +82,6 @@
   "coc.source.buffer.shortcut": "",
   "coc.source.issues.shortcut": "",
   "coc.source.buffer.ignoreGitignore": true,
-  "semanticTokens.filetypes": ["c", "cpp"],
   "translator.engines": ["youdao"],
   "hover.floatConfig": { "border": true },
   "suggest.floatConfig": { "border": true },
@@ -185,7 +183,7 @@
     ">>": "gitUnstage"
   },
   // coc-sumneko-lua
-  "Lua.semantic.enable": true,
+  "Lua.semantic.enable": false,
   "Lua.telemetry.enable": false,
   "Lua.runtime.version": "LuaJIT",
   "Lua.diagnostics.disable": ["lowercase-global"],
@@ -194,5 +192,8 @@
   "Lua.hint.paramName": "All",
   "sumneko-lua.enableNvimLuaDev": true,
   "sumneko-lua.inlayHints.typeHintsPrefix": " ",
-  "sumneko-lua.inlayHints.paramHintsPrefix": " "
+  "sumneko-lua.inlayHints.paramHintsPrefix": " ",
+  // leetcode
+  "leetcode.enabled": true,
+  "leetcode.language": "golang"
 }

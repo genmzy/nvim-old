@@ -72,7 +72,7 @@ local should_and_do_check_git = function()
 end
 
 
-local coc_status = function ()
+local coc_status = function()
     local return_val = vim['g']['coc_status']
     if return_val == nil then
         return ''
@@ -82,17 +82,17 @@ end
 
 
 local buf_icon = {
-  help             = ' ',
-  defx             = ' ',
-  ['coc-explorer'] = ' ',
-  nerdtree         = ' ',
-  denite           = ' ',
-  ['vim-plug']     = ' ',
-  vista            = ' ',
-  vista_kind       = ' ',
-  dbui             = ' ',
-  magit            = ' ',
-  NvimTree         = ' ',
+    help             = ' ',
+    defx             = ' ',
+    ['coc-explorer'] = ' ',
+    nerdtree         = ' ',
+    denite           = ' ',
+    ['vim-plug']     = ' ',
+    vista            = ' ',
+    vista_kind       = ' ',
+    dbui             = ' ',
+    magit            = ' ',
+    NvimTree         = ' ',
 }
 
 
