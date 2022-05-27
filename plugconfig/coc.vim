@@ -92,9 +92,12 @@ nnoremap <silent> st :CocFzfList outline<cr>
 
 " git stuff
 nnoremap <silent> <leader>gr :CocCommand git.showCommit<cr>
-nnoremap <silent> <leader>gk :CocCommand git.keepBoth<cr>
 nnoremap <silent> <leader>gu :CocCommand git.chunkUndo<cr>
 nnoremap <silent> <leader>gF :CocCommand git.foldUnchanged<cr>
+nnoremap <silent> <leader>gkb :CocCommand git.keepBoth<cr>
+nnoremap <silent> <leader>gkc :CocCommand git.keepCurrent<cr>
+nnoremap <silent> <leader>gki :CocCommand git.keepIncoming<cr>
+
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
