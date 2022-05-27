@@ -90,7 +90,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 
 
 autocmd TermOpen term://* startinsert
-tnoremap <C-N> <C-\><C-N>
+tnoremap <c-n> <c-\><c-n>
 
 
 let g:python_highlight_all=1

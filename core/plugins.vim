@@ -99,13 +99,6 @@ Plug 'puremourning/vimspector', {
 " Sudo read/write
 Plug 'lambdalisue/suda.vim'
 
-" Use defx for big project
-Plug 'Shougo/defx.nvim', {
-    \'do': ':UpdateRemotePlugins'
-\}
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
-
 " DB
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
