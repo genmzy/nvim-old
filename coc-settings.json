@@ -72,11 +72,7 @@
   "coc.source.file.shortcut": "",
   "coc.source.db.enable": true,
   "coc.source.db.shortcut": "",
-  "coc.source.db.filetypes": [
-    "sql",
-    "mysql",
-    "plsql"
-  ],
+  "coc.source.db.filetypes": ["sql", "mysql", "plsql"],
   "sql.database": "mariadb",
   "coc.source.around.shortcut": "ﮜ",
   "coc.source.buffer.shortcut": "",
@@ -119,6 +115,14 @@
   "yaml.schemas": {
     "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
   },
+  // coc-json
+  "json.schemaDownload.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["/.vimspector.json"],
+      "url": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json"
+    }
+  ],
   // coc-explorer
   "explorer.width": 30,
   "explorer.quitOnOpen": false,
