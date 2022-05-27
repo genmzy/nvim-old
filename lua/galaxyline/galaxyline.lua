@@ -300,11 +300,10 @@ gls.right[4] = {
                 c = '  Command ',
                 v = '  Visual ',
                 V = '  Visual Line ',
-                [''] = '  Visual Block ',
                 s = '  Select ',
                 R = '  Replace '
             }
-            return alias[vim.fn.mode()]
+            return alias[vim.fn.mode()] or '  Visual Block '
         end,
         separator_highlight = {
             colors.blue,
