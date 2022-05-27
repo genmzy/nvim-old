@@ -20,8 +20,6 @@ source $root/plugconfig/snippet.vim
 
 source $root/plugconfig/fzf.vim
 
-source $root/plugconfig/defx.vim
-
 if filereadable($HOME."/.genmzy.vim")
   source $HOME/.genmzy.vim
 endif

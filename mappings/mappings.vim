@@ -3,8 +3,8 @@
 " ===
 
 " accelerated_jk
-nmap j <Plug>(accelerated_jk_gj)
-nmap k <Plug>(accelerated_jk_gk)
+nmap j <plug>(accelerated_jk_gj)
+nmap k <plug>(accelerated_jk_gk)
 
 map <silent> K 5k
 map <silent> J 5j
@@ -12,10 +12,10 @@ map <silent> H 14h
 map <silent> L 14l
 
 " Resize splits with arrow keys
-noremap <up> :res +5<CR>
-noremap <down> :res -5<CR>
-noremap <left> :vertical resize-5<CR>
-noremap <right> :vertical resize+5<CR>
+noremap <up> :res +5<cr>
+noremap <down> :res -5<cr>
+noremap <left> :vertical resize-5<cr>
+noremap <right> :vertical resize+5<cr>
 
 " Better code expandation in insert mode.
 inoremap { {}<Left>
@@ -31,27 +31,27 @@ inoremap （ （）<left>
 
 let &t_ut=''
 
-map S :w<CR>
+map S :w<cr>
 map s <nop>
 map . <nop>
-map Q :q<CR>
-map R :source $MYVIMRC<CR>
+map Q :q<cr>
+map R :source $MYVIMRC<cr>
 
 " All fold expand for current buffer
-map <LEADER>z zR
+map <leader>z zR
 
-map <F3> :tabe<CR>
-map <F8> :set splitright<CR>:vsplit<CR>
-map <F5> :set nosplitright<CR>:vsplit<CR>
-map <F7> :set nosplitbelow<CR>:split<CR>
-map <F6> :set splitbelow<CR>:split<CR>
+map <f3> :tabe<cr>
+map <f8> :set splitright<cr>:vsplit<cr>
+map <f5> :set nosplitright<cr>:vsplit<cr>
+map <f7> :set nosplitbelow<cr>:split<cr>
+map <f6> :set splitbelow<cr>:split<cr>
 
 " s<direction> map to cross the split windows
-map sh <C-w>h
-map sj <C-w>j
-map sk <C-w>k
-map sl <C-w>l
-map sw <C-w>w
+map sh <c-w>h
+map sj <c-w>j
+map sk <c-w>k
+map sl <c-w>l
+map sw <c-w>w
 
 " Instead of Shift+K for `man` helper
 map <silent> <leader>h :Man<cr>
@@ -60,11 +60,11 @@ map <silent> <leader>h :Man<cr>
 map <leader>n :noh<cr>
 
 " quick tabpage-change
-map - :-tabnext<CR>
-map = :tabnext<CR>
+map - :-tabnext<cr>
+map = :tabnext<cr>
 
 " put a place holder to edit format-similar coding quickly
-nnoremap \\ <Esc>/<++><CR>:nohlsearch<CR>c4l
+nnoremap \\ <esc>/<++><cr>:nohlsearch<cr>c4l
 
 nmap . %
 vmap . %

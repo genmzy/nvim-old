@@ -55,31 +55,31 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]    =~ '\s'
 endfunction
-inoremap <silent><expr> <Tab>
-            \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<Tab>" :
+inoremap <silent><expr> <tab>
+            \ pumvisible() ? "\<c-n>" :
+            \ <SID>check_back_space() ? "\<tab>" :
             \ coc#refresh()
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> to trigger the full snippets complete(including '()' and arguments)
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
-                                           \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+                                           \"\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
 
 " Useful commands
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gk <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gd <plug>(coc-definition)
+nmap <silent> gk <plug>(coc-type-definition)
+nmap <silent> gi <plug>(coc-implementation)
 " both coc-declaration and references-used
-nmap <silent> gj <Plug>(coc-references)
-nmap <silent> gr <Plug>(coc-references-used)
-nmap <silent> gl <Plug>(coc-declaration)
-nmap <silent> go <Plug>(coc-refactor)
+nmap <silent> gj <plug>(coc-references)
+nmap <silent> gr <plug>(coc-references-used)
+nmap <silent> gl <plug>(coc-declaration)
+nmap <silent> go <plug>(coc-refactor)
 
-nmap <silent> sn <Plug>(coc-diagnostic-next)
-nmap <silent> sN <Plug>(coc-diagnostic-prev)
-nmap <silent> sr <Plug>(coc-rename)
-nmap <silent> sf <Plug>(coc-format)
-vmap <silent> sf <Plug>(coc-format-selected)
+nmap <silent> sn <plug>(coc-diagnostic-next)
+nmap <silent> sN <plug>(coc-diagnostic-prev)
+nmap <silent> sr <plug>(coc-rename)
+nmap <silent> sf <plug>(coc-format)
+vmap <silent> sf <plug>(coc-format-selected)
 
 nnoremap <silent> <leader><space> :CocFzfList<cr>
 nnoremap <silent> sy :CocFzfList yank<cr>
@@ -94,17 +94,18 @@ nnoremap <silent> st :CocFzfList outline<cr>
 nnoremap <silent> <leader>gr :CocCommand git.showCommit<cr>
 nnoremap <silent> <leader>gk :CocCommand git.keepBoth<cr>
 nnoremap <silent> <leader>gu :CocCommand git.chunkUndo<cr>
+nnoremap <silent> <leader>gF :CocCommand git.foldUnchanged<cr>
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap hf <Plug>(coc-funcobj-i)
-omap hf <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap hc <Plug>(coc-classobj-i)
-omap hc <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
+xmap hf <plug>(coc-funcobj-i)
+omap hf <plug>(coc-funcobj-i)
+xmap af <plug>(coc-funcobj-a)
+omap af <plug>(coc-funcobj-a)
+xmap hc <plug>(coc-classobj-i)
+omap hc <plug>(coc-classobj-i)
+xmap ac <plug>(coc-classobj-a)
+omap ac <plug>(coc-classobj-a)
 
 " coc-highlight
 " autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -119,8 +120,8 @@ augroup end
 call coc#add_command('vista', ':Vista!!')
 call coc#add_command('table', ':TableModeToggle')
 
-nnoremap <silent> <leader>d :CocCommand explorer<CR>
-nnoremap <silent> <leader>r :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>d :CocCommand explorer<cr>
+nnoremap <silent> <leader>r :call <SID>show_documentation()<cr>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -138,18 +139,18 @@ command! -nargs=0 OR     :call CocActionAsync('runCommand', 'editor.action.organ
 
 " NOTE: do NOT use `nore` mappings
 " popup
-nmap <leader>mt <Plug>(coc-translator-p)
-vmap <leader>mt <Plug>(coc-translator-pv)
+nmap <leader>mt <plug>(coc-translator-p)
+vmap <leader>mt <plug>(coc-translator-pv)
 
-" Remap <C-j> and <C-k> for scroll float windows/popups for insert mode
+" Remap <c-j> and <c-k> for scroll float windows/popups for insert mode
 " (only use for documention)
 if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
-  nnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
-  inoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-j>"
-  vnoremap <silent><nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-k>"
+  nnoremap <silent><nowait><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<c-j>"
+  nnoremap <silent><nowait><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<c-k>"
+  inoremap <silent><nowait><expr> <c-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<right>"
+  inoremap <silent><nowait><expr> <c-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<left>"
+  vnoremap <silent><nowait><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<c-j>"
+  vnoremap <silent><nowait><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<c-k>"
 endif
 
 " solve the huge file read problem
