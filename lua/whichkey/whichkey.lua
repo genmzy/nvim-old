@@ -116,9 +116,14 @@ wk.register({
     name = "Git",
     f = { "Changed git file" }, -- create a binding with label
     g = { "Git UI" },
-    k = { "Keep merge conflicts" },
     r = { "Cursor latest git message" },
     u = { "Undo chunk under cursor" },
+    k = {
+      name = "Conflicts",
+      b = { "Keep both" },
+      c = { "Keep original" },
+      i = { "Keep new" }
+    },
   }
 }, { prefix = "<leader>" })
 
