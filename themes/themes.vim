@@ -8,11 +8,14 @@ else
 endif
 
 " ===
-" === gruvbox_genmzy
+" === everforest_light
 " ===
-let g:lualine_theme = "gruvbox"
+let g:everforest_enable_italic = 1
 let g:vim_transparent_enable = 1
 let g:gruvbox_genmzy_enable_italic = 0
 set background=dark
 colorscheme gruvbox_genmzy
 let g:gruvbox_contrast_dark="hard"
+
+" temp set for additional_vim_regex_highlighting
+autocmd! FileType go,java hi link TSComment NONE

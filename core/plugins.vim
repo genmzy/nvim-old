@@ -3,7 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 
 " Status line
-Plug 'hoob3rt/lualine.nvim'
+Plug 'glepnir/galaxyline.nvim' , { 'branch': 'main' }
+
 " If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
@@ -68,9 +69,9 @@ Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'genmzy/gruvbox_genmzy'
 
 " Color enhancement
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'genmzy/vim-transparent'       " Transparent background
 Plug 'genmzy/vim-polyglot'          " Enhancing syntax color of a lot of filetypes
-Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'kamailio/vim-kamailio-syntax' " Kamilio/OpenSIPs syntax support
 Plug 'zchee/vim-goasm'              " syntax for go assembly
 
@@ -78,7 +79,7 @@ Plug 'zchee/vim-goasm'              " syntax for go assembly
 Plug 'neoclide/coc.nvim', {
     \'do': 'yarn install --frozen-lockfile'
 \}
-Plug 'liuchengxu/vim-which-key'
+Plug 'folke/which-key.nvim'
 
 " Quick start
 Plug 'hardcoreplayers/dashboard-nvim'
@@ -97,13 +98,6 @@ Plug 'puremourning/vimspector', {
 
 " Sudo read/write
 Plug 'lambdalisue/suda.vim'
-
-" Use defx for big project
-Plug 'Shougo/defx.nvim', {
-    \'do': ':UpdateRemotePlugins'
-\}
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
 
 " DB
 Plug 'tpope/vim-dadbod'
