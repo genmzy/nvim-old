@@ -29,16 +29,16 @@ gl.short_line_list = {
 
 
 local colors = {
-    bg       = "#1b1b23",
-    fg       = "#abb2bf",
-    green    = "#8fc587",
-    red      = "#ebb9b9",
-    lightbg  = "#2c2e3e",
-    lightbg1 = "#63718B",
-    lightbg2 = "#3b3b4d",
-    blue     = "#cddbf9",
-    yellow   = "#ffcf85",
-    grey     = "#8791a3",
+    bg       = "#2B2D3A",
+    fg       = "#E1E3E4",
+    green    = "#9ED06C",
+    red      = "#FB617E",
+    lightbg  = "#333648",
+    lightbg1 = "#5a5e7a",
+    lightbg2 = "#3f445b",
+    blue     = "#77D5F0",
+    yellow   = "#EDC763",
+    grey     = "#7e8294",
     magenta  = "#bf83b5"
 }
 
