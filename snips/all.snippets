@@ -1,0 +1,6 @@
+# some snippets add/overwrite for all filetypes
+
+# overwrite todo comment snippet for different date format
+snippet todo "TODO comment" bw
+`!p snip.rv=get_comment_format()[0]` ${2:TODO}: $0${3: <${4:`!v strftime("%Y-%m-%d")`}${5:, `!v g:snips_author`}>} `!p snip.rv=get_comment_format()[2]`
+endsnippet
