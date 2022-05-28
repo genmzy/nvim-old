@@ -1,74 +1,10 @@
 {
-  // no language client
-  "languageserver": {
-    // clang
-    "ccls": {
-      "enable": true,
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [".ccls", ".ccls-root", ".vim/", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        },
-        "client": {
-          "snippetSupport": true
-        },
-        "highlight": { "lsRanges": true }
-      }
-    },
-    // lua
-    "lua": {
-      "enable": true,
-      "cwd": "/home/waves/Workspace/lua/ls/lua-language-server",
-      "command": "/home/waves/Workspace/lua/ls/lua-language-server/bin/lua-language-server",
-      "args": [
-        "-E",
-        "-e",
-        "LANG=en",
-        "/home/waves/Workspace/lua/ls/lua-language-server/main.lua"
-      ],
-      "filetypes": ["lua"],
-      "rootPatterns": [".git/"],
-      // lua environment
-      "settings": {
-        "Lua": {
-          "format": {
-            "enable": true
-          },
-          "telemetry": {
-            "enable": true
-          },
-          "workspace": {
-            "library": {
-              "/usr/local/nvim-linux64/share/nvim/runtime/lua/": true
-            },
-            "maxPreload": 2000,
-            "preloadFileSize": 1000
-          },
-          "runtime": {
-            "version": "LuaJIT"
-          },
-          "diagnostics": {
-            "enable": true,
-            "globals": [
-              "hs",
-              "vim",
-              "it",
-              "describe",
-              "before_each",
-              "after_each"
-            ],
-            "disable": ["lowercase-global"]
-          }
-        }
-      }
-    }
-  },
+  // coc-clangd
+  "clangd.inlayHints.enable": true,
+  "clangd.inlayHints.sep": " ",
   // coc-java(and java debug)
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.home": "/opt/environment/java/jdk-13.0.2",
-  // "java.home": "/opt/environment/java/jdk1.8",
   "java.jdt.ls.vmargs": "-javaagent:/home/waves/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar",
   "java.configuration.maven.userSettings": "/home/waves/.m2/settings.xml",
   "java.import.maven.enabled": true,
@@ -87,6 +23,7 @@
   ],
   "prettier.statusItemText": " ",
   // coc-go
+  "go.checkForUpdates": "disabled",
   "go.goplsOptions": {
     "usePlaceholders": true,
     "analyses": {
@@ -135,18 +72,12 @@
   "coc.source.file.shortcut": "",
   "coc.source.db.enable": true,
   "coc.source.db.shortcut": "",
-  "coc.source.db.filetypes": [
-    "sql",
-    "mysql",
-    "plsql"
-  ],
+  "coc.source.db.filetypes": ["sql", "mysql", "plsql"],
   "sql.database": "mariadb",
   "coc.source.around.shortcut": "ﮜ",
   "coc.source.buffer.shortcut": "",
   "coc.source.issues.shortcut": "",
-  "coc.source.around.firstMatch": true,
   "coc.source.buffer.ignoreGitignore": true,
-  "coc.source.buffer.firstMatch": true,
   "translator.engines": ["youdao"],
   "hover.floatConfig": { "border": true },
   "suggest.floatConfig": { "border": true },
@@ -184,6 +115,14 @@
   "yaml.schemas": {
     "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
   },
+  // coc-json
+  "json.schemaDownload.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["/.vimspector.json"],
+      "url": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json"
+    }
+  ],
   // coc-explorer
   "explorer.width": 30,
   "explorer.quitOnOpen": false,
@@ -246,5 +185,19 @@
     "]c": "gitNext",
     "<<": "gitStage",
     ">>": "gitUnstage"
-  }
+  },
+  // coc-sumneko-lua
+  "Lua.semantic.enable": false,
+  "Lua.telemetry.enable": false,
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.diagnostics.disable": ["lowercase-global"],
+  "Lua.workspace.useGitIgnore": true,
+  "Lua.diagnostics.globals": ["freeswitch", "session", "params", "XML_STRING", "XML_REQUEST", "argv"],
+  "Lua.hint.paramName": "All",
+  "sumneko-lua.enableNvimLuaDev": true,
+  "sumneko-lua.inlayHints.typeHintsPrefix": " ",
+  "sumneko-lua.inlayHints.paramHintsPrefix": " ",
+  // leetcode
+  "leetcode.enabled": true,
+  "leetcode.language": "golang"
 }

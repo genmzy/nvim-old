@@ -2,37 +2,23 @@
 
 - 💜 I wanna see you after COVID-19.
 
-![gruvbox+dashborad](https://github.com/genmzy/pictures/blob/master/gruvbox+dashborad.png)
+![dashboard](https://github.com/genmzy/pictures/blob/master/genmzy_pikachu.png)
+![genmzy](https://github.com/genmzy/pictures/blob/master/genmzy_complete.png)
+![info](https://github.com/genmzy/pictures/blob/master/genmzy_info.png)
+![git](https://github.com/genmzy/pictures/blob/master/genmzy_git.png)
 
-![gruvbox+customFont+codeComplete](https://github.com/genmzy/pictures/blob/master/gruvbox+customFont+codeComplete.png)
+## ColorScheme
 
-![gruvbox+customFont+explorer+vista](https://github.com/genmzy/pictures/blob/master/gruvbox+customFont+explorer+vista.png)
-
-![gruvbox+lazygit](https://github.com/genmzy/pictures/blob/master/gruvbox+lazygit.png)
-
-![gruvbox+floaterm](https://github.com/genmzy/pictures/blob/master/gruvbox+floaterm.png)
-
-![rg_panic](https://github.com/genmzy/pictures/blob/master/rg_panic.png)
-
-- Above fonts see [here](https://github.com/genmzy/recursive-code-config/tree/main/fonts/RecMonoGenmzyCasual/NerdFonts)
-
-![lightForest](https://github.com/genmzy/pictures/blob/master/lightForest.png)
-
-![lightForestVistaExplorer](https://github.com/genmzy/pictures/blob/master/lightForestVistaExplorer.png)
-
-![spacelight_vista_explorer](https://github.com/genmzy/pictures/blob/master/spacelight_vista_explorer.png)
-
-![spacelight](https://github.com/genmzy/pictures/blob/master/spacelight.png)
-
-- More pictures, see [here](https://github.com/genmzy/pictures)
-
+- [aquarium-vim](https://github.com/genmzy/aquarium-vim): a forked version from [original](https://github.com/FrenzyExists/aquarium-vim)
+- transparent background: a plugin [vim-transparent](https://github.com/genmzy/vim-transparent) forked version from [original](https://github.com/tribela/vim-transparent)
+- background picture, a [pokemon picture](https://github.com/genmzy/pictures/blob/master/448.jpg) from [pokemon-terminal](https://github.com/LazoCoder/Pokemon-Terminal)
 
 ## Installation
 
-- PreAction
+- Requires
 > ```shell
-> sudo add-apt-repository ppa:lazygit-team/release
-> sudo apt-get update && sudo apt-get upgrade
+> go install github.com/jesseduffield/lazygit@latest
+>
 > sudo apt-get install python3 lazygit fzf silversearch_ag ripgrep bat ccat neovim python3-pip git
 >
 > pip3 install neovim neovim-remote pynvim
@@ -49,8 +35,8 @@
 
 ## More
 
-- I use [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal)
-- for WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), but when I change my system to Windows11, some bugs happened, paste will cause long-time no respond(more than 5 minutes). I cannot find the reason, as I see the win32yank got a paste [error](https://github.com/equalsraf/win32yank/issues/9#issue-463019718), I tried a lot of times and I think it is a copy issue, not a paste issue, so I use the system clipboard redirector, which path is `/mnt/c/Windows/System32/clip.exe`, works okay so far.
+- With [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal) (please use version: [v1.10.2383.0](https://github.com/microsoft/terminal/releases/download/v1.10.2383.0/Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle_Windows10_PreinstallKit.zip))
+- For WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), win11 [issue](https://github.com/equalsraf/win32yank/issues/9#issue-463019718), use `/mnt/c/Windows/System32/clip.exe` instead copy in win32yank, works okay so far. Configuration is:
 ```vim
 if executable("clip.exe") && executable("win32yank.exe")
     set clipboard+=unnamedplus
@@ -68,3 +54,75 @@ if executable("clip.exe") && executable("win32yank.exe")
         \ }
 endif
 ```
+
+- ~~Font :[LigaSrcPro NF](https://github.com/Bo-Fone/Liga-Sauce-Code-Pro-Nerd-Font)~~
+- Font: [CursorPrimeSans NF](https://github.com/genmzy/dotfiles/blob/master/Backup/CourierPrimeSansNF), a [nerd-font](https://github.com/ryanoasis/nerd-fonts) version of [CourierPrimeSans](https://github.com/quoteunquoteapps/CourierPrimeSans) font, but this font is not ligatured, so ...
+
+- Partial configurations in WindowsTerminal:
+```json
+{
+  "useAcrylicInTabRow": true,
+  "profiles": {
+    "defaults": {
+      "acrylicOpacity": 0.9,
+      "antialiasingMode": "grayscale",
+      "backgroundImageOpacity": 0.05,
+      "bellStyle": "none",
+      "colorScheme": "aquarium",
+      "intenseTextStyle": "bold", // NOTE: DO NOT delete this anyway
+      "backgroundImage": "C:/Users/waves/Pictures/pokemon/Generation IV - Sinnoh/448.jpg",
+      "font": {
+        "face": "LigaSrcPro NF",
+        "size": 11,
+        "weight": "normal"
+      },
+      "padding": "0, 0, 0, 0",
+      "tabColor": "#44495E",
+      "useAcrylic": false
+    },
+    "list": [
+      {
+        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+        "hidden": false,
+        "icon": "C:\\Users\\waves\\Pictures\\Camera Roll\\icons\\icons8-console-24.png",
+        "name": "Ubuntu-20.04",
+        "source": "Windows.Terminal.Wsl",
+        "startingDirectory": "//wsl$/Ubuntu-20.04/home/waves",
+        "closeOnExit": "always"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "name": "aquarium",
+      "background": "#17171F",
+      "foreground": "#63718B",
+      "cursorColor": "#5c6a72",
+      "black": "#3b3b4d",
+      "red": "#cc9b9d",
+      "green": "#a3ccad",
+      "yellow": "#d1ba97",
+      "cyan": "#b8c9ea",
+      "purple": "#b294bb",
+      "blue": "#95c2d1",
+      "white": "#63718b",
+      "brightBlack": "#44495e",
+      "brightRed": "#ebb9b9",
+      "brightGreen": "#b1dba4",
+      "brightYellow": "#e6dfb8",
+      "brightCyan": "#cddbf9",
+      "brightPurple": "#f6bbe7",
+      "brightBlue": "#cddbf9",
+      "brightWhite": "#c6d0e9",
+      "selectionBackground": "#2c2e3e"
+    }
+  ],
+  "theme": "dark"
+}
+```
+
+- Icon [picture](https://github.com/genmzy/pictures/blob/master/icons8-console-24.png)
+
+- More themes, see [here](https://github.com/genmzy/nvim/blob/aquarium/themes.md)
+
+- ZSH configurations and Oh-My-Zsh configurations, see: [file](https://github.com/genmzy/dotfiles/blob/master/.zshrc)
