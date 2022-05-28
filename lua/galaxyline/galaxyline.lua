@@ -31,16 +31,16 @@ gl.short_line_list = {
 local colors = {
     bg       = (api.nvim_eval('exists("g:genmzy_transparent")') == 1
         and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
-    fg       = "#5c6a72",
-    green    = "#35a77c",
-    red      = "#f85552",
-    lightbg  = "#f0eed9",
-    lightbg1 = "#e9e8d2",
-    lightbg2 = "#e1ddcb",
-    blue     = "#41A8B0",
-    yellow   = "#dfa000",
-    grey     = "#a0a79a",
-    magenta  = "#d67ba7"
+    fg       = "#ebdbb2",
+    green    = "#8ec07c",
+    red      = "#fb4934",
+    lightbg  = "#504945",
+    lightbg1 = "#32302f",
+    lightbg2 = "#32302f",
+    blue     = "#83a598",
+    yellow   = "#fabd2f",
+    grey     = "#7c6f64",
+    magenta  = "#d3869b"
 }
 
 
