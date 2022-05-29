@@ -10,7 +10,9 @@ func! ScriptRun()
   let file_name = expand('%:p')
 
   if &filetype == 'c'
-    exec "FloatermNew gcc " . file_name . " -o " . file_name_no_tail . " && ./" . file_name_no_tail
+    exec "FloatermNew gcc -g " . file_name . " -o " . file_name_no_tail . " && ./" . file_name_no_tail
+  elseif &filetype == 'cpp'
+    exec "FloatermNew g++ -g " . file_name . " -o " . file_name_no_tail . " && ./" . file_name_no_tail
   elseif &filetype == 'sh'
     :!time bash %
   elseif &filetype == 'python'
