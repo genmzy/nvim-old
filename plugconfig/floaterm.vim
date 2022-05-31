@@ -10,6 +10,8 @@ nnoremap <silent> <leader>t :<c-u>FloatermToggle<cr>
 nnoremap <silent> <f9> :<c-u>FloatermNext<cr>
 nnoremap <silent> <f10> :<c-u>FloatermNew<cr>
 nnoremap <silent> <f12> :<c-u>FloatermPrev<cr>
+hi link FloatermBorder LineNr
+let g:floaterm_borderchars='─│─│╭╮╯╰'
 
 " ===
 " === lazygit
