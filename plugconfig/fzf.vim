@@ -11,8 +11,8 @@ let g:fzf_layout = {
     \'window': {
       \'width': 0.9,
       \'height': 0.9,
-      \'highlight': 'Todo',
-      \'border': 'sharp',
+      \'highlight': 'LineNr',
+      \'border': 'rounded',
     \},
 \}
 
