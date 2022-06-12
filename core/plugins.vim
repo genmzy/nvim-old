@@ -9,6 +9,14 @@ Plug 'glepnir/galaxyline.nvim' , { 'branch': 'main' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
+function! UpdateRemotePlugins(...)
+    " Needed to refresh runtime files
+    let &rtp=&rtp
+    UpdateRemotePlugins
+endfunction
+
+Plug 'gelguy/wilder.nvim', { 'do': function('UpdateRemotePlugins') }
+
 " File navigation
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'do' : './install --bin'}
