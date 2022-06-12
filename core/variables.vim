@@ -73,9 +73,9 @@ set termguicolors
 set foldmethod=marker
 
 
-"" pmenu semi-transparent
-"set pumblend=15
-"hi PmenuSel blend=0
+" pmenu semi-transparent
+set pumblend=15
+hi PmenuSel blend=0
 
 
 "map leader

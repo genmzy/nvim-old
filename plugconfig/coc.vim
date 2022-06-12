@@ -8,6 +8,7 @@ inoremap <c-l> <nop>
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-n>'
 let g:snips_author = 'genmzy'
+let g:coc_borderchars=['─', '│', '─', '│', '╭', '╮', '╯', '╰']
 "let g:coc-semantic-highlights=1
 autocmd FileType c,cpp,java,lua let b:coc_suggest_blacklist = [
       \"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
@@ -50,21 +51,21 @@ let g:coc_global_extensions = [
       \ 'coc-leetcode',
       \ 'coc-docker'
       \ ]
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]    =~ '\s'
 endfunction
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
+inoremap <silent><expr> <c-x><c-z> coc#pum#visible() ? coc#pum#stop() : "\<c-x>\<c-z>"
+" remap for complete to use tab and <cr>
 inoremap <silent><expr> <tab>
-            \ pumvisible() ? "\<c-n>" :
-            \ <SID>check_back_space() ? "\<tab>" :
-            \ coc#refresh()
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-h>"
+      \ coc#pum#visible() ? coc#pum#next(1):
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<c-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
-" Use <cr> to trigger the full snippets complete(including '()' and arguments)
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
-                                           \"\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
 
 " Useful commands
 nmap <silent> gd <plug>(coc-definition)
