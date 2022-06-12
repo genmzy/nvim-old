@@ -77,14 +77,26 @@
   "coc.source.issues.shortcut": "",
   "coc.source.buffer.ignoreGitignore": true,
   "translator.engines": ["youdao"],
-  "hover.floatConfig": { "border": true },
+  "hover.floatConfig": {
+    "border": true,
+    "highlight": "Normal",
+    "borderhighlight": "LineNr"
+  },
   "suggest.floatConfig": {
     "border": true,
     "highlight": "Normal",
     "borderhighlight": "LineNr"
   },
-  "diagnostic.floatConfig": { "border": true },
-  "signature.floatConfig": { "border": true },
+  "diagnostic.floatConfig": {
+    "border": true,
+    "highlight": "Normal",
+    "borderhighlight": "LineNr"
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "highlight": "Normal",
+    "borderhighlight": "LineNr"
+  },
   "suggest.completionItemKindLabels": {
     "keyword": " ",
     "variable": " ",
