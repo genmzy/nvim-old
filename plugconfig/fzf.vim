@@ -12,7 +12,7 @@ let g:fzf_layout = {
       \'width': 0.9,
       \'height': 0.9,
       \'highlight': 'LineNr',
-      \'border': 'rounded',
+      \'border': 'sharp',
     \},
 \}
 

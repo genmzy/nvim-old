@@ -4,7 +4,7 @@ call wilder#setup({'modes': [':']})
 call wilder#set_option('renderer', wilder#renderer_mux({
   \ ':': wilder#popupmenu_renderer(
     \ wilder#popupmenu_border_theme({
-      \   'border': "rounded",
+      \   'border': "single",
       \   'highlights': { 'border': 'LineNr' },
       \}
     \),
