@@ -67,6 +67,7 @@
   "suggest.selection": "none",
   "suggest.virtualText": true,
   "suggest.noselect": false,
+  "suggest.enablePreselect": false,
   "coc.preferences.snippetStatusText": "  ",
   "suggest.disableMenuShortcut": false,
   "snippets.shortcut": "",
