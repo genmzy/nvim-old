@@ -62,7 +62,7 @@ inoremap <silent><expr> <c-x><c-z> coc#pum#visible() ? coc#pum#stop() : "\<c-x>\
 " remap for complete to use tab and <cr>
 inoremap <silent><expr> <tab>
       \ coc#pum#visible() ? coc#pum#next(1):
-      \ <SID>check_back_space() ? "\<Tab>" :
+      \ <SID>check_back_space() ? "\<tab>" :
       \ coc#refresh()
 inoremap <expr><s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<c-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
