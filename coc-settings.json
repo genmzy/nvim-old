@@ -64,7 +64,7 @@
   "diagnostic.infoSign": "",
   "suggest.minTriggerInputLength": 1,
   "suggest.snippetIndicator": "  ",
-  "suggest.selection": "recentlyUsed",
+  "suggest.selection": "none",
   "suggest.virtualText": true,
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
