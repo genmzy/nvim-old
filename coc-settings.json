@@ -104,7 +104,7 @@
   "suggest.completionItemKindLabels": {
     "keyword": "",
     "variable": "",
-    "value": "",
+    "value": "",
     "operator": "",
     "function": "",
     "reference": "",
@@ -126,7 +126,7 @@
     "folder": "",
     "snippet": "",
     "typeParameter": "",
-    "default": ""
+    "default": ""
   },
   // coc-yaml
   "yaml.format.enable": true,
