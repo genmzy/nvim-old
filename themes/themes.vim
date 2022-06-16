@@ -12,7 +12,7 @@ endif
 " ===
 let g:everforest_enable_italic = 1
 let g:vim_transparent_enable = 1
-let g:gruvbox_genmzy_enable_italic = 0
+let g:gruvbox_genmzy_enable_italic = 1
 set background=dark
 colorscheme gruvbox_genmzy
 let g:gruvbox_contrast_dark="hard"
