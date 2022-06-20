@@ -179,3 +179,7 @@ augroup vimspectorlog
         \   let b:coc_enabled = 0 |
         \ endif |
 augroup END
+
+if filereadable('./go.mod')
+  nnoremap si :CocCommand go.impl.cursor<cr>
+endif
