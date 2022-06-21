@@ -69,6 +69,7 @@
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "suggest.formatItems": ["kind", "abbr", "menu", "shortcut"],
+  "suggest.defaultSortMethod":"none",
   "coc.preferences.snippetStatusText": "  ",
   "snippets.shortcut": "",
   "coc.source.file.shortcut": "",
