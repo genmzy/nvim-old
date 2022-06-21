@@ -47,4 +47,6 @@ source $root/plugconfig/vimspector.vim
 
 source $root/plugconfig/leetcode.vim
 
+source $root/plugconfig/wilder.vim
+
 source $root/lua/luaload.vim
