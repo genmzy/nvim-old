@@ -35,16 +35,16 @@
 
 ## More
 
-- With [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal) (please use version: [v1.10.2383.0](https://github.com/microsoft/terminal/releases/download/v1.10.2383.0/Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle_Windows10_PreinstallKit.zip))
-- For WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), win11 [issue](https://github.com/equalsraf/win32yank/issues/9#issue-463019718), use `/mnt/c/Windows/System32/clip.exe` instead copy in win32yank, works okay so far. Configuration is:
+- I use [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal)
+- For WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), but win11 makes things complicated, so strongly suggest put `put win32yank.exe` into `C:\Windows\System32` for better performance and make things correct on Windows11 (**NOTE**: your `$PATH` should include `/mnt/c/Windows/System32`).
 ```vim
-if executable("clip.exe") && executable("win32yank.exe")
+if executable("win32yank.exe")
     set clipboard+=unnamedplus
     let g:clipboard = {
         \   'name': 'genmzy_clipboard',
         \   'copy': {
-        \      '+': ['clip.exe'],
-        \      '*': ['clip.exe'],
+        \      '+': ['win32yank.exe', '-i', '--crlf'],
+        \      '*': ['win32yank.exe', '-i', '--crlf'],
         \    },
         \   'paste': {
         \      '+': ['win32yank.exe', '-o', '--lf'],
