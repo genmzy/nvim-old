@@ -37,7 +37,6 @@
 
 - I use [WSL2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions) and [WindowsTerminal](https://github.com/microsoft/terminal)
 - For WSL yank and paste support, see: [here](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl), but win11 makes things complicated, so strongly suggest put `put win32yank.exe` into `C:\Windows\System32` for better performance and make things correct on Windows11 (**NOTE**: your `$PATH` should include `/mnt/c/Windows/System32`).
->>>>>>> everforest_light
 ```vim
 if executable("win32yank.exe")
     set clipboard+=unnamedplus
