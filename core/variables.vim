@@ -54,13 +54,13 @@ set guicursor=n-v-c:underline,i-ci-ve:ver40,r-cr:hor20,o:hor50
             \,sm:block-blinkwait175-blinkoff150-blinkon175
 
 " For WSL yank and paste support, see: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
-if executable("clip.exe") && executable("win32yank.exe")
+if executable("win32yank.exe")
     set clipboard+=unnamedplus
     let g:clipboard = {
         \   'name': 'genmzy_clipboard',
         \   'copy': {
-        \      '+': ['clip.exe'],
-        \      '*': ['clip.exe'],
+        \      '+': ['win32yank.exe', '-i', '--crlf'],
+        \      '*': ['win32yank.exe', '-i', '--crlf'],
         \    },
         \   'paste': {
         \      '+': ['win32yank.exe', '-o', '--lf'],
