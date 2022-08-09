@@ -87,6 +87,14 @@
     "highlight": "Normal",
     "borderhighlight": "LineNr"
   },
+  "suggest.pumFloatConfig": {
+    "border": true,
+    "highlight": "CocFloating",
+    "rounded": false,
+    "borderhighlight": "LineNr",
+    "shadow": false,
+    "winblend": 10,
+  },
   "suggest.floatConfig": {
     "border": true,
     "highlight": "Normal",
