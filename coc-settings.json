@@ -70,7 +70,7 @@
   "suggest.enablePreselect": false,
   "suggest.formatItems": ["kind", "abbr", "menu", "shortcut"],
   "suggest.defaultSortMethod":"none",
-  "coc.preferences.snippetStatusText": "  ",
+  "snippet.statusText": "  ",
   "snippets.shortcut": "",
   "coc.source.file.shortcut": "",
   "coc.source.db.enable": true,
@@ -93,7 +93,7 @@
     "rounded": false,
     "borderhighlight": "LineNr",
     "shadow": false,
-    "winblend": 10,
+    "winblend": 10
   },
   "suggest.floatConfig": {
     "border": true,
