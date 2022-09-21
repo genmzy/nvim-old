@@ -70,6 +70,7 @@
   "suggest.enablePreselect": false,
   "suggest.formatItems": ["kind", "abbr", "menu", "shortcut"],
   "suggest.defaultSortMethod":"none",
+  "suggest.labelMaxLength": 100,
   "snippet.statusText": "  ",
   "snippets.shortcut": "",
   "coc.source.file.shortcut": "",
