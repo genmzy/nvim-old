@@ -82,6 +82,7 @@
   "coc.source.buffer.shortcut": "",
   "coc.source.issues.shortcut": "",
   "coc.source.buffer.ignoreGitignore": true,
+  "notification.statusLineProgress": false,
   "translator.engines": ["youdao"],
   "hover.floatConfig": {
     "border": true,
@@ -93,8 +94,8 @@
     "highlight": "CocFloating",
     "rounded": false,
     "borderhighlight": "LineNr",
-    "shadow": false,
-    "winblend": 10
+    "shadow": false
+    // "winblend": 10
   },
   "suggest.floatConfig": {
     "border": true,
