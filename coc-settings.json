@@ -61,7 +61,7 @@
   "inlayHint.enableParameter": true,
   "inlayHint.typeSeparator": " ",
   "inlayHint.parameterSeparator": " ",
-  "inlayHint.subSeparator": "|",
+  "inlayHint.subSeparator": "¦",
   "diagnostic.enableSign": true,
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
