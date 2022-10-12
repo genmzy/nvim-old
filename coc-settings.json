@@ -1,7 +1,4 @@
 {
-  // coc-clangd
-  "clangd.inlayHints.enable": true,
-  "clangd.inlayHints.sep": " ",
   // coc-java(and java debug)
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.home": "/opt/environment/java/jdk-13.0.2",
@@ -236,8 +233,6 @@
   ],
   "Lua.hint.paramName": "All",
   "sumneko-lua.enableNvimLuaDev": true,
-  "sumneko-lua.inlayHints.typeHintsPrefix": " ",
-  "sumneko-lua.inlayHints.paramHintsPrefix": " ",
   // leetcode
   "leetcode.enabled": true,
   "leetcode.language": "golang"
