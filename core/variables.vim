@@ -70,6 +70,7 @@ if executable("win32yank.exe")
 endif
 
 set termguicolors
+set mouse=
 set foldmethod=marker
 
 
