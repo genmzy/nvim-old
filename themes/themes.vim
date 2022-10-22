@@ -18,4 +18,8 @@ let g:everforest_background = 'hard'
 colorscheme everforest
 
 " temp set for additional_vim_regex_highlighting
-autocmd! FileType go,java hi link TSComment NONE
+if has('nvim-0.8.0') 
+    autocmd! FileType go,java hi link @comment NONE
+else
+    autocmd! FileType go,java hi link TSComment NONE
+endif
