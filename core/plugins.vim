@@ -90,7 +90,7 @@ Plug 'neoclide/coc.nvim', {
 Plug 'folke/which-key.nvim'
 
 " Quick start
-Plug 'hardcoreplayers/dashboard-nvim'
+Plug 'genmzy/dashboard-nvim'
 
 " Code snippets
 Plug 'honza/vim-snippets'
