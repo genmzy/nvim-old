@@ -31,16 +31,14 @@ gl.short_line_list = {
 local colors = {
     bg       = (api.nvim_eval('exists("g:genmzy_transparent")') == 1
         and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
-    fg       = "#5c6a72",
-    green    = "#35a77c",
-    red      = "#f85552",
-    lightbg  = "#f0eed9",
-    lightbg1 = "#e9e8d2",
-    lightbg2 = "#e1ddcb",
-    blue     = "#41A8B0",
-    yellow   = "#dfa000",
-    grey     = "#a0a79a",
-    magenta  = "#d67ba7"
+    fg       = "#655370",
+    green    = "#67b11d",
+    red      = "#f2241f",
+    lightbg  = "#efeae9",
+    lightbg2 = "#e3dedd",
+    blue     = "#715ab1",
+    yellow   = "#dc752f",
+    grey     = "#b8b0b0",
 }
 
 
@@ -218,7 +216,7 @@ gls.left[8] = {
         provider = "DiffRemove",
         condition = checkwidth,
         icon = "  ",
-        highlight = { colors.red, colors.bg }
+        highlight = { colors.green, colors.bg }
     }
 }
 
@@ -226,7 +224,7 @@ gls.left[9] = {
     DiagnosticError = {
         provider = "DiagnosticError",
         icon = "  ",
-        highlight = { colors.red, colors.bg }
+        highlight = { colors.green, colors.bg }
     }
 }
 
@@ -285,9 +283,9 @@ gls.right[3] = {
         provider = function()
             return "  "
         end,
-        highlight = { colors.lightbg, colors.red },
+        highlight = { colors.lightbg, colors.green },
         separator = " ",
-        separator_highlight = { colors.red, colors.lightbg }
+        separator_highlight = { colors.green, colors.lightbg }
     }
 }
 
@@ -314,7 +312,7 @@ gls.right[4] = {
                 return colors.yellow
             end
         },
-        highlight = { colors.red, colors.lightbg, 'italicbold' },
+        highlight = { colors.green, colors.lightbg, 'italicbold' },
     },
 }
 

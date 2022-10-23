@@ -96,7 +96,7 @@
     "rounded": false,
     "borderhighlight": "LineNr",
     "shadow": false,
-    "winblend": 10
+    "winblend": 0
   },
   "suggest.floatConfig": {
     "border": true,
