@@ -1,6 +1,6 @@
-"===
-"=== General settings
-"===
+" ===
+" === General settings
+" ===
 
 syntax on
 filetype on
@@ -29,6 +29,9 @@ set autoindent
 set tabstop=4
 set smartindent
 
+" now only for which key
+set timeoutlen=200
+
 if filereadable("./go.mod") || filereadable("./go.sum")
     set noexpandtab
 else
@@ -45,14 +48,19 @@ set list
 "set listchars=tab:¦\ ,trail:→,eol:↵,space:·
 set listchars=tab:¦\ ,trail:→,eol:↵
 
+" Gui Cursor!
+set guicursor=n-v-c:underline,i-ci-ve:ver40,r-cr:hor20,o:hor50
+            \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+            \,sm:block-blinkwait175-blinkoff150-blinkon175
+
 " For WSL yank and paste support, see: https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
-if executable("clip.exe") && executable("win32yank.exe")
+if executable("win32yank.exe")
     set clipboard+=unnamedplus
     let g:clipboard = {
         \   'name': 'genmzy_clipboard',
         \   'copy': {
-        \      '+': ['clip.exe'],
-        \      '*': ['clip.exe'],
+        \      '+': ['win32yank.exe', '-i', '--crlf'],
+        \      '*': ['win32yank.exe', '-i', '--crlf'],
         \    },
         \   'paste': {
         \      '+': ['win32yank.exe', '-o', '--lf'],
@@ -63,13 +71,17 @@ if executable("clip.exe") && executable("win32yank.exe")
 endif
 
 set termguicolors
-"set mouse=a
+set mouse=
 set foldmethod=marker
 
 
-"" pmenu semi-transparent
-"set pumblend=15
-"hi PmenuSel blend=0
+" pmenu semi-transparent
+if &background=='light'
+    set pumblend=20
+else
+    set pumblend=15
+endif
+hi PmenuSel blend=0
 
 
 "map leader
@@ -82,7 +94,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 
 
 autocmd TermOpen term://* startinsert
-tnoremap <C-N> <C-\><C-N>
+tnoremap <c-n> <c-\><c-n>
 
 
 let g:python_highlight_all=1

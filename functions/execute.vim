@@ -2,15 +2,17 @@
 " === Compile And Run fuction
 " ===
 
-map <leader>\ :call RunSigleFile()<CR>
+map <leader>\ :call ScriptRun()<cr>
 
-func! RunSigleFile()
+func! ScriptRun()
   exec "w"
-  let file_name_no_tail = expand('%:t:r')
-  let file_name = expand('%:p')
+  let fname_no_ext = expand('%:t:r')
+  let fname = expand('%:p')
 
   if &filetype == 'c'
-    exec "FloatermNew gcc " . file_name . " -o " . file_name_no_tail . " && ./" . file_name_no_tail
+    exec "FloatermNew gcc -g " . fname . " -o " . fname_no_ext . " && ./" . fname_no_ext
+  elseif &filetype == 'cpp'
+    exec "FloatermNew g++ -g " . fname . " -o " . fname_no_ext . " && ./" . fname_no_ext
   elseif &filetype == 'sh'
     :!time bash %
   elseif &filetype == 'python'
