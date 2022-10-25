@@ -29,8 +29,7 @@ gl.short_line_list = {
 
 
 local colors = {
-    bg       = (api.nvim_eval('exists("g:genmzy_transparent")') == 1
-        and api.nvim_eval("g:genmzy_transparent") == 1) and "NONE" or "#fff9e8",
+    bg       = "NONE",
     fg       = "#655370",
     green    = "#67b11d",
     red      = "#f2241f",
@@ -224,7 +223,7 @@ gls.left[9] = {
     DiagnosticError = {
         provider = "DiagnosticError",
         icon = "  ",
-        highlight = { colors.green, colors.bg }
+        highlight = { colors.red, colors.bg }
     }
 }
 
