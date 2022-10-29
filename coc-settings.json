@@ -84,7 +84,7 @@
   "translator.engines": ["youdao"],
   "hover.floatConfig": {
     "border": true,
-    "highlight": "Normal",
+    "highlight": "CocFloating",
     "borderhighlight": "LineNr"
   },
   "suggest.pumFloatConfig": {
@@ -97,17 +97,17 @@
   },
   "suggest.floatConfig": {
     "border": true,
-    "highlight": "Normal",
+    "highlight": "CocFloating",
     "borderhighlight": "LineNr"
   },
   "diagnostic.floatConfig": {
     "border": true,
-    "highlight": "Normal",
+    "highlight": "CocFloating",
     "borderhighlight": "LineNr"
   },
   "signature.floatConfig": {
     "border": true,
-    "highlight": "Normal",
+    "highlight": "CocFloating",
     "borderhighlight": "LineNr"
   },
   "suggest.completionItemKindLabels": {
