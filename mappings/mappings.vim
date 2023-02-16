@@ -60,7 +60,7 @@ map <silent> <leader>h :Man<cr>
 map <leader>n :noh<cr>
 
 " quick tabpage-change
-map - :-tabnext<cr>
+map - :tabprevious<cr>
 map = :tabnext<cr>
 
 " put a place holder to edit format-similar coding quickly
